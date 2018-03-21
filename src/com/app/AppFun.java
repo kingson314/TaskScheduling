@@ -100,7 +100,7 @@ public class AppFun {
 			TaskDao.getInstance().modTask(new com.task.Watch.Task());
 			VariableApp.systemParamsValue = SystemParamsValueDao.getInstance().getSystemParamsValue();
 			// 初始化节假日HashSet
-			HolidayDao.getInstance().loadMapHoliday(VariableApp.systemParamsValue.getDateType());
+//			HolidayDao.getInstance().loadMapHoliday(VariableApp.systemParamsValue.getDateType());
 		} catch (Exception e) {
 			Log.logError("主程序初始化参数信息错误:", e);
 		} finally {
