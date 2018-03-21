@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Wed Mar 15 00:49:00 CST 2017
+onejar.license.required=false
+manifest.classpath=
+manifest.removesigners=true
+onejar.checkbox=true
+jarname=D\:\\Projects\\GitHub\\TaskScheduling\\run\\TaskScheduling.jar
+manifest.mergeall=true
+manifest.mainclass=com.app.TaskScheduling
+manifest.file=<createnew>
+jarname.isextern=true
+onejar.expand=
+excludes=
+includes=

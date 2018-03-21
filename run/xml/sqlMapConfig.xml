@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+	PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-config.dtd">
+	
+<configuration>
+	<typeAliases>
+		<typeAlias alias="FundAssetData" type="com.data.FundInfoData"/>	
+	</typeAliases>
+	
+	<environments default="idc">
+		<environment id="tyreal_dev">
+			<transactionManager type="JDBC"/>
+			<dataSource type="POOLED">
+				<property name="driver" value="oracle.jdbc.driver.OracleDriver"/>
+				<property name="url" value="jdbc:oracle:thin:@192.1.50.100:1521:tyreal"/>
+				<property name="username" value="TYREAL_DEV"/>
+				<property name="password" value="yfdtyxtyrealdev"/>
+			</dataSource>
+		</environment>		
+		
+		<environment id="idc">
+			<transactionManager type="JDBC"/>
+			<dataSource type="POOLED">
+				<property name="driver" value="oracle.jdbc.driver.OracleDriver"/>
+				<property name="url" value="jdbc:oracle:thin:@192.1.50.100:1521:tyreal"/>
+				<property name="username" value="idc"/>
+				<property name="password" value="idc_20120808"/>
+			</dataSource>
+		</environment>		
+	</environments>	
+	
+<mappers>	
+	<mapper resource="Mybatis_config/DataDaoMapper.xml"/>
+	<mapper resource="Mybatis_config/EntryDataMapper.xml"/>
+	<mapper resource="Mybatis_config/HldDaoMapper.xml"/>
+</mappers>
+
+</configuration>

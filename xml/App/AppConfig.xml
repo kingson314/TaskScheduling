@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="GBK"?>  <System>
+	    <!-- 程序启动选项 -->
+	 <boot>
+		    <!-- 程序使用的数据库 -->
+		 <!-- <dbApp>使用默认的数据库 AppCon</dbApp> -->
+		 <dbApp>app</dbApp>
+		    <!-- 当前执行日期数据库 -->
+		 <dbNowDate>app</dbNowDate>
+		    <!-- 节假日数据库 -->
+		 <dbDateType>app</dbDateType>
+		    <!-- 是否自动启动jetty -->
+		 <startJetty>false</startJetty>
+		    <!-- 是否使用登陆、锁屏 -->
+		 <useAppLogin>false</useAppLogin>
+	 </boot>
+
+	    <!-- jetty参数 -->
+	 <jetty>
+		    <!-- jetty启动的端口 -->
+		 <jettyPort>9999</jettyPort>
+	 </jetty>
+
+	 <!-- db  -->
+	 <db>
+		 <id>app</id>
+		 <type>mysql</type>
+		 <class>com.mysql.jdbc.Driver</class>
+		 <link>jdbc:mysql://127.0.0.1:3306/app?useUnicode=true&amp;characterEncoding=UTF-8</link>
+		 <username>root</username>
+		 <password>G^HYfL5dwaln2.,e</password>
+	 </db>
+	    <!-- 程序使用的多个可选数据库配置，供启动选项选择  -->
+	 <db>
+		    <!-- 数据库标志，在启动选项中使用 -->
+		 <id>ts</id>
+		    <!-- 数据库类型 -->
+		 <type>sqlserver2005</type>
+		    <!-- 数据库类 -->
+		 <class>net.sourceforge.jtds.jdbc.driver</class>
+		    <!-- 数据库连接串 -->
+		 <link>jdbc:sqlserver://vs-dev-09:1433;databasename=oiw1</link>
+		    <!-- 数据库用户名 -->
+		 <username>sa</username>
+		    <!-- 数据库密码，密码必须由本程序的加密工具生成 -->
+		 <password>6ded5525d71b3fb0f4fc83adebb9c9ba</password>
+	 </db>
+
+	 <db>
+		 <id>mdb</id>
+		 <type>access</type>
+		 <class>sun.jdbc.odbc.JdbcOdbcDriver</class>
+		 <link>
+			<![CDATA[
+			jdbc:odbc:driver={Microsoft Access Driver (*.mdb)};DBQ=
+			E:\360云盘\百度云\Projects\TaskScheduling\db\db.mdb;
+			]]>
+		</link>
+		 <username/>
+		 <password/>
+	 </db>
+
+	 <db>
+		 <id>otc</id>
+		 <type>oracle</type>
+		 <class>oracle.jdbc.driver.OracleDriver</class>
+		 <link>jdbc:oracle:thin:@192.1.50.100:1521:otc</link>
+		 <username>otc</username>
+		 <password>ddbdab3606a4bb62fb445677419fdede</password>
+	 </db>
+	    <!-- db -->
+
+	    <!-- 程序部分可配置参数  -->
+	 <App>
+		    <!-- 程序标题  -->
+		 <appTitle>TaskScheduler</appTitle>
+		    <!-- 程序版本(此参数设置会启动程序的首次自动更新功能) -->
+		 <appVersion>3.0.0</appVersion>
+		    <!-- 程序发布日期 -->
+		 <appPublishDate>2012-10-01</appPublishDate>
+		    <!-- 程序的专利说明 -->
+		 <appCopyRight>
+			<![CDATA[ (c) Copyright efund 2012 - 2020.All rights reserved.
+	    Visit http://www.efunds.com.cn]]>
+		</appCopyRight>
+		    <!-- 程序使用的皮肤主题 -->
+		 <appLookAndFeel>默认风格</appLookAndFeel>
+		    <!-- 程序登陆、锁屏用户，此用户固定，暂不扩展  -->
+		 <appUserName>Admin</appUserName>
+		    <!-- 程序登陆、锁屏对应的密码，密文可以用程序用的加密工具生成，此密码默认为888 -->
+		 <appPassword>kingson</appPassword>
+		    <!-- 程序锁屏快捷键 -->
+		 <appLockShortKey>F12</appLockShortKey>
+		    <!-- 程序编辑框撤销做捷键 -->
+		 <appUnDoShortKey>CTRL + Z</appUnDoShortKey>
+		    <!-- 程序锁编辑框重做捷键 -->
+		 <appReDoShortKey>CTRL + R</appReDoShortKey>
+		    <!-- 程序自动锁屏时间，单位为秒，不为0时生效；前题时启动了守护调度 -->
+		 <appAutoLockTime>600</appAutoLockTime>
+	 </App>
+ </System>
