@@ -32,7 +32,7 @@ public class JOutlookBar extends JPanel implements ActionListener {
 	 * A LinkedHashMap of bars: we use a linked hash map to preserve the order
 	 * of the bars
 	 */
-	@SuppressWarnings("unchecked")
+	@SuppressWarnings("rawtypes")
 	private Map bars = new LinkedHashMap();
 
 	/**
@@ -128,7 +128,7 @@ public class JOutlookBar extends JPanel implements ActionListener {
 	 * rebuilds the top and bottom panels of bars as well as making the
 	 * currently selected bar's panel visible
 	 */
-	@SuppressWarnings("unchecked")
+	@SuppressWarnings({ "rawtypes" })
 	public void render() {
 		// Compute how many bars we are going to have where
 		int totalBars = this.bars.size();
@@ -183,7 +183,7 @@ public class JOutlookBar extends JPanel implements ActionListener {
 	/**
 	 * Invoked when one of our bars is selected
 	 */
-	@SuppressWarnings("unchecked")
+	@SuppressWarnings("rawtypes")
 	public void actionPerformed(ActionEvent e) {
 		int currentBar = 0;
 		for (Iterator i = this.bars.keySet().iterator(); i.hasNext();) {

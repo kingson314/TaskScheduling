@@ -60,9 +60,9 @@ public class ScherRunAction {
 			sp.setStartTime(UtilString.isNil(sp.getStartTime(), UtilConver.dateToStr(new Date(), Const.fm_HHmmss)));
 			sp.setStartDate(UtilString.isNil(sp.getStartDate(), UtilConver.dateToStr(new Date(), Const.fm_yyyyMMdd)));
 
-			String sTime = DateAction.getDat(sp.getStartTime(), Const.fm_HHmmss, "ss mm HH");
+			String sTime = DateAction.getDat(sp.getStartTime(), Const.fm_HHmmss, "ss:mm:HH");
 
-			String[] sTimes = sTime.split("/s");
+			String[] sTimes = sTime.split(":");
 
 			if (sTime.equals("") || sTime == null) {
 				sTime = "0 00 00";// 则表示为0点运行

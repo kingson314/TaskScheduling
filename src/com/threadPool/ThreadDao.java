@@ -16,7 +16,7 @@ public class ThreadDao {
 	}
 
 	// 查询线程表格数组
-	@SuppressWarnings("unchecked")
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public Vector<?> getThreadVector(java.util.Map<String, String> map) {
 		Vector<Vector<String>> tableValue = new Vector<Vector<String>>();
 		Iterator<?> it = ThreadPool.MapFuture.entrySet().iterator();

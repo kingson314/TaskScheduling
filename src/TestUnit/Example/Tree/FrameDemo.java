@@ -43,6 +43,7 @@ public class FrameDemo extends JFrame {
 
 	private JLabel SLabel = null;
 
+	@SuppressWarnings("rawtypes")
 	private JList jList = null;
 
 	private JPanel jPanel3 = null;
@@ -173,6 +174,7 @@ public class FrameDemo extends JFrame {
 	 * 
 	 * @return javax.swing.JList
 	 */
+	@SuppressWarnings({ "rawtypes", "unchecked" })
 	private JList getJList() {
 		if (jList == null) {
 			DefaultListModel model = new DefaultListModel();

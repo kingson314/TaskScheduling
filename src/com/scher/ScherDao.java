@@ -64,11 +64,10 @@ public class ScherDao {
 	}
 
 	// 获取调度数组
-	@SuppressWarnings("unchecked")
 	public Vector<?> getScheVector(Map<String, String> map) {
 		Statement sm = null;
 		ResultSet rs = null;
-		Vector<Vector<String>> scheVector = new Vector<Vector<String>>();
+		Vector<Vector<Object>> scheVector = new Vector<Vector<Object>>();
 		try {
 			sm = con.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
 			String vsql = null;
@@ -128,7 +127,7 @@ public class ScherDao {
 				sp.setSchOrder(rs.getString("schOrder"));
 				sp.setSpecialDate(rs.getString("specialDate"));
 				sp.setNowDate(rs.getString("nowDate") == null ? false : rs.getBoolean("nowDate"));
-				Vector rowValue = new Vector();
+				Vector<Object> rowValue = new Vector<Object>();
 				rowValue.add(false);
 				rowValue.add(sp.getSchOrder() == null ? "" : sp.getSchOrder());
 				rowValue.add(sp.getSchCde() == null ? "" : sp.getSchCde());
@@ -645,9 +644,8 @@ public class ScherDao {
 		try {
 			sm = con.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
 			try {
-				rs = sm.executeQuery("select max(len(SchOrder)) as len from  " + AppCon.TN_ScheParam);
-			} catch (Exception e) {
 				rs = sm.executeQuery("select max(length(SchOrder)) as len from  " + AppCon.TN_ScheParam);
+			} catch (Exception e) {
 			}
 			rs.last();
 			if (rs.getRow() > 0)

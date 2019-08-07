@@ -23,7 +23,6 @@ import common.util.json.UtilJson;
 
 public class Panel implements ITaskPanel {
 
-	private static final long serialVersionUID = 1L;
 	private JPanel pnlMail;
 	private STextArea txtaContent;
 	private SButton btnMailFileName;

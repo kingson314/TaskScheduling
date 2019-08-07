@@ -378,8 +378,8 @@ public class Log {
 		// 使用了静态变量ScheExecJob.MapTask 后，须清空这两个字段
 		String title = taskName + "[" + taskId + "]";
 		showLog(title, sb.toString(), false);
-		// 如果是手工执行/执行失败/执行提示，则系统日志与任务日志都写前台显示
-		if (scheId.equals("-1") || taskStatus.equals("执行失败") || taskStatus.equals("执行提示")) {
+		// 如果是手工执行/执行失败/执行提示,普通日志类型，则系统日志与任务日志都写前台显示
+		if (scheId.equals("-1") || taskStatus.equals("执行失败") || taskStatus.equals("执行提示")|| "普通任务日志".equals(task.getLogType())) {
 			showLog(AppLogView.LogSystem, sb.toString(), true);
 		}
 		task.setTaskStatus("");

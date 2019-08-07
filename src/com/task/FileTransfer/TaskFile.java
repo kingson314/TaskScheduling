@@ -186,6 +186,7 @@ public class TaskFile extends TaskAbstract {
 	}
 
 	// 测试文件是否可以锁定
+	@SuppressWarnings("resource")
 	protected boolean locked(File File, String FileName) {
 		Boolean result = true;
 		try {

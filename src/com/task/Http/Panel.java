@@ -12,7 +12,6 @@ import common.util.string.UtilString;
 import consts.Const;
 
 public class Panel implements ITaskPanel {
-	private static final long serialVersionUID = 1L;
 	private JPanel pnlMain;
 	private STextField txtUrl;
 	private SLabel lUrl;

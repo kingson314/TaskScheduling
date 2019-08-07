@@ -2,24 +2,36 @@
 
 <任务类型信息>
 	<taskType>
+		广东省工业信息
+		<taskJarPath>taskJar\Gdgov.jar</taskJarPath>
+		<taskPath>com.task.Gdgov.Task</taskPath>
+		<taskPanelPath>com.task.Gdgov.Panel</taskPanelPath>
+	</taskType>
+	<taskType>
+		珠海政府信息
+		<taskJarPath>taskJar\Zhgov.jar</taskJarPath>
+		<taskPath>com.task.Zhgov.Task</taskPath>
+		<taskPanelPath>com.task.Zhgov.Panel</taskPanelPath>
+	</taskType>
+	<taskType>
 		Http接口
 		<taskJarPath>taskJar\Http.jar</taskJarPath>
 		<taskPath>com.task.Http.Task</taskPath>
 		<taskPanelPath>com.task.Http.Panel</taskPanelPath>
 	</taskType>
-	<taskType>
+	<!-- <taskType>
 		导入行情数据
 		<taskJarPath>taskJar\ImportPrice.jar</taskJarPath>
 		<taskPath>com.task.ImportPrice.Task</taskPath>
 		<taskPanelPath>com.task.ImportPrice.Panel</taskPanelPath>
-	</taskType>
-	<taskType>
+	</taskType> -->
+	<!-- <taskType>
 		导入快迅通数据
 		<taskJarPath>taskJar\Kxt.jar</taskJarPath>
 		<taskPath>com.task.Kxt.Task</taskPath>
 		<taskPanelPath>com.task.Kxt.Panel</taskPanelPath>
-	</taskType>
-	<taskType>
+	</taskType> -->
+	<!-- <taskType>
 		财经数据采集
 		<jarPath>taskJar\Economic.jar</jarPath>
 		<taskPath>com.task.Economic.Task</taskPath>
@@ -30,40 +42,39 @@
 		<taskJarPath>taskJar\ImportNews.jar</taskJarPath>
 		<taskPath>com.task.ImportNews.Task</taskPath>
 		<taskPanelPath>com.task.ImportNews.Panel</taskPanelPath>
-	</taskType>
-		<taskType>
+	</taskType> -->
+	<!-- 	<taskType>
 		时点价差分析
 		<jarPath>taskJar\TimingValue.jar</jarPath>
 		<taskPath>com.task.TimingValue.Task</taskPath>
 		<panelPath>com.task.TimingValue.Panel</panelPath>
-	</taskType><!--
+	</taskType> --><!--
 	<taskType>
 		时点价差极值范围比率分析
 		<jarPath>taskJar\TimingmaximinRangeRate.jar</jarPath>
 		<taskPath>com.task.TimingmaximinRangeRate.Task</taskPath>
 		<panelPath>com.task.TimingmaximinRangeRate.Panel</panelPath>
 	</taskType>	
-	--><taskType>
+	-->
+	<!-- <taskType>
 		导入历史订单
 		<taskJarPath>taskJar\ImportOrders.jar</taskJarPath>
 		<taskPath>com.task.ImportOrders.Task</taskPath>
 		<taskPanelPath>com.task.ImportOrders.Panel</taskPanelPath>
-	</taskType>
-	
-	
-	<taskType>
+	</taskType> -->
+<!-- 	<taskType>
 		导入行情数据Forex
 		<taskJarPath>taskJar\ImportPriceFromForex.jar</taskJarPath>
 		<taskPath>com.task.ImportPriceFromForex.Task</taskPath>
 		<taskPanelPath>com.task.ImportPriceFromForex.Panel</taskPanelPath>
-	</taskType>
-	<taskType>
+	</taskType> -->
+	<!-- <taskType>
 		更新行情本地时间
 		<taskJarPath>taskJar\UpdateDateTimeLocal.jar</taskJarPath>
 		<taskPath>com.task.UpdateDateTimeLocal.Task</taskPath>
 		<taskPanelPath>com.task.UpdateDateTimeLocal.Panel</taskPanelPath>
-	</taskType>
-	<taskType>
+	</taskType> -->
+	<!-- <taskType>
 		简化行情数据
 		<jarPath>taskJar\SimplifyPriceFile.jar</jarPath>
 		<taskPath>com.task.SimplifyPriceFile.Task</taskPath>
@@ -74,19 +85,19 @@
 		<jarPath>taskJar\Trend.jar</jarPath>
 		<taskPath>com.task.Trend.Task</taskPath>
 		<panelPath>com.task.Trend.Panel</panelPath>
-	</taskType>
+	</taskType> -->
 	<taskType>
 		MySQL备份
 		<taskJarPath>taskJar.BackMySQL.jar</taskJarPath>
 		<taskPath>com.task.BackMySQL.Task</taskPath>
 		<taskPanelPath>com.task.BackMySQL.Panel</taskPanelPath>
 	</taskType>
-	<taskType>
+	<!-- <taskType>
 		文件导入
 		<taskJarPath>taskJar\ImportFile.jar</taskJarPath>
 		<taskPath>com.task.ImportFile.Task</taskPath>
 		<taskPanelPath>com.task.ImportFile.Panel</taskPanelPath>
-	</taskType>
+	</taskType> -->
 	<taskType>
 		文件检查
 		<jarPath>taskJar\FileCheck.jar</jarPath>
@@ -99,7 +110,7 @@
 		<taskPath>com.task.TableCheck.Task</taskPath>
 		<panelPath>com.task.TableCheck.Panel</panelPath>
 	</taskType>
-	<taskType>
+	<!-- <taskType>
 		导出Excel
 		<jarPath>taskJar\ExportExcel.jar</jarPath>
 		<taskPath>com.task.ExportExcel.Task</taskPath>
@@ -116,8 +127,8 @@
 		<jarPath>taskJar\Procedure.jar</jarPath>
 		<taskPath>com.task.Procedure.Task</taskPath>
 		<panelPath>com.task.Procedure.Panel</panelPath>
-	</taskType>
-	<taskType>
+	</taskType> -->
+	<!-- <taskType>
 		数据同步
 		<jarPath>taskJar\DataUpdate.jar</jarPath>
 		<taskPath>com.task.DataUpdate.Task</taskPath>
@@ -134,7 +145,7 @@
 		<jarPath>taskJar\TableUpdateForBigData.jar</jarPath>
 		<taskPath>com.task.TableUpdateForBigData.Task</taskPath>
 		<panelPath>com.task.TableUpdateForBigData.Panel</panelPath>
-	</taskType>
+	</taskType> -->
 	<!--
 		<taskType> 数据表更新(多表)
 		<jarPath>taskJar\TableUpdateMultiple.jar</jarPath>

@@ -220,7 +220,7 @@ public class TaskFtp extends TaskFile implements FTPDataTransferListener {
 	}
 
 	// sftp下载
-	@SuppressWarnings("unchecked")
+	@SuppressWarnings("rawtypes")
 	protected void sftpDownLoad(FtpSite ftpSite, String sFilePath, String sFileName, String dFilePath, String dFileName) {
 		ChannelSftp sftp = getsFtp(ftpSite);
 		FileOutputStream fo = null;

@@ -27,7 +27,6 @@ import common.util.string.UtilString;
 import consts.Const;
 
 public class Panel implements ITaskPanel {
-	private static final long serialVersionUID = 1L;
 	private JPanel pnlTableUpdate;
 	private SLabel lSrcDbName;
 	private SLabel lSrcCompareFields;

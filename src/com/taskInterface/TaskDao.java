@@ -161,7 +161,7 @@ public class TaskDao {
 	}
 
 	// key 用于任务组 任务查询
-	@SuppressWarnings("unchecked")
+	@SuppressWarnings("rawtypes")
 	public Vector<?> getTaskVector(Map<String, String> map) {
 		Statement sm = null;
 		ResultSet rs = null;
@@ -356,7 +356,6 @@ public class TaskDao {
 			try {
 				rs = sm.executeQuery("select max(len(taskOrder)) as len from  " + AppCon.TN_Task);
 			} catch (Exception e) {
-				rs = sm.executeQuery("select max(length(taskOrder)) as len from  " + AppCon.TN_Task);
 			}
 			rs.last();
 			if (rs.getRow() > 0)

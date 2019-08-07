@@ -34,8 +34,8 @@ public class AppTableView {
 	// 构造，添加默认的3个列表
 	private AppTableView() {
 		tab.setFont(Const.tfont);
-		tab.addTab("任务组列表", ImageContext.TabTaskGroup, TaskGroupTab.getInstance().getPnlTab(), "任务组列表", false);
 		tab.addTab("任务列表", ImageContext.TabTask, TaskTab.getInstance().getPnlTab(), "任务列表", false);
+		tab.addTab("任务组列表", ImageContext.TabTaskGroup, TaskGroupTab.getInstance().getPnlTab(), "任务组列表", false);
 		tab.addTab("调度列表", ImageContext.TabSche, ScherTab.getInstance().getPnlTab(), "调度列表", false);
 	}
 

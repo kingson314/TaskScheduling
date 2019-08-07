@@ -23,7 +23,6 @@ import common.component.ShowMsg;
 import common.util.json.UtilJson;
 
 public class Panel implements ITaskPanel {
-	private static final long serialVersionUID = 1L;
 	private JPanel pnlDataUpdate;
 	private SLabel lSrcDbName;
 	private SScrollPane scrlSrcSql;

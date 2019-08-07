@@ -24,7 +24,6 @@ import common.util.json.UtilJson;
 import consts.Const;
 
 public class Panel implements ITaskPanel {
-	private static final long serialVersionUID = 1L;
 	private JPanel pnlMain;
 	private SLabel lDbconn;
 	private SLabel lSql;

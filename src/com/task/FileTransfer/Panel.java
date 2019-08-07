@@ -28,7 +28,6 @@ import common.util.json.UtilJson;
 import consts.Const;
 
 public class Panel implements ITaskPanel {
-	private static final long serialVersionUID = 1L;
 	private JPanel pnlFile;
 	private JPanel pnlPlugin;
 	private SCheckBox chkEnableplugin;

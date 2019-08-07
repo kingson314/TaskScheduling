@@ -30,7 +30,7 @@ public class MonitorDao {
 	}
 
 	// 获取监控员表格数组
-	@SuppressWarnings("unchecked")
+	@SuppressWarnings("rawtypes")
 	public Vector<Vector<Comparable>> getMonitorVector(String sql) {
 		Statement sm = null;
 		ResultSet rs = null;

@@ -25,7 +25,7 @@
 		 <id>app</id>
 		 <type>mysql</type>
 		 <class>com.mysql.jdbc.Driver</class>
-		 <link>jdbc:mysql://127.0.0.1:3306/app?useUnicode=true&amp;characterEncoding=UTF-8</link>
+		 <link>jdbc:mysql://127.0.0.1:3306/app-qy?useUnicode=true&amp;characterEncoding=UTF-8</link>
 		 <username>root</username>
 		 <password>G^HYfL5dwaln2.,e</password>
 	 </db>
@@ -76,11 +76,10 @@
 		    <!-- 程序版本(此参数设置会启动程序的首次自动更新功能) -->
 		 <appVersion>3.0.0</appVersion>
 		    <!-- 程序发布日期 -->
-		 <appPublishDate>2012-10-01</appPublishDate>
+		 <appPublishDate>2019-08-01</appPublishDate>
 		    <!-- 程序的专利说明 -->
 		 <appCopyRight>
-			<![CDATA[ (c) Copyright efund 2012 - 2020.All rights reserved.
-	    Visit http://www.efunds.com.cn]]>
+			<![CDATA[ (c) Copyright fengguoqu 2012 - 2120.All rights reserved.]]>
 		</appCopyRight>
 		    <!-- 程序使用的皮肤主题 -->
 		 <appLookAndFeel>默认风格</appLookAndFeel>

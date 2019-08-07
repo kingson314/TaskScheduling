@@ -26,7 +26,6 @@ import common.util.string.UtilString;
 import consts.ImageContext;
 
 public class Panel implements ITaskPanel {
-	private static final long serialVersionUID = 1L;
 	private JPanel pnlFile;
 	private JPanel pnlFilescr;
 	private SLabel l9;

@@ -214,11 +214,10 @@ public class TaskGroupDao {
 	}
 
 	// 根据参数获取任务表格数组
-	@SuppressWarnings("unchecked")
 	public Vector<?> getTaskGroupVector(Map<String, String> map) {
 		Statement sm = null;
 		ResultSet rs = null;
-		Vector<Vector<String>> taskGroupVector = new Vector<Vector<String>>();
+		Vector<Vector<Object>> taskGroupVector = new Vector<Vector<Object>>();
 		try {
 			sm = con.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
 			String vsql = null;
@@ -237,7 +236,7 @@ public class TaskGroupDao {
 			rs = sm.executeQuery(vsql);
 
 			while (rs.next()) {
-				Vector rowValue = new Vector();
+				Vector<Object> rowValue = new Vector<Object>();
 				rowValue.add(false);
 				rowValue.add(rs.getString("groupOrder") == null ? "" : rs.getString("groupOrder"));
 				rowValue.add(rs.getString("groupID"));
@@ -288,7 +287,6 @@ public class TaskGroupDao {
 			try {
 				rs = sm.executeQuery("select max(len(groupOrder)) as len from  " + AppCon.TN_Taskgroup);
 			} catch (Exception e) {
-				rs = sm.executeQuery("select max(length(groupOrder)) as len from  " + AppCon.TN_Taskgroup);
 			}
 			rs.last();
 			if (rs.getRow() > 0)

@@ -216,8 +216,8 @@ public class LogAbridgementDao {
 						sql = sql + " and DATE_FORMAT(dateTime,'%Y%m%d')>='" + map.get("开始日期") + "'";
 					if (map.get("结束日期") != null && map.get("结束日期").trim().length() > 0)
 						sql = sql + " and DATE_FORMAT(dateTime,'%Y%m%d')<='" + map.get("结束日期") + "'";
-					if (map.get("查询记录数") != null && map.get("查询记录数").trim().length() > 0)
-						sql = sql + "  and rownum<= " + Long.valueOf(map.get("查询记录数"));
+//					if (map.get("查询记录数") != null && map.get("查询记录数").trim().length() > 0)
+//						sql = sql + "  and rownum<= " + Long.valueOf(map.get("查询记录数"));
 				}
 
 				if (map.get("调度名称") != null && map.get("调度名称").trim().length() > 0)
@@ -228,8 +228,10 @@ public class LogAbridgementDao {
 					sql = sql + " and groupName like ('%" + map.get("任务组名称") + "%')  ";
 				if (map.get("任务类型") != null && map.get("任务类型").trim().length() > 0)
 					sql = sql + " and d.taskType like ('%" + map.get("任务类型") + "%')  ";
-
+				
 				sql = sql + " order by a.dateTime desc";
+				if (map.get("查询记录数") != null && map.get("查询记录数").trim().length() > 0)
+					sql = sql + " limit 0,"+map.get("查询记录数").trim()+" ";
 				rs = sm.executeQuery(sql);
 				while (rs.next()) {
 					String scheid = rs.getString("scheId");

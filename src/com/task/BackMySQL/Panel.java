@@ -17,7 +17,6 @@ import common.component.ShowMsg;
 import common.util.json.UtilJson;
 
 public class Panel implements ITaskPanel {
-	private static final long serialVersionUID = 1L;
 	private JPanel pnlBackup;
 	private SLabel lDbPath;
 	private SLabel lDbconn;

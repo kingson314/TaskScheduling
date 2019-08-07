@@ -1,0 +1,1004 @@
+[2019-08-01 00:25:04,767 INFO] - MLog clients using log4j logging.
+[2019-08-01 00:25:04,833 INFO] - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+[2019-08-01 00:25:05,036 INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge0w5a4k7o6k118ufusa|720e8ce9, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge0w5a4k7o6k118ufusa|720e8ce9, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/app?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2019-08-01 00:25:08,838 INFO] - Job execution threads will use class loader of thread: Thread-2
+[2019-08-01 00:25:09,172 INFO] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2019-08-01 00:25:09,173 INFO] - Quartz Scheduler v.2.0.1 created.
+[2019-08-01 00:25:09,174 INFO] - RAMJobStore initialized.
+[2019-08-01 00:25:09,177 INFO] - Scheduler meta-data: Quartz Scheduler (v2.0.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 100 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2019-08-01 00:25:09,177 INFO] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+[2019-08-01 00:25:09,177 INFO] - Quartz scheduler version: 2.0.1
+[2019-08-01 00:25:09,219 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-08-01 10:59:45,136 INFO] - MLog clients using log4j logging.
+[2019-08-01 10:59:45,480 INFO] - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+[2019-08-01 10:59:45,713 INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1bqomxva4kucdo315jpymi|4fc5cf32, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1bqomxva4kucdo315jpymi|4fc5cf32, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/app-qy?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2019-08-01 10:59:50,722 INFO] - Job execution threads will use class loader of thread: Thread-0
+[2019-08-01 10:59:50,948 INFO] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2019-08-01 10:59:50,949 INFO] - Quartz Scheduler v.2.0.1 created.
+[2019-08-01 10:59:50,951 INFO] - RAMJobStore initialized.
+[2019-08-01 10:59:50,953 INFO] - Scheduler meta-data: Quartz Scheduler (v2.0.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 100 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2019-08-01 10:59:50,953 INFO] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+[2019-08-01 10:59:50,953 INFO] - Quartz scheduler version: 2.0.1
+[2019-08-01 10:59:50,993 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-08-01 11:02:09,242 INFO] - MLog clients using log4j logging.
+[2019-08-01 11:02:09,312 INFO] - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+[2019-08-01 11:02:09,696 INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1bqomxva4kufgqn1201jc9|43b0e4ac, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1bqomxva4kufgqn1201jc9|43b0e4ac, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/app-qy?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2019-08-01 11:02:14,860 INFO] - Job execution threads will use class loader of thread: Thread-2
+[2019-08-01 11:02:15,005 INFO] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2019-08-01 11:02:15,006 INFO] - Quartz Scheduler v.2.0.1 created.
+[2019-08-01 11:02:15,008 INFO] - RAMJobStore initialized.
+[2019-08-01 11:02:15,011 INFO] - Scheduler meta-data: Quartz Scheduler (v2.0.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 100 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2019-08-01 11:02:15,011 INFO] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+[2019-08-01 11:02:15,011 INFO] - Quartz scheduler version: 2.0.1
+[2019-08-01 11:02:15,139 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-08-01 11:02:39,051 INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1bqomxva4kufgqn1201jc9|4013cd05, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1bqomxva4kufgqn1201jc9|4013cd05, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/app-base?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2019-08-01 11:04:17,712 INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1bqomxva4kufgqn1201jc9|426ad784, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1bqomxva4kufgqn1201jc9|426ad784, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/app-qy?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2019-08-01 11:04:26,610 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutting down.
+[2019-08-01 11:04:26,616 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused.
+[2019-08-01 11:04:26,618 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutdown complete.
+[2019-08-01 11:04:26,637 INFO] - 20190801 110426:jetty is stopped
+[2019-08-01 11:04:35,983 INFO] - MLog clients using log4j logging.
+[2019-08-01 11:04:36,033 INFO] - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+[2019-08-01 11:04:36,170 INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1bqomxva4kuilyq1859zjo|54cc2176, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1bqomxva4kuilyq1859zjo|54cc2176, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/app-qy?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2019-08-01 11:04:39,561 INFO] - Job execution threads will use class loader of thread: Thread-0
+[2019-08-01 11:04:39,755 INFO] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2019-08-01 11:04:39,756 INFO] - Quartz Scheduler v.2.0.1 created.
+[2019-08-01 11:04:39,759 INFO] - RAMJobStore initialized.
+[2019-08-01 11:04:39,761 INFO] - Scheduler meta-data: Quartz Scheduler (v2.0.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 100 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2019-08-01 11:04:39,762 INFO] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+[2019-08-01 11:04:39,762 INFO] - Quartz scheduler version: 2.0.1
+[2019-08-01 11:04:39,845 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-08-01 11:05:18,895 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutting down.
+[2019-08-01 11:05:18,896 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused.
+[2019-08-01 11:05:18,897 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutdown complete.
+[2019-08-01 11:05:18,965 INFO] - 20190801 110518:jetty is stopped
+[2019-08-01 11:05:27,249 INFO] - MLog clients using log4j logging.
+[2019-08-01 11:05:27,310 INFO] - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+[2019-08-01 11:05:27,488 INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1bqomxva4kujpit1b9kg5n|793a1163, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1bqomxva4kujpit1b9kg5n|793a1163, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/app-qy?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2019-08-01 11:05:31,000 INFO] - Job execution threads will use class loader of thread: Thread-2
+[2019-08-01 11:05:31,243 INFO] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2019-08-01 11:05:31,244 INFO] - Quartz Scheduler v.2.0.1 created.
+[2019-08-01 11:05:31,246 INFO] - RAMJobStore initialized.
+[2019-08-01 11:05:31,248 INFO] - Scheduler meta-data: Quartz Scheduler (v2.0.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 100 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2019-08-01 11:05:31,248 INFO] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+[2019-08-01 11:05:31,248 INFO] - Quartz scheduler version: 2.0.1
+[2019-08-01 11:05:31,286 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-08-01 11:06:42,629 INFO] - MLog clients using log4j logging.
+[2019-08-01 11:06:42,680 INFO] - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+[2019-08-01 11:06:42,896 INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1bqomxva4kulbomcsxdv5|25ac0055, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1bqomxva4kulbomcsxdv5|25ac0055, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/app-qy?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2019-08-01 11:06:47,375 INFO] - Job execution threads will use class loader of thread: Thread-2
+[2019-08-01 11:06:47,922 INFO] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2019-08-01 11:06:47,923 INFO] - Quartz Scheduler v.2.0.1 created.
+[2019-08-01 11:06:47,925 INFO] - RAMJobStore initialized.
+[2019-08-01 11:06:47,928 INFO] - Scheduler meta-data: Quartz Scheduler (v2.0.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 100 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2019-08-01 11:06:47,928 INFO] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+[2019-08-01 11:06:47,928 INFO] - Quartz scheduler version: 2.0.1
+[2019-08-01 11:06:48,351 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-08-01 11:07:08,196 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutting down.
+[2019-08-01 11:07:08,197 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused.
+[2019-08-01 11:07:08,208 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutdown complete.
+[2019-08-01 11:07:08,218 INFO] - 20190801 110708:jetty is stopped
+[2019-08-01 11:07:16,818 INFO] - MLog clients using log4j logging.
+[2019-08-01 11:07:16,998 INFO] - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+[2019-08-01 11:07:17,166 INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1bqomxva4kum22b1gd2c9w|5ba8f03c, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1bqomxva4kum22b1gd2c9w|5ba8f03c, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/app-qy?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2019-08-01 11:07:20,676 INFO] - Job execution threads will use class loader of thread: Thread-0
+[2019-08-01 11:07:20,949 INFO] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2019-08-01 11:07:20,951 INFO] - Quartz Scheduler v.2.0.1 created.
+[2019-08-01 11:07:20,953 INFO] - RAMJobStore initialized.
+[2019-08-01 11:07:20,956 INFO] - Scheduler meta-data: Quartz Scheduler (v2.0.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 100 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2019-08-01 11:07:20,956 INFO] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+[2019-08-01 11:07:20,956 INFO] - Quartz scheduler version: 2.0.1
+[2019-08-01 11:07:21,141 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-08-01 11:07:26,866 INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1bqomxva4kum22b1gd2c9w|1795d2eb, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1bqomxva4kum22b1gd2c9w|1795d2eb, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/app-qy?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2019-08-01 11:10:39,056 INFO] - MLog clients using log4j logging.
+[2019-08-01 11:10:39,234 INFO] - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+[2019-08-01 11:10:39,592 INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1bqomxva4kuqe7h11q0zxk|589aeee9, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1bqomxva4kuqe7h11q0zxk|589aeee9, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/app-qy?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2019-08-01 11:10:44,151 INFO] - Job execution threads will use class loader of thread: Thread-0
+[2019-08-01 11:10:44,368 INFO] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2019-08-01 11:10:44,370 INFO] - Quartz Scheduler v.2.0.1 created.
+[2019-08-01 11:10:44,373 INFO] - RAMJobStore initialized.
+[2019-08-01 11:10:44,376 INFO] - Scheduler meta-data: Quartz Scheduler (v2.0.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 100 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2019-08-01 11:10:44,376 INFO] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+[2019-08-01 11:10:44,376 INFO] - Quartz scheduler version: 2.0.1
+[2019-08-01 11:10:44,424 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-08-01 11:10:56,550 INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1bqomxva4kuqe7h11q0zxk|4aafa1e1, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1bqomxva4kuqe7h11q0zxk|4aafa1e1, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/app-qy?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2019-08-01 11:17:26,786 INFO] - MLog clients using log4j logging.
+[2019-08-01 11:17:26,834 INFO] - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+[2019-08-01 11:17:27,038 INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1bqomxva4kuz4prlnzjoe|4c0c03bd, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1bqomxva4kuz4prlnzjoe|4c0c03bd, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/app-qy?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2019-08-01 11:17:31,323 INFO] - Job execution threads will use class loader of thread: Thread-1
+[2019-08-01 11:17:31,572 INFO] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2019-08-01 11:17:31,575 INFO] - Quartz Scheduler v.2.0.1 created.
+[2019-08-01 11:17:31,579 INFO] - RAMJobStore initialized.
+[2019-08-01 11:17:31,583 INFO] - Scheduler meta-data: Quartz Scheduler (v2.0.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 100 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2019-08-01 11:17:31,583 INFO] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+[2019-08-01 11:17:31,583 INFO] - Quartz scheduler version: 2.0.1
+[2019-08-01 11:17:31,622 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-08-01 11:17:36,924 INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1bqomxva4kuz4prlnzjoe|6b678336, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1bqomxva4kuz4prlnzjoe|6b678336, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/app-qy?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2019-08-01 11:19:57,249 INFO] - MLog clients using log4j logging.
+[2019-08-01 11:19:57,534 INFO] - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+[2019-08-01 11:19:58,012 INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1bqomxva4kv2cu812ukbf2|1311a468, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1bqomxva4kv2cu812ukbf2|1311a468, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/app-qy?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2019-08-01 11:20:02,683 INFO] - Job execution threads will use class loader of thread: Thread-0
+[2019-08-01 11:20:03,099 INFO] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2019-08-01 11:20:03,103 INFO] - Quartz Scheduler v.2.0.1 created.
+[2019-08-01 11:20:03,106 INFO] - RAMJobStore initialized.
+[2019-08-01 11:20:03,116 INFO] - Scheduler meta-data: Quartz Scheduler (v2.0.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 100 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2019-08-01 11:20:03,116 INFO] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+[2019-08-01 11:20:03,117 INFO] - Quartz scheduler version: 2.0.1
+[2019-08-01 11:20:03,188 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-08-01 11:20:18,532 INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1bqomxva4kv2cu812ukbf2|4c8dba72, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1bqomxva4kv2cu812ukbf2|4c8dba72, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/app-qy?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2019-08-01 11:22:11,954 INFO] - MLog clients using log4j logging.
+[2019-08-01 11:22:12,054 INFO] - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+[2019-08-01 11:22:12,256 INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1bqomxva4kv58s11thtaj|141fb444, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1bqomxva4kv58s11thtaj|141fb444, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/app-qy?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2019-08-01 11:22:16,042 INFO] - Job execution threads will use class loader of thread: Thread-0
+[2019-08-01 11:22:16,399 INFO] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2019-08-01 11:22:16,400 INFO] - Quartz Scheduler v.2.0.1 created.
+[2019-08-01 11:22:16,402 INFO] - RAMJobStore initialized.
+[2019-08-01 11:22:16,403 INFO] - Scheduler meta-data: Quartz Scheduler (v2.0.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 100 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2019-08-01 11:22:16,403 INFO] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+[2019-08-01 11:22:16,403 INFO] - Quartz scheduler version: 2.0.1
+[2019-08-01 11:22:16,565 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-08-01 11:22:27,263 INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1bqomxva4kv58s11thtaj|6d579cf3, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1bqomxva4kv58s11thtaj|6d579cf3, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/app-qy?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2019-08-01 11:25:26,389 ERROR] - 20190801 112526:6设置CronStr发生错误:2
+errorList:com.scher.ScherRunAction.setCronStr(ScherRunAction.java:77)
+com.scher.ScherRunAction.run(ScherRunAction.java:46)
+com.scher.ScherDialog.btnOk(ScherDialog.java:725)
+com.scher.ScherDialog.access$19(ScherDialog.java:714)
+com.scher.ScherDialog$14.actionPerformed(ScherDialog.java:488)
+javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+java.awt.Component.processMouseEvent(Component.java:6533)
+javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+java.awt.Component.processEvent(Component.java:6298)
+java.awt.Container.processEvent(Container.java:2237)
+java.awt.Component.dispatchEventImpl(Component.java:4889)
+java.awt.Container.dispatchEventImpl(Container.java:2295)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4889)
+java.awt.LightweightDispatcher.processMouseEvent(Container.java:4526)
+java.awt.LightweightDispatcher.dispatchEvent(Container.java:4467)
+java.awt.Container.dispatchEventImpl(Container.java:2281)
+java.awt.Window.dispatchEventImpl(Window.java:2746)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+java.awt.EventQueue.access$500(EventQueue.java:97)
+java.awt.EventQueue$3.run(EventQueue.java:709)
+java.awt.EventQueue$3.run(EventQueue.java:703)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90)
+java.awt.EventQueue$4.run(EventQueue.java:731)
+java.awt.EventQueue$4.run(EventQueue.java:729)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:109)
+java.awt.WaitDispatchSupport$2.run(WaitDispatchSupport.java:190)
+java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:235)
+java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:233)
+java.security.AccessController.doPrivileged(Native Method)
+java.awt.WaitDispatchSupport.enter(WaitDispatchSupport.java:233)
+java.awt.Dialog.show(Dialog.java:1084)
+java.awt.Component.show(Component.java:1671)
+com.taskInterface.TaskTab.addSche(TaskTab.java:335)
+com.taskInterface.TaskTab$4.actionPerformed(TaskTab.java:140)
+javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+java.awt.Component.processMouseEvent(Component.java:6533)
+javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+java.awt.Component.processEvent(Component.java:6298)
+java.awt.Container.processEvent(Container.java:2237)
+java.awt.Component.dispatchEventImpl(Component.java:4889)
+java.awt.Container.dispatchEventImpl(Container.java:2295)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4889)
+java.awt.LightweightDispatcher.processMouseEvent(Container.java:4526)
+java.awt.LightweightDispatcher.dispatchEvent(Container.java:4467)
+java.awt.Container.dispatchEventImpl(Container.java:2281)
+java.awt.Window.dispatchEventImpl(Window.java:2746)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+java.awt.EventQueue.access$500(EventQueue.java:97)
+java.awt.EventQueue$3.run(EventQueue.java:709)
+java.awt.EventQueue$3.run(EventQueue.java:703)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90)
+java.awt.EventQueue$4.run(EventQueue.java:731)
+java.awt.EventQueue$4.run(EventQueue.java:729)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+
+[2019-08-01 11:25:26,408 ERROR] - 20190801 112526:调度6生成调度任务发生错误:null
+errorList:com.scher.ScherRunAction.startScher(ScherRunAction.java:139)
+com.scher.ScherRunAction.run(ScherRunAction.java:47)
+com.scher.ScherDialog.btnOk(ScherDialog.java:725)
+com.scher.ScherDialog.access$19(ScherDialog.java:714)
+com.scher.ScherDialog$14.actionPerformed(ScherDialog.java:488)
+javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+java.awt.Component.processMouseEvent(Component.java:6533)
+javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+java.awt.Component.processEvent(Component.java:6298)
+java.awt.Container.processEvent(Container.java:2237)
+java.awt.Component.dispatchEventImpl(Component.java:4889)
+java.awt.Container.dispatchEventImpl(Container.java:2295)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4889)
+java.awt.LightweightDispatcher.processMouseEvent(Container.java:4526)
+java.awt.LightweightDispatcher.dispatchEvent(Container.java:4467)
+java.awt.Container.dispatchEventImpl(Container.java:2281)
+java.awt.Window.dispatchEventImpl(Window.java:2746)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+java.awt.EventQueue.access$500(EventQueue.java:97)
+java.awt.EventQueue$3.run(EventQueue.java:709)
+java.awt.EventQueue$3.run(EventQueue.java:703)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90)
+java.awt.EventQueue$4.run(EventQueue.java:731)
+java.awt.EventQueue$4.run(EventQueue.java:729)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:109)
+java.awt.WaitDispatchSupport$2.run(WaitDispatchSupport.java:190)
+java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:235)
+java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:233)
+java.security.AccessController.doPrivileged(Native Method)
+java.awt.WaitDispatchSupport.enter(WaitDispatchSupport.java:233)
+java.awt.Dialog.show(Dialog.java:1084)
+java.awt.Component.show(Component.java:1671)
+com.taskInterface.TaskTab.addSche(TaskTab.java:335)
+com.taskInterface.TaskTab$4.actionPerformed(TaskTab.java:140)
+javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+java.awt.Component.processMouseEvent(Component.java:6533)
+javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+java.awt.Component.processEvent(Component.java:6298)
+java.awt.Container.processEvent(Container.java:2237)
+java.awt.Component.dispatchEventImpl(Component.java:4889)
+java.awt.Container.dispatchEventImpl(Container.java:2295)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4889)
+java.awt.LightweightDispatcher.processMouseEvent(Container.java:4526)
+java.awt.LightweightDispatcher.dispatchEvent(Container.java:4467)
+java.awt.Container.dispatchEventImpl(Container.java:2281)
+java.awt.Window.dispatchEventImpl(Window.java:2746)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+java.awt.EventQueue.access$500(EventQueue.java:97)
+java.awt.EventQueue$3.run(EventQueue.java:709)
+java.awt.EventQueue$3.run(EventQueue.java:703)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90)
+java.awt.EventQueue$4.run(EventQueue.java:731)
+java.awt.EventQueue$4.run(EventQueue.java:729)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+
+[2019-08-01 11:26:00,819 ERROR] - 20190801 112600:6设置CronStr发生错误:2
+errorList:com.scher.ScherRunAction.setCronStr(ScherRunAction.java:77)
+com.scher.ScherRunAction.run(ScherRunAction.java:46)
+com.scher.JobOperater.resumeTrigger(JobOperater.java:127)
+com.scher.ScherTab.startSche(ScherTab.java:329)
+com.scher.ScherTab$1.actionPerformed(ScherTab.java:89)
+javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+java.awt.Component.processMouseEvent(Component.java:6533)
+javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+java.awt.Component.processEvent(Component.java:6298)
+java.awt.Container.processEvent(Container.java:2237)
+java.awt.Component.dispatchEventImpl(Component.java:4889)
+java.awt.Container.dispatchEventImpl(Container.java:2295)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4889)
+java.awt.LightweightDispatcher.processMouseEvent(Container.java:4526)
+java.awt.LightweightDispatcher.dispatchEvent(Container.java:4467)
+java.awt.Container.dispatchEventImpl(Container.java:2281)
+java.awt.Window.dispatchEventImpl(Window.java:2746)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+java.awt.EventQueue.access$500(EventQueue.java:97)
+java.awt.EventQueue$3.run(EventQueue.java:709)
+java.awt.EventQueue$3.run(EventQueue.java:703)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90)
+java.awt.EventQueue$4.run(EventQueue.java:731)
+java.awt.EventQueue$4.run(EventQueue.java:729)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+
+[2019-08-01 11:26:00,828 ERROR] - 20190801 112600:调度6生成调度任务发生错误:null
+errorList:com.scher.ScherRunAction.startScher(ScherRunAction.java:139)
+com.scher.ScherRunAction.run(ScherRunAction.java:47)
+com.scher.JobOperater.resumeTrigger(JobOperater.java:127)
+com.scher.ScherTab.startSche(ScherTab.java:329)
+com.scher.ScherTab$1.actionPerformed(ScherTab.java:89)
+javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+java.awt.Component.processMouseEvent(Component.java:6533)
+javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+java.awt.Component.processEvent(Component.java:6298)
+java.awt.Container.processEvent(Container.java:2237)
+java.awt.Component.dispatchEventImpl(Component.java:4889)
+java.awt.Container.dispatchEventImpl(Container.java:2295)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4889)
+java.awt.LightweightDispatcher.processMouseEvent(Container.java:4526)
+java.awt.LightweightDispatcher.dispatchEvent(Container.java:4467)
+java.awt.Container.dispatchEventImpl(Container.java:2281)
+java.awt.Window.dispatchEventImpl(Window.java:2746)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+java.awt.EventQueue.access$500(EventQueue.java:97)
+java.awt.EventQueue$3.run(EventQueue.java:709)
+java.awt.EventQueue$3.run(EventQueue.java:703)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90)
+java.awt.EventQueue$4.run(EventQueue.java:731)
+java.awt.EventQueue$4.run(EventQueue.java:729)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+
+[2019-08-01 11:26:08,356 ERROR] - 20190801 112608:6设置CronStr发生错误:2
+errorList:com.scher.ScherRunAction.setCronStr(ScherRunAction.java:77)
+com.scher.ScherRunAction.run(ScherRunAction.java:46)
+com.scher.JobOperater.resumeTrigger(JobOperater.java:127)
+com.scher.ScherTab.startSche(ScherTab.java:329)
+com.scher.ScherTab$1.actionPerformed(ScherTab.java:89)
+javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+java.awt.Component.processMouseEvent(Component.java:6533)
+javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+java.awt.Component.processEvent(Component.java:6298)
+java.awt.Container.processEvent(Container.java:2237)
+java.awt.Component.dispatchEventImpl(Component.java:4889)
+java.awt.Container.dispatchEventImpl(Container.java:2295)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4889)
+java.awt.LightweightDispatcher.processMouseEvent(Container.java:4526)
+java.awt.LightweightDispatcher.dispatchEvent(Container.java:4467)
+java.awt.Container.dispatchEventImpl(Container.java:2281)
+java.awt.Window.dispatchEventImpl(Window.java:2746)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+java.awt.EventQueue.access$500(EventQueue.java:97)
+java.awt.EventQueue$3.run(EventQueue.java:709)
+java.awt.EventQueue$3.run(EventQueue.java:703)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90)
+java.awt.EventQueue$4.run(EventQueue.java:731)
+java.awt.EventQueue$4.run(EventQueue.java:729)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+
+[2019-08-01 11:26:08,366 ERROR] - 20190801 112608:调度6生成调度任务发生错误:null
+errorList:com.scher.ScherRunAction.startScher(ScherRunAction.java:139)
+com.scher.ScherRunAction.run(ScherRunAction.java:47)
+com.scher.JobOperater.resumeTrigger(JobOperater.java:127)
+com.scher.ScherTab.startSche(ScherTab.java:329)
+com.scher.ScherTab$1.actionPerformed(ScherTab.java:89)
+javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+java.awt.Component.processMouseEvent(Component.java:6533)
+javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+java.awt.Component.processEvent(Component.java:6298)
+java.awt.Container.processEvent(Container.java:2237)
+java.awt.Component.dispatchEventImpl(Component.java:4889)
+java.awt.Container.dispatchEventImpl(Container.java:2295)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4889)
+java.awt.LightweightDispatcher.processMouseEvent(Container.java:4526)
+java.awt.LightweightDispatcher.dispatchEvent(Container.java:4467)
+java.awt.Container.dispatchEventImpl(Container.java:2281)
+java.awt.Window.dispatchEventImpl(Window.java:2746)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+java.awt.EventQueue.access$500(EventQueue.java:97)
+java.awt.EventQueue$3.run(EventQueue.java:709)
+java.awt.EventQueue$3.run(EventQueue.java:703)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90)
+java.awt.EventQueue$4.run(EventQueue.java:731)
+java.awt.EventQueue$4.run(EventQueue.java:729)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+
+[2019-08-01 11:28:19,698 ERROR] - 20190801 112819:6设置CronStr发生错误:2
+errorList:com.scher.ScherRunAction.setCronStr(ScherRunAction.java:77)
+com.scher.ScherRunAction.run(ScherRunAction.java:46)
+com.scher.JobOperater.resumeTrigger(JobOperater.java:127)
+com.scher.ScherTab.startSche(ScherTab.java:329)
+com.scher.ScherTab$1.actionPerformed(ScherTab.java:89)
+javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+java.awt.Component.processMouseEvent(Component.java:6533)
+javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+java.awt.Component.processEvent(Component.java:6298)
+java.awt.Container.processEvent(Container.java:2237)
+java.awt.Component.dispatchEventImpl(Component.java:4889)
+java.awt.Container.dispatchEventImpl(Container.java:2295)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4889)
+java.awt.LightweightDispatcher.processMouseEvent(Container.java:4526)
+java.awt.LightweightDispatcher.dispatchEvent(Container.java:4467)
+java.awt.Container.dispatchEventImpl(Container.java:2281)
+java.awt.Window.dispatchEventImpl(Window.java:2746)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+java.awt.EventQueue.access$500(EventQueue.java:97)
+java.awt.EventQueue$3.run(EventQueue.java:709)
+java.awt.EventQueue$3.run(EventQueue.java:703)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90)
+java.awt.EventQueue$4.run(EventQueue.java:731)
+java.awt.EventQueue$4.run(EventQueue.java:729)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+
+[2019-08-01 11:28:19,713 ERROR] - 20190801 112819:调度6生成调度任务发生错误:null
+errorList:com.scher.ScherRunAction.startScher(ScherRunAction.java:139)
+com.scher.ScherRunAction.run(ScherRunAction.java:47)
+com.scher.JobOperater.resumeTrigger(JobOperater.java:127)
+com.scher.ScherTab.startSche(ScherTab.java:329)
+com.scher.ScherTab$1.actionPerformed(ScherTab.java:89)
+javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+java.awt.Component.processMouseEvent(Component.java:6533)
+javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+java.awt.Component.processEvent(Component.java:6298)
+java.awt.Container.processEvent(Container.java:2237)
+java.awt.Component.dispatchEventImpl(Component.java:4889)
+java.awt.Container.dispatchEventImpl(Container.java:2295)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4889)
+java.awt.LightweightDispatcher.processMouseEvent(Container.java:4526)
+java.awt.LightweightDispatcher.dispatchEvent(Container.java:4467)
+java.awt.Container.dispatchEventImpl(Container.java:2281)
+java.awt.Window.dispatchEventImpl(Window.java:2746)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+java.awt.EventQueue.access$500(EventQueue.java:97)
+java.awt.EventQueue$3.run(EventQueue.java:709)
+java.awt.EventQueue$3.run(EventQueue.java:703)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90)
+java.awt.EventQueue$4.run(EventQueue.java:731)
+java.awt.EventQueue$4.run(EventQueue.java:729)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+
+[2019-08-01 11:31:26,086 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-08-01 11:38:09,601 INFO] - MLog clients using log4j logging.
+[2019-08-01 11:38:09,947 INFO] - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+[2019-08-01 11:38:10,100 INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1bqomxva4kvprtc1algpyn|71942ffa, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1bqomxva4kvprtc1algpyn|71942ffa, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/app-qy?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2019-08-01 11:38:14,435 INFO] - Job execution threads will use class loader of thread: Thread-0
+[2019-08-01 11:38:14,962 INFO] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2019-08-01 11:38:14,963 INFO] - Quartz Scheduler v.2.0.1 created.
+[2019-08-01 11:38:14,966 INFO] - RAMJobStore initialized.
+[2019-08-01 11:38:14,968 INFO] - Scheduler meta-data: Quartz Scheduler (v2.0.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 100 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2019-08-01 11:38:14,968 INFO] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+[2019-08-01 11:38:14,968 INFO] - Quartz scheduler version: 2.0.1
+[2019-08-01 11:38:15,102 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-08-01 11:38:15,230 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-08-01 11:41:14,708 INFO] - MLog clients using log4j logging.
+[2019-08-01 11:41:15,005 INFO] - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+[2019-08-01 11:41:15,294 INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1bqomxva4kvtqiu12vdjiq|34207d9, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1bqomxva4kvtqiu12vdjiq|34207d9, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/app-qy?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2019-08-01 11:41:19,335 INFO] - Job execution threads will use class loader of thread: Thread-0
+[2019-08-01 11:41:19,430 INFO] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2019-08-01 11:41:19,430 INFO] - Quartz Scheduler v.2.0.1 created.
+[2019-08-01 11:41:19,434 INFO] - RAMJobStore initialized.
+[2019-08-01 11:41:19,437 INFO] - Scheduler meta-data: Quartz Scheduler (v2.0.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 100 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2019-08-01 11:41:19,437 INFO] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+[2019-08-01 11:41:19,437 INFO] - Quartz scheduler version: 2.0.1
+[2019-08-01 11:41:19,573 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-08-01 11:41:19,607 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-08-01 12:01:01,577 INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1bqomxva4kvtqiu12vdjiq|79c82685, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1bqomxva4kvtqiu12vdjiq|79c82685, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/app-qy?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2019-08-01 12:29:35,756 ERROR] - 20190801 122935:获取执行结果表格参数SQL错误:Unknown column 'rownum' in 'where clause'
+errorList:sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+com.mysql.jdbc.Util.getInstance(Util.java:386)
+com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1054)
+com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4190)
+com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4122)
+com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2570)
+com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2731)
+com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2812)
+com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2761)
+com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1612)
+com.mchange.v2.c3p0.impl.NewProxyStatement.executeQuery(NewProxyStatement.java:35)
+com.log.common.LogCommonDao.getLogCommonVector(LogCommonDao.java:113)
+com.log.common.LogCommonTable.<init>(LogCommonTable.java:35)
+com.log.common.LogCommonTab.queryLogCommon(LogCommonTab.java:352)
+com.log.common.LogCommonTab$4.actionPerformed(LogCommonTab.java:305)
+javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+java.awt.Component.processMouseEvent(Component.java:6533)
+javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+java.awt.Component.processEvent(Component.java:6298)
+java.awt.Container.processEvent(Container.java:2237)
+java.awt.Component.dispatchEventImpl(Component.java:4889)
+java.awt.Container.dispatchEventImpl(Container.java:2295)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4889)
+java.awt.LightweightDispatcher.processMouseEvent(Container.java:4526)
+java.awt.LightweightDispatcher.dispatchEvent(Container.java:4467)
+java.awt.Container.dispatchEventImpl(Container.java:2281)
+java.awt.Window.dispatchEventImpl(Window.java:2746)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+java.awt.EventQueue.access$500(EventQueue.java:97)
+java.awt.EventQueue$3.run(EventQueue.java:709)
+java.awt.EventQueue$3.run(EventQueue.java:703)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90)
+java.awt.EventQueue$4.run(EventQueue.java:731)
+java.awt.EventQueue$4.run(EventQueue.java:729)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+
+[2019-08-01 12:30:10,221 ERROR] - 20190801 123010:获取执行结果表格参数SQL错误:Unknown column 'rownum' in 'where clause'
+errorList:sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+com.mysql.jdbc.Util.getInstance(Util.java:386)
+com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1054)
+com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4190)
+com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4122)
+com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2570)
+com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2731)
+com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2812)
+com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2761)
+com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1612)
+com.mchange.v2.c3p0.impl.NewProxyStatement.executeQuery(NewProxyStatement.java:35)
+com.log.common.LogCommonDao.getLogCommonVector(LogCommonDao.java:113)
+com.log.common.LogCommonTable.<init>(LogCommonTable.java:35)
+com.log.common.LogCommonTab.queryLogCommon(LogCommonTab.java:352)
+com.log.common.LogCommonTab$4.actionPerformed(LogCommonTab.java:305)
+javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+java.awt.Component.processMouseEvent(Component.java:6533)
+javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+java.awt.Component.processEvent(Component.java:6298)
+java.awt.Container.processEvent(Container.java:2237)
+java.awt.Component.dispatchEventImpl(Component.java:4889)
+java.awt.Container.dispatchEventImpl(Container.java:2295)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4889)
+java.awt.LightweightDispatcher.processMouseEvent(Container.java:4526)
+java.awt.LightweightDispatcher.dispatchEvent(Container.java:4467)
+java.awt.Container.dispatchEventImpl(Container.java:2281)
+java.awt.Window.dispatchEventImpl(Window.java:2746)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+java.awt.EventQueue.access$500(EventQueue.java:97)
+java.awt.EventQueue$3.run(EventQueue.java:709)
+java.awt.EventQueue$3.run(EventQueue.java:703)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90)
+java.awt.EventQueue$4.run(EventQueue.java:731)
+java.awt.EventQueue$4.run(EventQueue.java:729)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+
+[2019-08-01 12:33:42,157 ERROR] - 20190801 123342:获取执行结果表格参数SQL错误:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by a.starttime desc' at line 1
+errorList:sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+com.mysql.jdbc.Util.getInstance(Util.java:386)
+com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1054)
+com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4190)
+com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4122)
+com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2570)
+com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2731)
+com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2812)
+com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2761)
+com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1612)
+com.mchange.v2.c3p0.impl.NewProxyStatement.executeQuery(NewProxyStatement.java:35)
+com.log.common.LogCommonDao.getLogCommonVector(LogCommonDao.java:114)
+com.log.common.LogCommonTable.<init>(LogCommonTable.java:35)
+com.log.common.LogCommonTab.queryLogCommon(LogCommonTab.java:352)
+com.log.common.LogCommonTab$4.actionPerformed(LogCommonTab.java:305)
+javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+java.awt.Component.processMouseEvent(Component.java:6533)
+javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+java.awt.Component.processEvent(Component.java:6298)
+java.awt.Container.processEvent(Container.java:2237)
+java.awt.Component.dispatchEventImpl(Component.java:4889)
+java.awt.Container.dispatchEventImpl(Container.java:2295)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4889)
+java.awt.LightweightDispatcher.processMouseEvent(Container.java:4526)
+java.awt.LightweightDispatcher.dispatchEvent(Container.java:4467)
+java.awt.Container.dispatchEventImpl(Container.java:2281)
+java.awt.Window.dispatchEventImpl(Window.java:2746)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+java.awt.EventQueue.access$500(EventQueue.java:97)
+java.awt.EventQueue$3.run(EventQueue.java:709)
+java.awt.EventQueue$3.run(EventQueue.java:703)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90)
+java.awt.EventQueue$4.run(EventQueue.java:731)
+java.awt.EventQueue$4.run(EventQueue.java:729)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+
+[2019-08-01 12:38:01,086 INFO] - MLog clients using log4j logging.
+[2019-08-01 12:38:01,390 INFO] - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+[2019-08-01 12:38:01,874 INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1bqomxva4kxuqwe19pspbb|5e6da3a2, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1bqomxva4kxuqwe19pspbb|5e6da3a2, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/app-qy?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2019-08-01 12:38:06,049 INFO] - Job execution threads will use class loader of thread: Thread-0
+[2019-08-01 12:38:06,368 INFO] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2019-08-01 12:38:06,369 INFO] - Quartz Scheduler v.2.0.1 created.
+[2019-08-01 12:38:06,371 INFO] - RAMJobStore initialized.
+[2019-08-01 12:38:06,374 INFO] - Scheduler meta-data: Quartz Scheduler (v2.0.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 100 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2019-08-01 12:38:06,375 INFO] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+[2019-08-01 12:38:06,375 INFO] - Quartz scheduler version: 2.0.1
+[2019-08-01 12:38:06,563 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-08-01 12:38:06,657 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-08-01 12:50:20,256 INFO] - MLog clients using log4j logging.
+[2019-08-01 12:50:20,476 INFO] - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+[2019-08-01 12:50:20,683 INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1bqomxva4kyal8m1rhw8jb|55791037, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1bqomxva4kyal8m1rhw8jb|55791037, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/app-qy?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2019-08-01 12:50:24,896 INFO] - Job execution threads will use class loader of thread: Thread-0
+[2019-08-01 12:50:25,308 INFO] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2019-08-01 12:50:25,309 INFO] - Quartz Scheduler v.2.0.1 created.
+[2019-08-01 12:50:25,311 INFO] - RAMJobStore initialized.
+[2019-08-01 12:50:25,313 INFO] - Scheduler meta-data: Quartz Scheduler (v2.0.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 100 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2019-08-01 12:50:25,313 INFO] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+[2019-08-01 12:50:25,313 INFO] - Quartz scheduler version: 2.0.1
+[2019-08-01 12:50:25,376 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-08-01 12:50:25,477 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-08-01 12:51:18,537 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-08-01 12:52:01,764 INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1bqomxva4kyal8m1rhw8jb|1af0890c, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1bqomxva4kyal8m1rhw8jb|1af0890c, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/app-qy?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2019-08-01 12:52:26,247 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-08-01 12:58:25,649 INFO] - 20190801 125825:6|||: 1
+[2019-08-01 12:58:35,257 ERROR] - 20190801 125835:获取最大调度Order错误:null
+errorList:com.scher.ScherDao.getMaxOrderLen(ScherDao.java:650)
+com.scher.ScherTable.updateOrder(ScherTable.java:230)
+com.scher.ScherTable.access$3(ScherTable.java:229)
+com.scher.ScherTable$5.actionPerformed(ScherTable.java:130)
+javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+javax.swing.AbstractButton.doClick(AbstractButton.java:376)
+javax.swing.plaf.basic.BasicMenuItemUI.doClick(BasicMenuItemUI.java:842)
+com.apple.laf.AquaMenuItemUI.doClick(AquaMenuItemUI.java:157)
+javax.swing.plaf.basic.BasicMenuItemUI$Handler.mouseReleased(BasicMenuItemUI.java:886)
+java.awt.Component.processMouseEvent(Component.java:6533)
+javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+java.awt.Component.processEvent(Component.java:6298)
+java.awt.Container.processEvent(Container.java:2237)
+java.awt.Component.dispatchEventImpl(Component.java:4889)
+java.awt.Container.dispatchEventImpl(Container.java:2295)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4889)
+java.awt.LightweightDispatcher.processMouseEvent(Container.java:4526)
+java.awt.LightweightDispatcher.dispatchEvent(Container.java:4467)
+java.awt.Container.dispatchEventImpl(Container.java:2281)
+java.awt.Window.dispatchEventImpl(Window.java:2746)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+java.awt.EventQueue.access$500(EventQueue.java:97)
+java.awt.EventQueue$3.run(EventQueue.java:709)
+java.awt.EventQueue$3.run(EventQueue.java:703)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90)
+java.awt.EventQueue$4.run(EventQueue.java:731)
+java.awt.EventQueue$4.run(EventQueue.java:729)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+
+[2019-08-01 18:47:14,702 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutting down.
+[2019-08-01 18:47:14,705 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused.
+[2019-08-01 18:47:14,708 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutdown complete.
+[2019-08-01 18:47:15,473 INFO] - 20190801 184715:jetty is stopped
+[2019-08-01 20:46:18,981 INFO] - MLog clients using log4j logging.
+[2019-08-01 20:46:19,192 INFO] - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+[2019-08-01 20:46:19,651 INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge0w5a4lfapawey4cpk|208864d0, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge0w5a4lfapawey4cpk|208864d0, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/app-qy?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2019-08-01 20:46:26,079 INFO] - Job execution threads will use class loader of thread: Thread-0
+[2019-08-01 20:46:26,337 INFO] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2019-08-01 20:46:26,342 INFO] - Quartz Scheduler v.2.0.1 created.
+[2019-08-01 20:46:26,352 INFO] - RAMJobStore initialized.
+[2019-08-01 20:46:26,528 INFO] - Scheduler meta-data: Quartz Scheduler (v2.0.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 100 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2019-08-01 20:46:26,528 INFO] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+[2019-08-01 20:46:26,528 INFO] - Quartz scheduler version: 2.0.1
+[2019-08-01 20:46:26,580 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-08-01 20:46:26,590 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-08-01 20:47:35,980 INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge0w5a4lfapawey4cpk|64058b8a, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge0w5a4lfapawey4cpk|64058b8a, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/app-qy?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2019-08-01 20:51:09,755 INFO] - MLog clients using log4j logging.
+[2019-08-01 20:51:10,235 INFO] - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+[2019-08-01 20:51:10,483 INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge0w5a4lfgxsmqt8bak|208864d0, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge0w5a4lfgxsmqt8bak|208864d0, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/app-qy?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2019-08-01 20:51:14,539 INFO] - Job execution threads will use class loader of thread: Thread-0
+[2019-08-01 20:51:14,814 INFO] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2019-08-01 20:51:14,833 INFO] - Quartz Scheduler v.2.0.1 created.
+[2019-08-01 20:51:14,836 INFO] - RAMJobStore initialized.
+[2019-08-01 20:51:14,839 INFO] - Scheduler meta-data: Quartz Scheduler (v2.0.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 100 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2019-08-01 20:51:14,839 INFO] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+[2019-08-01 20:51:14,839 INFO] - Quartz scheduler version: 2.0.1
+[2019-08-01 20:51:14,945 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-08-01 20:51:14,958 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-08-01 20:51:21,810 INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge0w5a4lfgxsmqt8bak|5a490de0, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge0w5a4lfgxsmqt8bak|5a490de0, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/app-qy?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2019-08-01 21:07:45,771 ERROR] - 20190801 210745:Sql.QueryForCount:select count(1) from IssueNews where title='梅州：立足产业基础 促进创新发展' and newsTime='2017-08-01'You can't operate on a closed Connection!!!
+errorList:com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:106)
+com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:65)
+com.mchange.v2.c3p0.impl.NewProxyConnection.prepareStatement(NewProxyConnection.java:284)
+common.util.jdbc.UtilSql.queryForCount(UtilSql.java:1390)
+common.util.jdbc.UtilSql.isExist(UtilSql.java:1408)
+com.task.Gdgov.Task.isExits(Task.java:107)
+com.task.Gdgov.Task.initDynamicInfo(Task.java:141)
+com.task.Gdgov.Task.fireTask(Task.java:50)
+com.task.Gdgov.Task.fireTask(Task.java:63)
+com.scher.ScherExecJob$1.run(ScherExecJob.java:179)
+java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+java.util.concurrent.FutureTask.run(FutureTask.java:266)
+java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+java.lang.Thread.run(Thread.java:748)
+

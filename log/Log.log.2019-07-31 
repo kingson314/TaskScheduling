@@ -1,0 +1,2466 @@
+[2019-07-31 17:47:35,946 INFO] - MLog clients using log4j logging.
+[2019-07-31 17:47:36,369 INFO] - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+[2019-07-31 17:47:36,616 INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1bqomxva4jth0ogsbev4s|14646f4c, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1bqomxva4jth0ogsbev4s|14646f4c, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/app?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2019-07-31 17:47:41,658 INFO] - Job execution threads will use class loader of thread: Thread-0
+[2019-07-31 17:47:41,757 INFO] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2019-07-31 17:47:41,759 INFO] - Quartz Scheduler v.2.0.1 created.
+[2019-07-31 17:47:41,763 INFO] - RAMJobStore initialized.
+[2019-07-31 17:47:41,766 INFO] - Scheduler meta-data: Quartz Scheduler (v2.0.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 100 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2019-07-31 17:47:41,766 INFO] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+[2019-07-31 17:47:41,766 INFO] - Quartz scheduler version: 2.0.1
+[2019-07-31 17:47:42,097 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-07-31 17:47:42,121 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-07-31 17:47:42,127 ERROR] - 20190731 174742:splitStr错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:285)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:47:42,129 ERROR] - 20190731 174742:splitStr错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:285)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:47:42,136 ERROR] - 20190731 174742:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:47:42,137 ERROR] - 20190731 174742:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:47:42,147 ERROR] - 20190731 174742:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:47:42,151 ERROR] - 20190731 174742:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:47:43,009 ERROR] - 20190731 174743:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:47:43,011 ERROR] - 20190731 174743:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:47:44,007 ERROR] - 20190731 174744:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:47:44,010 ERROR] - 20190731 174744:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:47:45,006 ERROR] - 20190731 174745:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:47:45,021 ERROR] - 20190731 174745:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:47:46,009 ERROR] - 20190731 174746:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:47:46,011 ERROR] - 20190731 174746:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:47:47,006 ERROR] - 20190731 174747:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:47:47,008 ERROR] - 20190731 174747:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:47:48,006 ERROR] - 20190731 174748:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:47:48,010 ERROR] - 20190731 174748:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:47:49,009 ERROR] - 20190731 174749:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:47:49,011 ERROR] - 20190731 174749:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:47:50,030 ERROR] - 20190731 174750:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:47:50,034 ERROR] - 20190731 174750:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:47:51,002 ERROR] - 20190731 174751:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:47:51,004 ERROR] - 20190731 174751:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:47:52,005 ERROR] - 20190731 174752:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:47:52,006 ERROR] - 20190731 174752:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:47:53,007 ERROR] - 20190731 174753:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:47:53,008 ERROR] - 20190731 174753:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:47:54,007 ERROR] - 20190731 174754:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:47:54,010 ERROR] - 20190731 174754:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:47:55,007 ERROR] - 20190731 174755:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:47:55,011 ERROR] - 20190731 174755:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:47:56,008 ERROR] - 20190731 174756:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:47:56,010 ERROR] - 20190731 174756:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:47:57,005 ERROR] - 20190731 174757:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:47:57,007 ERROR] - 20190731 174757:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:47:58,007 ERROR] - 20190731 174758:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:47:58,008 ERROR] - 20190731 174758:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:47:59,003 ERROR] - 20190731 174759:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:47:59,004 ERROR] - 20190731 174759:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:00,006 ERROR] - 20190731 174800:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:00,010 ERROR] - 20190731 174800:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:01,007 ERROR] - 20190731 174801:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:01,008 ERROR] - 20190731 174801:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:02,006 ERROR] - 20190731 174802:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:02,008 ERROR] - 20190731 174802:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:03,004 ERROR] - 20190731 174803:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:03,006 ERROR] - 20190731 174803:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:04,006 ERROR] - 20190731 174804:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:04,007 ERROR] - 20190731 174804:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:05,005 ERROR] - 20190731 174805:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:05,008 ERROR] - 20190731 174805:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:06,006 ERROR] - 20190731 174806:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:06,009 ERROR] - 20190731 174806:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:07,004 ERROR] - 20190731 174807:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:07,005 ERROR] - 20190731 174807:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:08,006 ERROR] - 20190731 174808:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:08,008 ERROR] - 20190731 174808:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:09,007 ERROR] - 20190731 174809:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:09,008 ERROR] - 20190731 174809:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:10,006 ERROR] - 20190731 174810:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:10,008 ERROR] - 20190731 174810:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:11,004 ERROR] - 20190731 174811:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:11,006 ERROR] - 20190731 174811:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:12,005 ERROR] - 20190731 174812:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:12,006 ERROR] - 20190731 174812:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:13,007 ERROR] - 20190731 174813:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:13,008 ERROR] - 20190731 174813:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:14,005 ERROR] - 20190731 174814:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:14,006 ERROR] - 20190731 174814:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:15,006 ERROR] - 20190731 174815:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:15,007 ERROR] - 20190731 174815:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:16,009 ERROR] - 20190731 174816:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:16,013 ERROR] - 20190731 174816:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:17,007 ERROR] - 20190731 174817:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:17,008 ERROR] - 20190731 174817:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:18,005 ERROR] - 20190731 174818:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:18,007 ERROR] - 20190731 174818:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:19,006 ERROR] - 20190731 174819:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:19,007 ERROR] - 20190731 174819:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:20,006 ERROR] - 20190731 174820:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:20,007 ERROR] - 20190731 174820:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:21,009 ERROR] - 20190731 174821:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:21,010 ERROR] - 20190731 174821:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:22,005 ERROR] - 20190731 174822:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:22,007 ERROR] - 20190731 174822:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:23,003 ERROR] - 20190731 174823:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:23,005 ERROR] - 20190731 174823:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:24,004 ERROR] - 20190731 174824:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:24,005 ERROR] - 20190731 174824:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:25,006 ERROR] - 20190731 174825:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:25,008 ERROR] - 20190731 174825:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:26,007 ERROR] - 20190731 174826:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:26,008 ERROR] - 20190731 174826:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:27,004 ERROR] - 20190731 174827:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:27,005 ERROR] - 20190731 174827:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:28,004 ERROR] - 20190731 174828:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:28,005 ERROR] - 20190731 174828:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:29,005 ERROR] - 20190731 174829:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:29,008 ERROR] - 20190731 174829:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:30,006 ERROR] - 20190731 174830:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:30,007 ERROR] - 20190731 174830:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:31,006 ERROR] - 20190731 174831:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:31,007 ERROR] - 20190731 174831:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:32,004 ERROR] - 20190731 174832:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:32,007 ERROR] - 20190731 174832:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:33,004 ERROR] - 20190731 174833:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:33,006 ERROR] - 20190731 174833:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:34,004 ERROR] - 20190731 174834:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:34,005 ERROR] - 20190731 174834:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:35,002 ERROR] - 20190731 174835:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:35,004 ERROR] - 20190731 174835:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:36,006 ERROR] - 20190731 174836:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:36,007 ERROR] - 20190731 174836:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:37,005 ERROR] - 20190731 174837:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:37,007 ERROR] - 20190731 174837:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:38,009 ERROR] - 20190731 174838:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:38,011 ERROR] - 20190731 174838:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:39,004 ERROR] - 20190731 174839:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:39,006 ERROR] - 20190731 174839:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:40,006 ERROR] - 20190731 174840:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:40,008 ERROR] - 20190731 174840:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:41,007 ERROR] - 20190731 174841:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:41,012 ERROR] - 20190731 174841:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:42,004 ERROR] - 20190731 174842:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:42,005 ERROR] - 20190731 174842:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:43,006 ERROR] - 20190731 174843:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:43,008 ERROR] - 20190731 174843:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:44,007 ERROR] - 20190731 174844:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:44,009 ERROR] - 20190731 174844:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:45,004 ERROR] - 20190731 174845:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:45,005 ERROR] - 20190731 174845:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:46,006 ERROR] - 20190731 174846:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:46,007 ERROR] - 20190731 174846:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:47,009 ERROR] - 20190731 174847:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:47,010 ERROR] - 20190731 174847:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:48,005 ERROR] - 20190731 174848:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:48,008 ERROR] - 20190731 174848:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:49,003 ERROR] - 20190731 174849:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:49,004 ERROR] - 20190731 174849:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:50,005 ERROR] - 20190731 174850:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:50,006 ERROR] - 20190731 174850:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:51,006 ERROR] - 20190731 174851:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:48:51,006 ERROR] - 20190731 174851:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:54:28,011 ERROR] - 20190731 175428:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:54:28,016 ERROR] - 20190731 175428:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:54:29,006 ERROR] - 20190731 175429:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:54:29,006 ERROR] - 20190731 175429:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:54:30,005 ERROR] - 20190731 175430:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:54:30,006 ERROR] - 20190731 175430:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:54:31,007 ERROR] - 20190731 175431:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:54:31,010 ERROR] - 20190731 175431:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:54:32,005 ERROR] - 20190731 175432:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:54:32,007 ERROR] - 20190731 175432:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:54:33,016 ERROR] - 20190731 175433:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:54:33,017 ERROR] - 20190731 175433:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:54:34,006 ERROR] - 20190731 175434:0调度执行任务错误:null
+errorList:com.scher.ScherExecJob.refreshSche(ScherExecJob.java:303)
+com.scher.ScherExecJob.execute(ScherExecJob.java:111)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:54:34,008 ERROR] - 20190731 175434:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-07-31 17:54:34,562 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutting down.
+[2019-07-31 17:54:34,563 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused.
+[2019-07-31 17:54:34,564 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutdown complete.
+[2019-07-31 17:54:34,718 INFO] - 20190731 175434:jetty is stopped
+[2019-07-31 17:54:49,735 INFO] - MLog clients using log4j logging.
+[2019-07-31 17:54:49,957 INFO] - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+[2019-07-31 17:54:50,335 INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1bqomxva4jtqbeel00q5j|765d26ab, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1bqomxva4jtqbeel00q5j|765d26ab, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/app?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2019-07-31 17:54:54,138 INFO] - Job execution threads will use class loader of thread: Thread-0
+[2019-07-31 17:54:54,505 INFO] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2019-07-31 17:54:54,507 INFO] - Quartz Scheduler v.2.0.1 created.
+[2019-07-31 17:54:54,509 INFO] - RAMJobStore initialized.
+[2019-07-31 17:54:54,511 INFO] - Scheduler meta-data: Quartz Scheduler (v2.0.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 100 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2019-07-31 17:54:54,511 INFO] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+[2019-07-31 17:54:54,511 INFO] - Quartz scheduler version: 2.0.1
+[2019-07-31 17:54:54,619 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-07-31 18:02:18,529 ERROR] - 20190731 180218:根据任务ID获取任务错误:null
+errorList:com.taskClass.TaskClassImp.getTask(TaskClassImp.java:102)
+com.taskInterface.TaskDao.getTaskFromTaskID(TaskDao.java:59)
+com.taskInterface.TaskDao.getMapTask(TaskDao.java:42)
+com.taskInterface.TaskTab.editTask(TaskTab.java:290)
+com.taskInterface.TaskTable.mouseDoubleClick(TaskTable.java:292)
+com.taskInterface.TaskTable.access$0(TaskTable.java:290)
+com.taskInterface.TaskTable$1.mouseClicked(TaskTable.java:67)
+java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:270)
+java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:269)
+java.awt.Component.processMouseEvent(Component.java:6536)
+javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+java.awt.Component.processEvent(Component.java:6298)
+java.awt.Container.processEvent(Container.java:2237)
+java.awt.Component.dispatchEventImpl(Component.java:4889)
+java.awt.Container.dispatchEventImpl(Container.java:2295)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4889)
+java.awt.LightweightDispatcher.processMouseEvent(Container.java:4535)
+java.awt.LightweightDispatcher.dispatchEvent(Container.java:4467)
+java.awt.Container.dispatchEventImpl(Container.java:2281)
+java.awt.Window.dispatchEventImpl(Window.java:2746)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+java.awt.EventQueue.access$500(EventQueue.java:97)
+java.awt.EventQueue$3.run(EventQueue.java:709)
+java.awt.EventQueue$3.run(EventQueue.java:703)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90)
+java.awt.EventQueue$4.run(EventQueue.java:731)
+java.awt.EventQueue$4.run(EventQueue.java:729)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+
+[2019-07-31 18:02:18,539 ERROR] - 20190731 180218:主程修改任务序错误:null
+errorList:java.util.concurrent.ConcurrentHashMap.putVal(ConcurrentHashMap.java:1011)
+java.util.concurrent.ConcurrentHashMap.put(ConcurrentHashMap.java:1006)
+com.taskInterface.TaskDao.getMapTask(TaskDao.java:43)
+com.taskInterface.TaskTab.editTask(TaskTab.java:290)
+com.taskInterface.TaskTable.mouseDoubleClick(TaskTable.java:292)
+com.taskInterface.TaskTable.access$0(TaskTable.java:290)
+com.taskInterface.TaskTable$1.mouseClicked(TaskTable.java:67)
+java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:270)
+java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:269)
+java.awt.Component.processMouseEvent(Component.java:6536)
+javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+java.awt.Component.processEvent(Component.java:6298)
+java.awt.Container.processEvent(Container.java:2237)
+java.awt.Component.dispatchEventImpl(Component.java:4889)
+java.awt.Container.dispatchEventImpl(Container.java:2295)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4889)
+java.awt.LightweightDispatcher.processMouseEvent(Container.java:4535)
+java.awt.LightweightDispatcher.dispatchEvent(Container.java:4467)
+java.awt.Container.dispatchEventImpl(Container.java:2281)
+java.awt.Window.dispatchEventImpl(Window.java:2746)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+java.awt.EventQueue.access$500(EventQueue.java:97)
+java.awt.EventQueue$3.run(EventQueue.java:709)
+java.awt.EventQueue$3.run(EventQueue.java:703)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90)
+java.awt.EventQueue$4.run(EventQueue.java:731)
+java.awt.EventQueue$4.run(EventQueue.java:729)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+
+[2019-07-31 18:03:14,672 ERROR] - 20190731 180314:根据任务ID获取任务错误:null
+errorList:com.taskClass.TaskClassImp.getTask(TaskClassImp.java:102)
+com.taskInterface.TaskDao.getTaskFromTaskID(TaskDao.java:59)
+com.taskInterface.TaskDao.getMapTask(TaskDao.java:42)
+com.taskInterface.TaskTab.editTask(TaskTab.java:290)
+com.taskInterface.TaskTable.mouseDoubleClick(TaskTable.java:292)
+com.taskInterface.TaskTable.access$0(TaskTable.java:290)
+com.taskInterface.TaskTable$1.mouseClicked(TaskTable.java:67)
+java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:270)
+java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:269)
+java.awt.Component.processMouseEvent(Component.java:6536)
+javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+java.awt.Component.processEvent(Component.java:6298)
+java.awt.Container.processEvent(Container.java:2237)
+java.awt.Component.dispatchEventImpl(Component.java:4889)
+java.awt.Container.dispatchEventImpl(Container.java:2295)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4889)
+java.awt.LightweightDispatcher.processMouseEvent(Container.java:4535)
+java.awt.LightweightDispatcher.dispatchEvent(Container.java:4467)
+java.awt.Container.dispatchEventImpl(Container.java:2281)
+java.awt.Window.dispatchEventImpl(Window.java:2746)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+java.awt.EventQueue.access$500(EventQueue.java:97)
+java.awt.EventQueue$3.run(EventQueue.java:709)
+java.awt.EventQueue$3.run(EventQueue.java:703)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90)
+java.awt.EventQueue$4.run(EventQueue.java:731)
+java.awt.EventQueue$4.run(EventQueue.java:729)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+
+[2019-07-31 18:03:14,678 ERROR] - 20190731 180314:主程修改任务序错误:null
+errorList:java.util.concurrent.ConcurrentHashMap.putVal(ConcurrentHashMap.java:1011)
+java.util.concurrent.ConcurrentHashMap.put(ConcurrentHashMap.java:1006)
+com.taskInterface.TaskDao.getMapTask(TaskDao.java:43)
+com.taskInterface.TaskTab.editTask(TaskTab.java:290)
+com.taskInterface.TaskTable.mouseDoubleClick(TaskTable.java:292)
+com.taskInterface.TaskTable.access$0(TaskTable.java:290)
+com.taskInterface.TaskTable$1.mouseClicked(TaskTable.java:67)
+java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:270)
+java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:269)
+java.awt.Component.processMouseEvent(Component.java:6536)
+javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+java.awt.Component.processEvent(Component.java:6298)
+java.awt.Container.processEvent(Container.java:2237)
+java.awt.Component.dispatchEventImpl(Component.java:4889)
+java.awt.Container.dispatchEventImpl(Container.java:2295)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4889)
+java.awt.LightweightDispatcher.processMouseEvent(Container.java:4535)
+java.awt.LightweightDispatcher.dispatchEvent(Container.java:4467)
+java.awt.Container.dispatchEventImpl(Container.java:2281)
+java.awt.Window.dispatchEventImpl(Window.java:2746)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+java.awt.EventQueue.access$500(EventQueue.java:97)
+java.awt.EventQueue$3.run(EventQueue.java:709)
+java.awt.EventQueue$3.run(EventQueue.java:703)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90)
+java.awt.EventQueue$4.run(EventQueue.java:731)
+java.awt.EventQueue$4.run(EventQueue.java:729)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+
+[2019-07-31 18:03:15,888 ERROR] - 20190731 180315:根据任务ID获取任务错误:null
+errorList:com.taskClass.TaskClassImp.getTask(TaskClassImp.java:102)
+com.taskInterface.TaskDao.getTaskFromTaskID(TaskDao.java:59)
+com.taskInterface.TaskDao.getMapTask(TaskDao.java:42)
+com.taskInterface.TaskTab.editTask(TaskTab.java:290)
+com.taskInterface.TaskTable.mouseDoubleClick(TaskTable.java:292)
+com.taskInterface.TaskTable.access$0(TaskTable.java:290)
+com.taskInterface.TaskTable$1.mouseClicked(TaskTable.java:67)
+java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:270)
+java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:269)
+java.awt.Component.processMouseEvent(Component.java:6536)
+javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+java.awt.Component.processEvent(Component.java:6298)
+java.awt.Container.processEvent(Container.java:2237)
+java.awt.Component.dispatchEventImpl(Component.java:4889)
+java.awt.Container.dispatchEventImpl(Container.java:2295)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4889)
+java.awt.LightweightDispatcher.processMouseEvent(Container.java:4535)
+java.awt.LightweightDispatcher.dispatchEvent(Container.java:4467)
+java.awt.Container.dispatchEventImpl(Container.java:2281)
+java.awt.Window.dispatchEventImpl(Window.java:2746)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+java.awt.EventQueue.access$500(EventQueue.java:97)
+java.awt.EventQueue$3.run(EventQueue.java:709)
+java.awt.EventQueue$3.run(EventQueue.java:703)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90)
+java.awt.EventQueue$4.run(EventQueue.java:731)
+java.awt.EventQueue$4.run(EventQueue.java:729)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+
+[2019-07-31 18:03:15,892 ERROR] - 20190731 180315:主程修改任务序错误:null
+errorList:java.util.concurrent.ConcurrentHashMap.putVal(ConcurrentHashMap.java:1011)
+java.util.concurrent.ConcurrentHashMap.put(ConcurrentHashMap.java:1006)
+com.taskInterface.TaskDao.getMapTask(TaskDao.java:43)
+com.taskInterface.TaskTab.editTask(TaskTab.java:290)
+com.taskInterface.TaskTable.mouseDoubleClick(TaskTable.java:292)
+com.taskInterface.TaskTable.access$0(TaskTable.java:290)
+com.taskInterface.TaskTable$1.mouseClicked(TaskTable.java:67)
+java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:270)
+java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:269)
+java.awt.Component.processMouseEvent(Component.java:6536)
+javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+java.awt.Component.processEvent(Component.java:6298)
+java.awt.Container.processEvent(Container.java:2237)
+java.awt.Component.dispatchEventImpl(Component.java:4889)
+java.awt.Container.dispatchEventImpl(Container.java:2295)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4889)
+java.awt.LightweightDispatcher.processMouseEvent(Container.java:4535)
+java.awt.LightweightDispatcher.dispatchEvent(Container.java:4467)
+java.awt.Container.dispatchEventImpl(Container.java:2281)
+java.awt.Window.dispatchEventImpl(Window.java:2746)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+java.awt.EventQueue.access$500(EventQueue.java:97)
+java.awt.EventQueue$3.run(EventQueue.java:709)
+java.awt.EventQueue$3.run(EventQueue.java:703)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90)
+java.awt.EventQueue$4.run(EventQueue.java:731)
+java.awt.EventQueue$4.run(EventQueue.java:729)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+
+[2019-07-31 18:22:36,490 WARN] - Tried to assign property delSql:java.lang.String to bean of class com.task.ImportFile.Bean
+[2019-07-31 19:51:51,667 ERROR] - 20190731 195151:新增任务组SQL错误:Field 'id' doesn't have a default value
+errorList:com.mysql.jdbc.PreparedStatement.executeBatchSerially(PreparedStatement.java:2056)
+com.mysql.jdbc.PreparedStatement.executeBatch(PreparedStatement.java:1467)
+com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.executeBatch(NewProxyPreparedStatement.java:1723)
+com.taskgroup.TaskGroupDao.addTaskGroup(TaskGroupDao.java:162)
+com.taskgroup.TaskGroupDialog.<init>(TaskGroupDialog.java:86)
+com.taskgroup.TaskGroupTab.addTaskGroup(TaskGroupTab.java:220)
+com.taskgroup.TaskGroupTab$1.actionPerformed(TaskGroupTab.java:93)
+javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+java.awt.Component.processMouseEvent(Component.java:6533)
+javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+java.awt.Component.processEvent(Component.java:6298)
+java.awt.Container.processEvent(Container.java:2237)
+java.awt.Component.dispatchEventImpl(Component.java:4889)
+java.awt.Container.dispatchEventImpl(Container.java:2295)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4889)
+java.awt.LightweightDispatcher.processMouseEvent(Container.java:4526)
+java.awt.LightweightDispatcher.dispatchEvent(Container.java:4467)
+java.awt.Container.dispatchEventImpl(Container.java:2281)
+java.awt.Window.dispatchEventImpl(Window.java:2746)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+java.awt.EventQueue.access$500(EventQueue.java:97)
+java.awt.EventQueue$3.run(EventQueue.java:709)
+java.awt.EventQueue$3.run(EventQueue.java:703)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90)
+java.awt.EventQueue$4.run(EventQueue.java:731)
+java.awt.EventQueue$4.run(EventQueue.java:729)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+
+[2019-07-31 19:54:47,372 ERROR] - 20190731 195447:新增任务组SQL错误:Field 'ord' doesn't have a default value
+errorList:com.mysql.jdbc.PreparedStatement.executeBatchSerially(PreparedStatement.java:2056)
+com.mysql.jdbc.PreparedStatement.executeBatch(PreparedStatement.java:1467)
+com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.executeBatch(NewProxyPreparedStatement.java:1723)
+com.taskgroup.TaskGroupDao.addTaskGroup(TaskGroupDao.java:162)
+com.taskgroup.TaskGroupDialog.<init>(TaskGroupDialog.java:86)
+com.taskgroup.TaskGroupTab.addTaskGroup(TaskGroupTab.java:220)
+com.taskgroup.TaskGroupTab$1.actionPerformed(TaskGroupTab.java:93)
+javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+java.awt.Component.processMouseEvent(Component.java:6533)
+javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+java.awt.Component.processEvent(Component.java:6298)
+java.awt.Container.processEvent(Container.java:2237)
+java.awt.Component.dispatchEventImpl(Component.java:4889)
+java.awt.Container.dispatchEventImpl(Container.java:2295)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4889)
+java.awt.LightweightDispatcher.processMouseEvent(Container.java:4526)
+java.awt.LightweightDispatcher.dispatchEvent(Container.java:4467)
+java.awt.Container.dispatchEventImpl(Container.java:2281)
+java.awt.Window.dispatchEventImpl(Window.java:2746)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+java.awt.EventQueue.access$500(EventQueue.java:97)
+java.awt.EventQueue$3.run(EventQueue.java:709)
+java.awt.EventQueue$3.run(EventQueue.java:703)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90)
+java.awt.EventQueue$4.run(EventQueue.java:731)
+java.awt.EventQueue$4.run(EventQueue.java:729)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+
+[2019-07-31 19:54:50,454 ERROR] - 20190731 195450:删除任务组SQL错误:Can't call commit when autocommit=true
+errorList:com.mysql.jdbc.SQLError.createSQLException(SQLError.java:927)
+com.mysql.jdbc.SQLError.createSQLException(SQLError.java:924)
+com.mysql.jdbc.ConnectionImpl.commit(ConnectionImpl.java:1724)
+com.mchange.v2.c3p0.impl.NewProxyConnection.commit(NewProxyConnection.java:803)
+com.taskgroup.TaskGroupDao.delTaskGroup(TaskGroupDao.java:206)
+com.taskgroup.TaskGroupDialog.btnCancel(TaskGroupDialog.java:453)
+com.taskgroup.TaskGroupDialog.access$7(TaskGroupDialog.java:450)
+com.taskgroup.TaskGroupDialog$7.actionPerformed(TaskGroupDialog.java:378)
+javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+java.awt.Component.processMouseEvent(Component.java:6533)
+javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+java.awt.Component.processEvent(Component.java:6298)
+java.awt.Container.processEvent(Container.java:2237)
+java.awt.Component.dispatchEventImpl(Component.java:4889)
+java.awt.Container.dispatchEventImpl(Container.java:2295)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4889)
+java.awt.LightweightDispatcher.processMouseEvent(Container.java:4526)
+java.awt.LightweightDispatcher.dispatchEvent(Container.java:4467)
+java.awt.Container.dispatchEventImpl(Container.java:2281)
+java.awt.Window.dispatchEventImpl(Window.java:2746)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+java.awt.EventQueue.access$500(EventQueue.java:97)
+java.awt.EventQueue$3.run(EventQueue.java:709)
+java.awt.EventQueue$3.run(EventQueue.java:703)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90)
+java.awt.EventQueue$4.run(EventQueue.java:731)
+java.awt.EventQueue$4.run(EventQueue.java:729)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:109)
+java.awt.WaitDispatchSupport$2.run(WaitDispatchSupport.java:190)
+java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:235)
+java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:233)
+java.security.AccessController.doPrivileged(Native Method)
+java.awt.WaitDispatchSupport.enter(WaitDispatchSupport.java:233)
+java.awt.Dialog.show(Dialog.java:1084)
+java.awt.Component.show(Component.java:1671)
+com.taskgroup.TaskGroupTab.addTaskGroup(TaskGroupTab.java:221)
+com.taskgroup.TaskGroupTab$1.actionPerformed(TaskGroupTab.java:93)
+javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+java.awt.Component.processMouseEvent(Component.java:6533)
+javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+java.awt.Component.processEvent(Component.java:6298)
+java.awt.Container.processEvent(Container.java:2237)
+java.awt.Component.dispatchEventImpl(Component.java:4889)
+java.awt.Container.dispatchEventImpl(Container.java:2295)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4889)
+java.awt.LightweightDispatcher.processMouseEvent(Container.java:4526)
+java.awt.LightweightDispatcher.dispatchEvent(Container.java:4467)
+java.awt.Container.dispatchEventImpl(Container.java:2281)
+java.awt.Window.dispatchEventImpl(Window.java:2746)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+java.awt.EventQueue.access$500(EventQueue.java:97)
+java.awt.EventQueue$3.run(EventQueue.java:709)
+java.awt.EventQueue$3.run(EventQueue.java:703)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90)
+java.awt.EventQueue$4.run(EventQueue.java:731)
+java.awt.EventQueue$4.run(EventQueue.java:729)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+
+[2019-07-31 19:55:16,660 ERROR] - 20190731 195516:新增任务组SQL错误:Can't call commit when autocommit=true
+errorList:com.mysql.jdbc.SQLError.createSQLException(SQLError.java:927)
+com.mysql.jdbc.SQLError.createSQLException(SQLError.java:924)
+com.mysql.jdbc.ConnectionImpl.commit(ConnectionImpl.java:1724)
+com.mchange.v2.c3p0.impl.NewProxyConnection.commit(NewProxyConnection.java:803)
+com.taskgroup.TaskGroupDao.addTaskGroup(TaskGroupDao.java:163)
+com.taskgroup.TaskGroupDialog.<init>(TaskGroupDialog.java:86)
+com.taskgroup.TaskGroupTab.addTaskGroup(TaskGroupTab.java:220)
+com.taskgroup.TaskGroupTab$1.actionPerformed(TaskGroupTab.java:93)
+javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+java.awt.Component.processMouseEvent(Component.java:6533)
+javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+java.awt.Component.processEvent(Component.java:6298)
+java.awt.Container.processEvent(Container.java:2237)
+java.awt.Component.dispatchEventImpl(Component.java:4889)
+java.awt.Container.dispatchEventImpl(Container.java:2295)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4889)
+java.awt.LightweightDispatcher.processMouseEvent(Container.java:4526)
+java.awt.LightweightDispatcher.dispatchEvent(Container.java:4467)
+java.awt.Container.dispatchEventImpl(Container.java:2281)
+java.awt.Window.dispatchEventImpl(Window.java:2746)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+java.awt.EventQueue.access$500(EventQueue.java:97)
+java.awt.EventQueue$3.run(EventQueue.java:709)
+java.awt.EventQueue$3.run(EventQueue.java:703)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90)
+java.awt.EventQueue$4.run(EventQueue.java:731)
+java.awt.EventQueue$4.run(EventQueue.java:729)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+
+[2019-07-31 19:55:18,296 ERROR] - 20190731 195518:删除任务组SQL错误:Can't call commit when autocommit=true
+errorList:com.mysql.jdbc.SQLError.createSQLException(SQLError.java:927)
+com.mysql.jdbc.SQLError.createSQLException(SQLError.java:924)
+com.mysql.jdbc.ConnectionImpl.commit(ConnectionImpl.java:1724)
+com.mchange.v2.c3p0.impl.NewProxyConnection.commit(NewProxyConnection.java:803)
+com.taskgroup.TaskGroupDao.delTaskGroup(TaskGroupDao.java:206)
+com.taskgroup.TaskGroupDialog.btnCancel(TaskGroupDialog.java:453)
+com.taskgroup.TaskGroupDialog.access$7(TaskGroupDialog.java:450)
+com.taskgroup.TaskGroupDialog$7.actionPerformed(TaskGroupDialog.java:378)
+javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+java.awt.Component.processMouseEvent(Component.java:6533)
+javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+java.awt.Component.processEvent(Component.java:6298)
+java.awt.Container.processEvent(Container.java:2237)
+java.awt.Component.dispatchEventImpl(Component.java:4889)
+java.awt.Container.dispatchEventImpl(Container.java:2295)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4889)
+java.awt.LightweightDispatcher.processMouseEvent(Container.java:4526)
+java.awt.LightweightDispatcher.dispatchEvent(Container.java:4467)
+java.awt.Container.dispatchEventImpl(Container.java:2281)
+java.awt.Window.dispatchEventImpl(Window.java:2746)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+java.awt.EventQueue.access$500(EventQueue.java:97)
+java.awt.EventQueue$3.run(EventQueue.java:709)
+java.awt.EventQueue$3.run(EventQueue.java:703)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90)
+java.awt.EventQueue$4.run(EventQueue.java:731)
+java.awt.EventQueue$4.run(EventQueue.java:729)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:109)
+java.awt.WaitDispatchSupport$2.run(WaitDispatchSupport.java:190)
+java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:235)
+java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:233)
+java.security.AccessController.doPrivileged(Native Method)
+java.awt.WaitDispatchSupport.enter(WaitDispatchSupport.java:233)
+java.awt.Dialog.show(Dialog.java:1084)
+java.awt.Component.show(Component.java:1671)
+com.taskgroup.TaskGroupTab.addTaskGroup(TaskGroupTab.java:221)
+com.taskgroup.TaskGroupTab$1.actionPerformed(TaskGroupTab.java:93)
+javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+java.awt.Component.processMouseEvent(Component.java:6533)
+javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+java.awt.Component.processEvent(Component.java:6298)
+java.awt.Container.processEvent(Container.java:2237)
+java.awt.Component.dispatchEventImpl(Component.java:4889)
+java.awt.Container.dispatchEventImpl(Container.java:2295)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4889)
+java.awt.LightweightDispatcher.processMouseEvent(Container.java:4526)
+java.awt.LightweightDispatcher.dispatchEvent(Container.java:4467)
+java.awt.Container.dispatchEventImpl(Container.java:2281)
+java.awt.Window.dispatchEventImpl(Window.java:2746)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+java.awt.EventQueue.access$500(EventQueue.java:97)
+java.awt.EventQueue$3.run(EventQueue.java:709)
+java.awt.EventQueue$3.run(EventQueue.java:703)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90)
+java.awt.EventQueue$4.run(EventQueue.java:731)
+java.awt.EventQueue$4.run(EventQueue.java:729)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+
+[2019-07-31 20:09:25,044 INFO] - MLog clients using log4j logging.
+[2019-07-31 20:09:25,308 INFO] - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+[2019-07-31 20:09:25,490 INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge0w5a4jyjecs5gxhi6|648561b0, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge0w5a4jyjecs5gxhi6|648561b0, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/app?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2019-07-31 20:09:29,747 INFO] - Job execution threads will use class loader of thread: Thread-0
+[2019-07-31 20:09:30,078 INFO] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2019-07-31 20:09:30,079 INFO] - Quartz Scheduler v.2.0.1 created.
+[2019-07-31 20:09:30,082 INFO] - RAMJobStore initialized.
+[2019-07-31 20:09:30,085 INFO] - Scheduler meta-data: Quartz Scheduler (v2.0.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 100 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2019-07-31 20:09:30,086 INFO] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+[2019-07-31 20:09:30,086 INFO] - Quartz scheduler version: 2.0.1
+[2019-07-31 20:09:30,142 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-07-31 20:09:40,084 ERROR] - 20190731 200940:新增任务组SQL错误:Can't call commit when autocommit=true
+errorList:com.mysql.jdbc.SQLError.createSQLException(SQLError.java:927)
+com.mysql.jdbc.SQLError.createSQLException(SQLError.java:924)
+com.mysql.jdbc.ConnectionImpl.commit(ConnectionImpl.java:1724)
+com.mchange.v2.c3p0.impl.NewProxyConnection.commit(NewProxyConnection.java:803)
+com.taskgroup.TaskGroupDao.addTaskGroup(TaskGroupDao.java:163)
+com.taskgroup.TaskGroupDialog.<init>(TaskGroupDialog.java:86)
+com.taskgroup.TaskGroupTab.addTaskGroup(TaskGroupTab.java:220)
+com.taskgroup.TaskGroupTab$1.actionPerformed(TaskGroupTab.java:93)
+javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+java.awt.Component.processMouseEvent(Component.java:6533)
+javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+java.awt.Component.processEvent(Component.java:6298)
+java.awt.Container.processEvent(Container.java:2237)
+java.awt.Component.dispatchEventImpl(Component.java:4889)
+java.awt.Container.dispatchEventImpl(Container.java:2295)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4889)
+java.awt.LightweightDispatcher.processMouseEvent(Container.java:4526)
+java.awt.LightweightDispatcher.dispatchEvent(Container.java:4467)
+java.awt.Container.dispatchEventImpl(Container.java:2281)
+java.awt.Window.dispatchEventImpl(Window.java:2746)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+java.awt.EventQueue.access$500(EventQueue.java:97)
+java.awt.EventQueue$3.run(EventQueue.java:709)
+java.awt.EventQueue$3.run(EventQueue.java:703)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90)
+java.awt.EventQueue$4.run(EventQueue.java:731)
+java.awt.EventQueue$4.run(EventQueue.java:729)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+
+[2019-07-31 20:09:41,839 ERROR] - 20190731 200941:删除任务组SQL错误:Can't call commit when autocommit=true
+errorList:com.mysql.jdbc.SQLError.createSQLException(SQLError.java:927)
+com.mysql.jdbc.SQLError.createSQLException(SQLError.java:924)
+com.mysql.jdbc.ConnectionImpl.commit(ConnectionImpl.java:1724)
+com.mchange.v2.c3p0.impl.NewProxyConnection.commit(NewProxyConnection.java:803)
+com.taskgroup.TaskGroupDao.delTaskGroup(TaskGroupDao.java:206)
+com.taskgroup.TaskGroupDialog.btnCancel(TaskGroupDialog.java:453)
+com.taskgroup.TaskGroupDialog.access$7(TaskGroupDialog.java:450)
+com.taskgroup.TaskGroupDialog$7.actionPerformed(TaskGroupDialog.java:378)
+javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+java.awt.Component.processMouseEvent(Component.java:6533)
+javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+java.awt.Component.processEvent(Component.java:6298)
+java.awt.Container.processEvent(Container.java:2237)
+java.awt.Component.dispatchEventImpl(Component.java:4889)
+java.awt.Container.dispatchEventImpl(Container.java:2295)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4889)
+java.awt.LightweightDispatcher.processMouseEvent(Container.java:4526)
+java.awt.LightweightDispatcher.dispatchEvent(Container.java:4467)
+java.awt.Container.dispatchEventImpl(Container.java:2281)
+java.awt.Window.dispatchEventImpl(Window.java:2746)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+java.awt.EventQueue.access$500(EventQueue.java:97)
+java.awt.EventQueue$3.run(EventQueue.java:709)
+java.awt.EventQueue$3.run(EventQueue.java:703)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90)
+java.awt.EventQueue$4.run(EventQueue.java:731)
+java.awt.EventQueue$4.run(EventQueue.java:729)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:109)
+java.awt.WaitDispatchSupport$2.run(WaitDispatchSupport.java:190)
+java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:235)
+java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:233)
+java.security.AccessController.doPrivileged(Native Method)
+java.awt.WaitDispatchSupport.enter(WaitDispatchSupport.java:233)
+java.awt.Dialog.show(Dialog.java:1084)
+java.awt.Component.show(Component.java:1671)
+com.taskgroup.TaskGroupTab.addTaskGroup(TaskGroupTab.java:221)
+com.taskgroup.TaskGroupTab$1.actionPerformed(TaskGroupTab.java:93)
+javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+java.awt.Component.processMouseEvent(Component.java:6533)
+javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+java.awt.Component.processEvent(Component.java:6298)
+java.awt.Container.processEvent(Container.java:2237)
+java.awt.Component.dispatchEventImpl(Component.java:4889)
+java.awt.Container.dispatchEventImpl(Container.java:2295)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4889)
+java.awt.LightweightDispatcher.processMouseEvent(Container.java:4526)
+java.awt.LightweightDispatcher.dispatchEvent(Container.java:4467)
+java.awt.Container.dispatchEventImpl(Container.java:2281)
+java.awt.Window.dispatchEventImpl(Window.java:2746)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+java.awt.EventQueue.access$500(EventQueue.java:97)
+java.awt.EventQueue$3.run(EventQueue.java:709)
+java.awt.EventQueue$3.run(EventQueue.java:703)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90)
+java.awt.EventQueue$4.run(EventQueue.java:731)
+java.awt.EventQueue$4.run(EventQueue.java:729)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+
+[2019-07-31 20:10:41,621 INFO] - MLog clients using log4j logging.
+[2019-07-31 20:10:41,801 INFO] - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+[2019-07-31 20:10:41,983 INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge0w5a4jyl1fekpjsm|60b7095, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge0w5a4jyl1fekpjsm|60b7095, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/app?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2019-07-31 20:10:45,452 INFO] - Job execution threads will use class loader of thread: Thread-0
+[2019-07-31 20:10:45,575 INFO] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2019-07-31 20:10:45,578 INFO] - Quartz Scheduler v.2.0.1 created.
+[2019-07-31 20:10:45,580 INFO] - RAMJobStore initialized.
+[2019-07-31 20:10:45,603 INFO] - Scheduler meta-data: Quartz Scheduler (v2.0.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 100 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2019-07-31 20:10:45,604 INFO] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+[2019-07-31 20:10:45,604 INFO] - Quartz scheduler version: 2.0.1
+[2019-07-31 20:10:45,637 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-07-31 20:10:50,054 ERROR] - 20190731 201050:新增任务组SQL错误:Can't call commit when autocommit=true
+errorList:com.mysql.jdbc.SQLError.createSQLException(SQLError.java:927)
+com.mysql.jdbc.SQLError.createSQLException(SQLError.java:924)
+com.mysql.jdbc.ConnectionImpl.commit(ConnectionImpl.java:1724)
+com.mchange.v2.c3p0.impl.NewProxyConnection.commit(NewProxyConnection.java:803)
+com.taskgroup.TaskGroupDao.addTaskGroup(TaskGroupDao.java:163)
+com.taskgroup.TaskGroupDialog.<init>(TaskGroupDialog.java:86)
+com.taskgroup.TaskGroupTab.addTaskGroup(TaskGroupTab.java:220)
+com.taskgroup.TaskGroupTab$1.actionPerformed(TaskGroupTab.java:93)
+javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+java.awt.Component.processMouseEvent(Component.java:6533)
+javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+java.awt.Component.processEvent(Component.java:6298)
+java.awt.Container.processEvent(Container.java:2237)
+java.awt.Component.dispatchEventImpl(Component.java:4889)
+java.awt.Container.dispatchEventImpl(Container.java:2295)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4889)
+java.awt.LightweightDispatcher.processMouseEvent(Container.java:4526)
+java.awt.LightweightDispatcher.dispatchEvent(Container.java:4467)
+java.awt.Container.dispatchEventImpl(Container.java:2281)
+java.awt.Window.dispatchEventImpl(Window.java:2746)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+java.awt.EventQueue.access$500(EventQueue.java:97)
+java.awt.EventQueue$3.run(EventQueue.java:709)
+java.awt.EventQueue$3.run(EventQueue.java:703)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90)
+java.awt.EventQueue$4.run(EventQueue.java:731)
+java.awt.EventQueue$4.run(EventQueue.java:729)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+
+[2019-07-31 20:10:51,706 ERROR] - 20190731 201051:删除任务组SQL错误:Can't call commit when autocommit=true
+errorList:com.mysql.jdbc.SQLError.createSQLException(SQLError.java:927)
+com.mysql.jdbc.SQLError.createSQLException(SQLError.java:924)
+com.mysql.jdbc.ConnectionImpl.commit(ConnectionImpl.java:1724)
+com.mchange.v2.c3p0.impl.NewProxyConnection.commit(NewProxyConnection.java:803)
+com.taskgroup.TaskGroupDao.delTaskGroup(TaskGroupDao.java:206)
+com.taskgroup.TaskGroupDialog.btnCancel(TaskGroupDialog.java:453)
+com.taskgroup.TaskGroupDialog.access$7(TaskGroupDialog.java:450)
+com.taskgroup.TaskGroupDialog$7.actionPerformed(TaskGroupDialog.java:378)
+javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+java.awt.Component.processMouseEvent(Component.java:6533)
+javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+java.awt.Component.processEvent(Component.java:6298)
+java.awt.Container.processEvent(Container.java:2237)
+java.awt.Component.dispatchEventImpl(Component.java:4889)
+java.awt.Container.dispatchEventImpl(Container.java:2295)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4889)
+java.awt.LightweightDispatcher.processMouseEvent(Container.java:4526)
+java.awt.LightweightDispatcher.dispatchEvent(Container.java:4467)
+java.awt.Container.dispatchEventImpl(Container.java:2281)
+java.awt.Window.dispatchEventImpl(Window.java:2746)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+java.awt.EventQueue.access$500(EventQueue.java:97)
+java.awt.EventQueue$3.run(EventQueue.java:709)
+java.awt.EventQueue$3.run(EventQueue.java:703)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90)
+java.awt.EventQueue$4.run(EventQueue.java:731)
+java.awt.EventQueue$4.run(EventQueue.java:729)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:109)
+java.awt.WaitDispatchSupport$2.run(WaitDispatchSupport.java:190)
+java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:235)
+java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:233)
+java.security.AccessController.doPrivileged(Native Method)
+java.awt.WaitDispatchSupport.enter(WaitDispatchSupport.java:233)
+java.awt.Dialog.show(Dialog.java:1084)
+java.awt.Component.show(Component.java:1671)
+com.taskgroup.TaskGroupTab.addTaskGroup(TaskGroupTab.java:221)
+com.taskgroup.TaskGroupTab$1.actionPerformed(TaskGroupTab.java:93)
+javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+java.awt.Component.processMouseEvent(Component.java:6533)
+javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+java.awt.Component.processEvent(Component.java:6298)
+java.awt.Container.processEvent(Container.java:2237)
+java.awt.Component.dispatchEventImpl(Component.java:4889)
+java.awt.Container.dispatchEventImpl(Container.java:2295)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4889)
+java.awt.LightweightDispatcher.processMouseEvent(Container.java:4526)
+java.awt.LightweightDispatcher.dispatchEvent(Container.java:4467)
+java.awt.Container.dispatchEventImpl(Container.java:2281)
+java.awt.Window.dispatchEventImpl(Window.java:2746)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+java.awt.EventQueue.access$500(EventQueue.java:97)
+java.awt.EventQueue$3.run(EventQueue.java:709)
+java.awt.EventQueue$3.run(EventQueue.java:703)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90)
+java.awt.EventQueue$4.run(EventQueue.java:731)
+java.awt.EventQueue$4.run(EventQueue.java:729)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+
+[2019-07-31 20:12:53,097 INFO] - MLog clients using log4j logging.
+[2019-07-31 20:12:53,433 INFO] - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+[2019-07-31 20:12:53,592 INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge0w5a4jynuziedu1b5|5ac7a6d6, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge0w5a4jynuziedu1b5|5ac7a6d6, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/app?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2019-07-31 20:12:57,103 INFO] - Job execution threads will use class loader of thread: Thread-0
+[2019-07-31 20:12:57,406 INFO] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2019-07-31 20:12:57,407 INFO] - Quartz Scheduler v.2.0.1 created.
+[2019-07-31 20:12:57,410 INFO] - RAMJobStore initialized.
+[2019-07-31 20:12:57,412 INFO] - Scheduler meta-data: Quartz Scheduler (v2.0.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 100 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2019-07-31 20:12:57,412 INFO] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+[2019-07-31 20:12:57,412 INFO] - Quartz scheduler version: 2.0.1
+[2019-07-31 20:12:57,537 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-07-31 21:20:04,356 INFO] - MLog clients using log4j logging.
+[2019-07-31 21:20:04,422 INFO] - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+[2019-07-31 21:20:04,610 INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge0w5a4k129f8hb1iko|6bc6da83, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge0w5a4k129f8hb1iko|6bc6da83, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/app?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2019-07-31 21:20:08,483 INFO] - Job execution threads will use class loader of thread: Thread-2
+[2019-07-31 21:20:08,843 INFO] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2019-07-31 21:20:08,846 INFO] - Quartz Scheduler v.2.0.1 created.
+[2019-07-31 21:20:08,848 INFO] - RAMJobStore initialized.
+[2019-07-31 21:20:08,850 INFO] - Scheduler meta-data: Quartz Scheduler (v2.0.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 100 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2019-07-31 21:20:08,851 INFO] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+[2019-07-31 21:20:08,851 INFO] - Quartz scheduler version: 2.0.1
+[2019-07-31 21:20:08,917 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-07-31 21:26:10,118 INFO] - MLog clients using log4j logging.
+[2019-07-31 21:26:10,482 INFO] - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+[2019-07-31 21:26:10,656 INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge0w5a4k1a3ro19of25a|166a532f, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge0w5a4k1a3ro19of25a|166a532f, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/app?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2019-07-31 21:26:14,258 INFO] - Job execution threads will use class loader of thread: Thread-0
+[2019-07-31 21:26:14,450 INFO] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2019-07-31 21:26:14,451 INFO] - Quartz Scheduler v.2.0.1 created.
+[2019-07-31 21:26:14,453 INFO] - RAMJobStore initialized.
+[2019-07-31 21:26:14,456 INFO] - Scheduler meta-data: Quartz Scheduler (v2.0.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 100 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2019-07-31 21:26:14,456 INFO] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+[2019-07-31 21:26:14,456 INFO] - Quartz scheduler version: 2.0.1
+[2019-07-31 21:26:14,551 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-07-31 23:21:57,203 INFO] - MLog clients using log4j logging.
+[2019-07-31 23:21:57,260 INFO] - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+[2019-07-31 23:21:57,491 INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge0w5a4k5f01k1ke5bcd|25ac0055, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge0w5a4k5f01k1ke5bcd|25ac0055, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/app?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2019-07-31 23:22:01,684 INFO] - Job execution threads will use class loader of thread: Thread-2
+[2019-07-31 23:22:01,854 INFO] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2019-07-31 23:22:01,857 INFO] - Quartz Scheduler v.2.0.1 created.
+[2019-07-31 23:22:01,858 INFO] - RAMJobStore initialized.
+[2019-07-31 23:22:01,861 INFO] - Scheduler meta-data: Quartz Scheduler (v2.0.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 100 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2019-07-31 23:22:01,861 INFO] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+[2019-07-31 23:22:01,861 INFO] - Quartz scheduler version: 2.0.1
+[2019-07-31 23:22:01,936 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-07-31 23:22:06,023 ERROR] - 20190731 232206:获取任务PANEL类com.task.ImportFile.Panel错误3:com.task.ImportFile.Panel
+errorList:java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+java.lang.Class.forName0(Native Method)
+java.lang.Class.forName(Class.java:348)
+com.taskClass.TaskClassImp.getTaskPanel(TaskClassImp.java:121)
+com.taskInterface.TaskDialog.createPanel(TaskDialog.java:89)
+com.taskInterface.TaskDialog.<init>(TaskDialog.java:104)
+com.taskInterface.TaskTab.addTask(TaskTab.java:272)
+com.taskInterface.TaskTab$1.actionPerformed(TaskTab.java:100)
+javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+java.awt.Component.processMouseEvent(Component.java:6533)
+javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+java.awt.Component.processEvent(Component.java:6298)
+java.awt.Container.processEvent(Container.java:2237)
+java.awt.Component.dispatchEventImpl(Component.java:4889)
+java.awt.Container.dispatchEventImpl(Container.java:2295)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4889)
+java.awt.LightweightDispatcher.processMouseEvent(Container.java:4526)
+java.awt.LightweightDispatcher.dispatchEvent(Container.java:4467)
+java.awt.Container.dispatchEventImpl(Container.java:2281)
+java.awt.Window.dispatchEventImpl(Window.java:2746)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+java.awt.EventQueue.access$500(EventQueue.java:97)
+java.awt.EventQueue$3.run(EventQueue.java:709)
+java.awt.EventQueue$3.run(EventQueue.java:703)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90)
+java.awt.EventQueue$4.run(EventQueue.java:731)
+java.awt.EventQueue$4.run(EventQueue.java:729)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+
+[2019-07-31 23:22:06,033 ERROR] - 20190731 232206:任务对话框构造错误:null
+errorList:com.taskInterface.TaskDialog.createPanel(TaskDialog.java:90)
+com.taskInterface.TaskDialog.<init>(TaskDialog.java:104)
+com.taskInterface.TaskTab.addTask(TaskTab.java:272)
+com.taskInterface.TaskTab$1.actionPerformed(TaskTab.java:100)
+javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+java.awt.Component.processMouseEvent(Component.java:6533)
+javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+java.awt.Component.processEvent(Component.java:6298)
+java.awt.Container.processEvent(Container.java:2237)
+java.awt.Component.dispatchEventImpl(Component.java:4889)
+java.awt.Container.dispatchEventImpl(Container.java:2295)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4889)
+java.awt.LightweightDispatcher.processMouseEvent(Container.java:4526)
+java.awt.LightweightDispatcher.dispatchEvent(Container.java:4467)
+java.awt.Container.dispatchEventImpl(Container.java:2281)
+java.awt.Window.dispatchEventImpl(Window.java:2746)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+java.awt.EventQueue.access$500(EventQueue.java:97)
+java.awt.EventQueue$3.run(EventQueue.java:709)
+java.awt.EventQueue$3.run(EventQueue.java:703)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90)
+java.awt.EventQueue$4.run(EventQueue.java:731)
+java.awt.EventQueue$4.run(EventQueue.java:729)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+
+[2019-07-31 23:22:46,277 INFO] - MLog clients using log4j logging.
+[2019-07-31 23:22:46,458 INFO] - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+[2019-07-31 23:22:46,659 INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge0w5a4k5g1wn1qjg93e|11ff5929, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge0w5a4k5g1wn1qjg93e|11ff5929, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/app?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2019-07-31 23:22:50,310 INFO] - Job execution threads will use class loader of thread: Thread-0
+[2019-07-31 23:22:50,569 INFO] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2019-07-31 23:22:50,571 INFO] - Quartz Scheduler v.2.0.1 created.
+[2019-07-31 23:22:50,573 INFO] - RAMJobStore initialized.
+[2019-07-31 23:22:50,576 INFO] - Scheduler meta-data: Quartz Scheduler (v2.0.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 100 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2019-07-31 23:22:50,577 INFO] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+[2019-07-31 23:22:50,577 INFO] - Quartz scheduler version: 2.0.1
+[2019-07-31 23:22:50,795 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-07-31 23:24:37,678 INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge0w5a4k5g1wn1qjg93e|71debf2b, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge0w5a4k5g1wn1qjg93e|71debf2b, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/app-base?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2019-07-31 23:25:00,226 ERROR] - 20190731 232500:新增任务SQL错误:Field 'id' doesn't have a default value
+errorList:com.mysql.jdbc.PreparedStatement.executeBatchSerially(PreparedStatement.java:2056)
+com.mysql.jdbc.PreparedStatement.executeBatch(PreparedStatement.java:1467)
+com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.executeBatch(NewProxyPreparedStatement.java:1723)
+com.taskInterface.TaskDao.addTask(TaskDao.java:101)
+com.taskInterface.TaskDialog.btnOk(TaskDialog.java:398)
+com.taskInterface.TaskDialog.access$4(TaskDialog.java:389)
+com.taskInterface.TaskDialog$2.actionPerformed(TaskDialog.java:367)
+javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+java.awt.Component.processMouseEvent(Component.java:6533)
+javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+java.awt.Component.processEvent(Component.java:6298)
+java.awt.Container.processEvent(Container.java:2237)
+java.awt.Component.dispatchEventImpl(Component.java:4889)
+java.awt.Container.dispatchEventImpl(Container.java:2295)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4889)
+java.awt.LightweightDispatcher.processMouseEvent(Container.java:4526)
+java.awt.LightweightDispatcher.dispatchEvent(Container.java:4467)
+java.awt.Container.dispatchEventImpl(Container.java:2281)
+java.awt.Window.dispatchEventImpl(Window.java:2746)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+java.awt.EventQueue.access$500(EventQueue.java:97)
+java.awt.EventQueue$3.run(EventQueue.java:709)
+java.awt.EventQueue$3.run(EventQueue.java:703)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90)
+java.awt.EventQueue$4.run(EventQueue.java:731)
+java.awt.EventQueue$4.run(EventQueue.java:729)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:109)
+java.awt.WaitDispatchSupport$2.run(WaitDispatchSupport.java:190)
+java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:235)
+java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:233)
+java.security.AccessController.doPrivileged(Native Method)
+java.awt.WaitDispatchSupport.enter(WaitDispatchSupport.java:233)
+java.awt.Dialog.show(Dialog.java:1084)
+java.awt.Component.show(Component.java:1671)
+com.taskInterface.TaskTab.addTask(TaskTab.java:273)
+com.taskInterface.TaskTab$1.actionPerformed(TaskTab.java:100)
+javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+java.awt.Component.processMouseEvent(Component.java:6533)
+javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+java.awt.Component.processEvent(Component.java:6298)
+java.awt.Container.processEvent(Container.java:2237)
+java.awt.Component.dispatchEventImpl(Component.java:4889)
+java.awt.Container.dispatchEventImpl(Container.java:2295)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4889)
+java.awt.LightweightDispatcher.processMouseEvent(Container.java:4526)
+java.awt.LightweightDispatcher.dispatchEvent(Container.java:4467)
+java.awt.Container.dispatchEventImpl(Container.java:2281)
+java.awt.Window.dispatchEventImpl(Window.java:2746)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+java.awt.EventQueue.access$500(EventQueue.java:97)
+java.awt.EventQueue$3.run(EventQueue.java:709)
+java.awt.EventQueue$3.run(EventQueue.java:703)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90)
+java.awt.EventQueue$4.run(EventQueue.java:731)
+java.awt.EventQueue$4.run(EventQueue.java:729)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+
+[2019-07-31 23:25:00,251 ERROR] - 20190731 232500:根据任务ID获取任务SQL错误:Illegal operation on empty result set.
+errorList:com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1078)
+com.mysql.jdbc.SQLError.createSQLException(SQLError.java:989)
+com.mysql.jdbc.SQLError.createSQLException(SQLError.java:975)
+com.mysql.jdbc.SQLError.createSQLException(SQLError.java:920)
+com.mysql.jdbc.ResultSetImpl.checkRowPos(ResultSetImpl.java:855)
+com.mysql.jdbc.ResultSetImpl.getStringInternal(ResultSetImpl.java:5773)
+com.mysql.jdbc.ResultSetImpl.getString(ResultSetImpl.java:5693)
+com.mysql.jdbc.ResultSetImpl.getString(ResultSetImpl.java:5733)
+com.mchange.v2.c3p0.impl.NewProxyResultSet.getString(NewProxyResultSet.java:3342)
+com.taskInterface.TaskDao.getTaskFromTaskID(TaskDao.java:57)
+com.taskInterface.TaskDao.addTask(TaskDao.java:113)
+com.taskInterface.TaskDialog.btnOk(TaskDialog.java:398)
+com.taskInterface.TaskDialog.access$4(TaskDialog.java:389)
+com.taskInterface.TaskDialog$2.actionPerformed(TaskDialog.java:367)
+javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+java.awt.Component.processMouseEvent(Component.java:6533)
+javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+java.awt.Component.processEvent(Component.java:6298)
+java.awt.Container.processEvent(Container.java:2237)
+java.awt.Component.dispatchEventImpl(Component.java:4889)
+java.awt.Container.dispatchEventImpl(Container.java:2295)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4889)
+java.awt.LightweightDispatcher.processMouseEvent(Container.java:4526)
+java.awt.LightweightDispatcher.dispatchEvent(Container.java:4467)
+java.awt.Container.dispatchEventImpl(Container.java:2281)
+java.awt.Window.dispatchEventImpl(Window.java:2746)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+java.awt.EventQueue.access$500(EventQueue.java:97)
+java.awt.EventQueue$3.run(EventQueue.java:709)
+java.awt.EventQueue$3.run(EventQueue.java:703)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90)
+java.awt.EventQueue$4.run(EventQueue.java:731)
+java.awt.EventQueue$4.run(EventQueue.java:729)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:109)
+java.awt.WaitDispatchSupport$2.run(WaitDispatchSupport.java:190)
+java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:235)
+java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:233)
+java.security.AccessController.doPrivileged(Native Method)
+java.awt.WaitDispatchSupport.enter(WaitDispatchSupport.java:233)
+java.awt.Dialog.show(Dialog.java:1084)
+java.awt.Component.show(Component.java:1671)
+com.taskInterface.TaskTab.addTask(TaskTab.java:273)
+com.taskInterface.TaskTab$1.actionPerformed(TaskTab.java:100)
+javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+java.awt.Component.processMouseEvent(Component.java:6533)
+javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+java.awt.Component.processEvent(Component.java:6298)
+java.awt.Container.processEvent(Container.java:2237)
+java.awt.Component.dispatchEventImpl(Component.java:4889)
+java.awt.Container.dispatchEventImpl(Container.java:2295)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4889)
+java.awt.LightweightDispatcher.processMouseEvent(Container.java:4526)
+java.awt.LightweightDispatcher.dispatchEvent(Container.java:4467)
+java.awt.Container.dispatchEventImpl(Container.java:2281)
+java.awt.Window.dispatchEventImpl(Window.java:2746)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+java.awt.EventQueue.access$500(EventQueue.java:97)
+java.awt.EventQueue$3.run(EventQueue.java:709)
+java.awt.EventQueue$3.run(EventQueue.java:703)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90)
+java.awt.EventQueue$4.run(EventQueue.java:731)
+java.awt.EventQueue$4.run(EventQueue.java:729)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+
+[2019-07-31 23:25:00,259 ERROR] - 20190731 232500:任务面板保存错误:null
+errorList:java.util.concurrent.ConcurrentHashMap.putVal(ConcurrentHashMap.java:1011)
+java.util.concurrent.ConcurrentHashMap.put(ConcurrentHashMap.java:1006)
+com.taskInterface.TaskDao.addTask(TaskDao.java:113)
+com.taskInterface.TaskDialog.btnOk(TaskDialog.java:398)
+com.taskInterface.TaskDialog.access$4(TaskDialog.java:389)
+com.taskInterface.TaskDialog$2.actionPerformed(TaskDialog.java:367)
+javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+java.awt.Component.processMouseEvent(Component.java:6533)
+javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+java.awt.Component.processEvent(Component.java:6298)
+java.awt.Container.processEvent(Container.java:2237)
+java.awt.Component.dispatchEventImpl(Component.java:4889)
+java.awt.Container.dispatchEventImpl(Container.java:2295)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4889)
+java.awt.LightweightDispatcher.processMouseEvent(Container.java:4526)
+java.awt.LightweightDispatcher.dispatchEvent(Container.java:4467)
+java.awt.Container.dispatchEventImpl(Container.java:2281)
+java.awt.Window.dispatchEventImpl(Window.java:2746)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+java.awt.EventQueue.access$500(EventQueue.java:97)
+java.awt.EventQueue$3.run(EventQueue.java:709)
+java.awt.EventQueue$3.run(EventQueue.java:703)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90)
+java.awt.EventQueue$4.run(EventQueue.java:731)
+java.awt.EventQueue$4.run(EventQueue.java:729)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:109)
+java.awt.WaitDispatchSupport$2.run(WaitDispatchSupport.java:190)
+java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:235)
+java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:233)
+java.security.AccessController.doPrivileged(Native Method)
+java.awt.WaitDispatchSupport.enter(WaitDispatchSupport.java:233)
+java.awt.Dialog.show(Dialog.java:1084)
+java.awt.Component.show(Component.java:1671)
+com.taskInterface.TaskTab.addTask(TaskTab.java:273)
+com.taskInterface.TaskTab$1.actionPerformed(TaskTab.java:100)
+javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+java.awt.Component.processMouseEvent(Component.java:6533)
+javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+java.awt.Component.processEvent(Component.java:6298)
+java.awt.Container.processEvent(Container.java:2237)
+java.awt.Component.dispatchEventImpl(Component.java:4889)
+java.awt.Container.dispatchEventImpl(Container.java:2295)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4889)
+java.awt.LightweightDispatcher.processMouseEvent(Container.java:4526)
+java.awt.LightweightDispatcher.dispatchEvent(Container.java:4467)
+java.awt.Container.dispatchEventImpl(Container.java:2281)
+java.awt.Window.dispatchEventImpl(Window.java:2746)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+java.awt.EventQueue.access$500(EventQueue.java:97)
+java.awt.EventQueue$3.run(EventQueue.java:709)
+java.awt.EventQueue$3.run(EventQueue.java:703)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90)
+java.awt.EventQueue$4.run(EventQueue.java:731)
+java.awt.EventQueue$4.run(EventQueue.java:729)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+

@@ -1,32 +1,32 @@
-package TestUnit.TestRmi.Demo1;
-
-import java.rmi.Naming;
-import java.rmi.RMISecurityManager;
-import java.rmi.registry.LocateRegistry;
-
-public class RmiHelloServer {
-
-	public RmiHelloServer() {
-	}
-
-	public static void main(String[] args) {
-		// ´´½¨²¢°²×°°²È«¹ÜÀíÆ÷
-		if (System.getSecurityManager() == null) {
-			System.setSecurityManager(new RMISecurityManager());
-		}
-
-		try {
-			// ´´½¨Ô¶³Ì¶ÔÏó
-			RmiHelloRemoteObj ttt = new RmiHelloRemoteObj();
-			// Æô¶¯×¢²á±í
-			LocateRegistry.createRegistry(4588);
-			// ½±Ãû³Æ°ó¶¨µ½¶ÔÏó
-			// System.setProperty("java.rmi.server.localhost","211.81.207.109");
-			Naming.rebind("//localhost/wx", ttt);
-
-			System.out.println("RMI·þÎñÆ÷ÕýÔÚÔËÐÐ¡£¡£¡£¡£¡£¡£");
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
-}
+//package TestUnit.TestRmi.Demo1;
+//
+//import java.rmi.Naming;
+//import java.rmi.RMISecurityManager;
+//import java.rmi.registry.LocateRegistry;
+//
+//public class RmiHelloServer {
+//
+//	public RmiHelloServer() {
+//	}
+//
+//	public static void main(String[] args) {
+//		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×°ï¿½ï¿½È«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+//		if (System.getSecurityManager() == null) {
+//			System.setSecurityManager(new RMISecurityManager());
+//		}
+//
+//		try {
+//			// ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½Ì¶ï¿½ï¿½ï¿½
+//			RmiHelloRemoteObj ttt = new RmiHelloRemoteObj();
+//			// ï¿½ï¿½ï¿½ï¿½×¢ï¿½ï¿½ï¿½
+//			LocateRegistry.createRegistry(4588);
+//			// ï¿½ï¿½ï¿½ï¿½ï¿½Æ°ó¶¨µï¿½ï¿½ï¿½ï¿½ï¿½
+//			// System.setProperty("java.rmi.server.localhost","211.81.207.109");
+//			Naming.rebind("//localhost/wx", ttt);
+//
+//			System.out.println("RMIï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
+//	}
+//}

@@ -11,23 +11,6 @@ import java.sql.SQLException;
 
 import javax.swing.text.JTextComponent;
 
-import module.about.DialogAbout;
-import module.datetype.HolidayDao;
-import module.datetype.NowDateDao;
-import module.dbconnection.DbConnecitionTable;
-import module.dbconnection.DbConnectionDialog;
-import module.encrypt.EncryptAESDialog;
-import module.ftp.FtpDialog;
-import module.ftp.FtpTable;
-import module.mail.MailDialog;
-import module.mail.MailTable;
-import module.systemparam.SysAutoUpdate;
-import module.systemparam.SystemParamsDialog;
-import module.systemparam.SystemParamsValueDao;
-
-import app.AppConfig;
-import app.AppStatus;
-
 import com.dialog.DialogBackupDb;
 import com.log.Log;
 import com.monitor.MonitorDialog;
@@ -40,6 +23,8 @@ import com.settings.SettingsTable;
 import com.taskClass.TaskClassImp;
 import com.taskInterface.TaskDao;
 
+import app.AppConfig;
+import app.AppStatus;
 import common.component.DoManager;
 import common.component.MessageDialog;
 import common.component.STextArea;
@@ -52,6 +37,18 @@ import common.util.string.UtilString;
 import consts.Const;
 import consts.ImageContext;
 import consts.VariableApp;
+import module.about.DialogAbout;
+import module.datetype.NowDateDao;
+import module.dbconnection.DbConnecitionTable;
+import module.dbconnection.DbConnectionDialog;
+import module.encrypt.EncryptAESDialog;
+import module.ftp.FtpDialog;
+import module.ftp.FtpTable;
+import module.mail.MailDialog;
+import module.mail.MailTable;
+import module.systemparam.SysAutoUpdate;
+import module.systemparam.SystemParamsDialog;
+import module.systemparam.SystemParamsValueDao;
 
 /**
  * @info 程序级公共函数
@@ -267,6 +264,7 @@ public class AppFun {
 	}
 
 	// 判断程序是否运行
+	@SuppressWarnings("resource")
 	public boolean isRunning(String applicationName) {
 		boolean rv = false;
 		try {

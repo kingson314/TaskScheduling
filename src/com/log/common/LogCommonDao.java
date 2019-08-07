@@ -81,8 +81,8 @@ public class LogCommonDao {
 					sql = sql + " and DATE_FORMAT (dateTime,'%Y%m%d')>='" + map.get("开始日期") + "'";
 				if (map.get("结束日期") != null && map.get("结束日期").trim().length() > 0)
 					sql = sql + " and DATE_FORMAT (dateTime,'%Y%m%d')<='" + map.get("结束日期") + "'";
-				if (map.get("查询记录数") != null && map.get("查询记录数").trim().length() > 0)
-					sql = sql + "  and rownum<= " + Long.valueOf(map.get("查询记录数"));
+//				if (map.get("查询记录数") != null && map.get("查询记录数").trim().length() > 0)
+//					sql = sql + "  and rownum<= " + Long.valueOf(map.get("查询记录数"));
 			}
 
 			if (map.get("调度名称") != null && map.get("调度名称").trim().length() > 0)
@@ -108,8 +108,10 @@ public class LogCommonDao {
 				} else {
 					sql = sql + " and  dateTime>to_date('" + map.get("最大更新时间").trim() + "','yyyymmdd HH24miss')  and scheid=-1 ";
 				}
-
+			
 			sql = sql + " order by a.starttime desc";
+			if (map.get("查询记录数") != null && map.get("查询记录数").trim().length() > 0)
+				sql = sql + " limit 0,"+map.get("查询记录数").trim()+" ";
 			rs = sm.executeQuery(sql);
 			while (rs.next()) {
 				String scheid = rs.getString("scheId");

@@ -22,7 +22,6 @@ import common.util.json.UtilJson;
 import common.util.string.UtilString;
 
 public class Panel implements ITaskPanel {
-	private static final long serialVersionUID = 1L;
 	private JPanel pnlCustomQuery;
 	private SLabel lDbconn;
 	private SLabel lSql;
