@@ -16,6 +16,7 @@ import common.util.conver.UtilConver;
 import common.util.jdbc.UtilJDBCManager;
 import common.util.jdbc.UtilSql;
 import common.util.json.UtilJson;
+import common.util.string.UtilString;
 import consts.Const;
 
 public class Task extends TaskAbstract {
@@ -213,15 +214,17 @@ public class Task extends TaskAbstract {
 			int batchCount = 0;
 			int j = 0;// 记录数累加器
 			psSrc = conSrc.prepareStatement(bean.getSrcSql().trim());
-			psSrc.setString(1, this.getNowDate());
+//			psSrc.setString(1, this.getNowDate());
 			rsSrc = psSrc.executeQuery();// 结果集
 			rsmdSrc = rsSrc.getMetaData(); // 元数据
 			columnCount = rsmdSrc.getColumnCount();
 			// 3.1 删除数据
-			psDel = conDst.prepareStatement(bean.getRuleSql().trim());
-			psDel.setString(1, this.getNowDate());
-			psDel.addBatch();
-			psDel.executeBatch();
+			if(!UtilString.isBlank(bean.getRuleSql().trim())) {
+				psDel = conDst.prepareStatement(bean.getRuleSql().trim());
+	//			psDel.setString(1, this.getNowDate());
+				psDel.addBatch();
+				psDel.executeBatch();
+			}
 			// 3.2 插入数据
 			while (rsSrc.next()) {
 				batchCount += 1;

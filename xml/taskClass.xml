@@ -2,6 +2,72 @@
 
 <任务类型信息>
 	<taskType>
+		中国招投标公共服务平台-资格预审公告
+		<taskJarPath>taskJar\Cebpubservice.jar</taskJarPath>
+		<taskPath>com.task.Cebpubservice.TaskPretrial</taskPath>
+		<taskPanelPath>com.task.Cebpubservice.Panel</taskPanelPath>
+	</taskType>
+	<taskType>
+		中国招投标公共服务平台-招标公告
+		<taskJarPath>taskJar\Cebpubservice.jar</taskJarPath>
+		<taskPath>com.task.Cebpubservice.TaskNotice</taskPath>
+		<taskPanelPath>com.task.Cebpubservice.Panel</taskPanelPath>
+	</taskType>
+	<taskType>
+		中国招投标公共服务平台-中标候选人公示
+		<taskJarPath>taskJar\Cebpubservice.jar</taskJarPath>
+		<taskPath>com.task.Cebpubservice.TaskCandidate</taskPath>
+		<taskPanelPath>com.task.Cebpubservice.Panel</taskPanelPath>
+	</taskType>
+	<taskType>
+		中国招投标公共服务平台-中标结果公示
+		<taskJarPath>taskJar\Cebpubservice.jar</taskJarPath>
+		<taskPath>com.task.Cebpubservice.TaskResult</taskPath>
+		<taskPanelPath>com.task.Cebpubservice.Panel</taskPanelPath>
+	</taskType>
+	<taskType>
+		中国招投标公共服务平台-变更公告公示
+		<taskJarPath>taskJar\Cebpubservice.jar</taskJarPath>
+		<taskPath>com.task.Cebpubservice.TaskChange</taskPath>
+		<taskPanelPath>com.task.Cebpubservice.Panel</taskPanelPath>
+	</taskType>
+	
+	
+	<taskType>
+		中国政府采购网-资格预审公告
+		<taskJarPath>taskJar\Ccgp.jar</taskJarPath>
+		<taskPath>com.task.Ccgp.TaskPretrial</taskPath>
+		<taskPanelPath>com.task.Ccgp.Panel</taskPanelPath>
+	</taskType>
+	<taskType>
+		中国政府采购网-招标公告
+		<taskJarPath>taskJar\Ccgp.jar</taskJarPath>
+		<taskPath>com.task.Ccgp.TaskNotice</taskPath>
+		<taskPanelPath>com.task.Ccgp.Panel</taskPanelPath>
+	</taskType>
+	<taskType>
+		中国政府采购网-中标候选人公示
+		<taskJarPath>taskJar\Ccgp.jar</taskJarPath>
+		<taskPath>com.task.Ccgp.TaskCandidate</taskPath>
+		<taskPanelPath>com.task.Ccgp.Panel</taskPanelPath>
+	</taskType>
+	<taskType>
+		中国政府采购网-中标结果公示
+		<taskJarPath>taskJar\Ccgp.jar</taskJarPath>
+		<taskPath>com.task.Ccgp.TaskResult</taskPath>
+		<taskPanelPath>com.task.Ccgp.Panel</taskPanelPath>
+	</taskType>
+	<taskType>
+		中国政府采购网-变更公告公示
+		<taskJarPath>taskJar\Ccgp.jar</taskJarPath>
+		<taskPath>com.task.Ccgp.TaskChange</taskPath>
+		<taskPanelPath>com.task.Ccgp.Panel</taskPanelPath>
+	</taskType>
+	
+	
+	
+	
+	<taskType>
 		广东省工业信息
 		<taskJarPath>taskJar\Gdgov.jar</taskJarPath>
 		<taskPath>com.task.Gdgov.Task</taskPath>
@@ -128,12 +194,13 @@
 		<taskPath>com.task.Procedure.Task</taskPath>
 		<panelPath>com.task.Procedure.Panel</panelPath>
 	</taskType> -->
-	<!-- <taskType>
+	<taskType>
 		数据同步
 		<jarPath>taskJar\DataUpdate.jar</jarPath>
 		<taskPath>com.task.DataUpdate.Task</taskPath>
 		<panelPath>com.task.DataUpdate.Panel</panelPath>
 	</taskType>
+	<!-- 
 	<taskType>
 		数据表更新
 		<jarPath>taskJar\TableUpdate.jar</jarPath>

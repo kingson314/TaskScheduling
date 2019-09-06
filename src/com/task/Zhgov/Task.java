@@ -23,7 +23,7 @@ import module.dbconnection.DbConnection;
 import module.dbconnection.DbConnectionDao;
 
 /**
- * @Description:广东省工业信息
+ * @Description:珠海政府信息
  * @date Aut 1,o19
  * @author:fgq
  */
