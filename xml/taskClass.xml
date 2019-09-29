@@ -34,37 +34,196 @@
 	
 	
 	<taskType>
+		中央政府采购网-招标公告
+		<taskJarPath></taskJarPath>
+		<taskPath>com.task.Zycg.TaskNotice</taskPath>
+		<taskPanelPath>com.task.Zycg.Panel</taskPanelPath>
+	</taskType>
+	<taskType>
+		中央政府采购网-中标结果公示
+		<taskJarPath></taskJarPath>
+		<taskPath>com.task.Zycg.TaskResult</taskPath>
+		<taskPanelPath>com.task.Zycg.Panel</taskPanelPath>
+	</taskType>
+	<taskType>
+		中央政府采购网-变更公告公示
+		<taskJarPath></taskJarPath>
+		<taskPath>com.task.Zycg.TaskChange</taskPath>
+		<taskPanelPath>com.task.Zycg.Panel</taskPanelPath>
+	</taskType>
+	
+	
+	<taskType>
 		中国政府采购网-资格预审公告
-		<taskJarPath>taskJar\Ccgp.jar</taskJarPath>
+		<taskJarPath></taskJarPath>
 		<taskPath>com.task.Ccgp.TaskPretrial</taskPath>
 		<taskPanelPath>com.task.Ccgp.Panel</taskPanelPath>
 	</taskType>
 	<taskType>
 		中国政府采购网-招标公告
-		<taskJarPath>taskJar\Ccgp.jar</taskJarPath>
+		<taskJarPath></taskJarPath>
 		<taskPath>com.task.Ccgp.TaskNotice</taskPath>
 		<taskPanelPath>com.task.Ccgp.Panel</taskPanelPath>
 	</taskType>
 	<taskType>
 		中国政府采购网-中标候选人公示
-		<taskJarPath>taskJar\Ccgp.jar</taskJarPath>
+		<taskJarPath></taskJarPath>
 		<taskPath>com.task.Ccgp.TaskCandidate</taskPath>
 		<taskPanelPath>com.task.Ccgp.Panel</taskPanelPath>
 	</taskType>
 	<taskType>
 		中国政府采购网-中标结果公示
-		<taskJarPath>taskJar\Ccgp.jar</taskJarPath>
+		<taskJarPath></taskJarPath>
 		<taskPath>com.task.Ccgp.TaskResult</taskPath>
 		<taskPanelPath>com.task.Ccgp.Panel</taskPanelPath>
 	</taskType>
 	<taskType>
 		中国政府采购网-变更公告公示
-		<taskJarPath>taskJar\Ccgp.jar</taskJarPath>
+		<taskJarPath></taskJarPath>
 		<taskPath>com.task.Ccgp.TaskChange</taskPath>
 		<taskPanelPath>com.task.Ccgp.Panel</taskPanelPath>
 	</taskType>
 	
 	
+	
+	<taskType>
+		全国公共资源交易平台-招标公告
+		<taskJarPath></taskJarPath>
+		<taskPath>com.task.Ggzy.TaskNotice</taskPath>
+		<taskPanelPath>com.task.Ggzy.Panel</taskPanelPath>
+	</taskType>
+	<taskType>
+		全国公共资源交易平台-中标结果公示
+		<taskJarPath></taskJarPath>
+		<taskPath>com.task.Ggzy.TaskResult</taskPath>
+		<taskPanelPath>com.task.Ggzy.Panel</taskPanelPath>
+	</taskType>
+	
+	
+	
+	<taskType>
+		河南省公共资源交易中心-招标公告
+		<taskJarPath></taskJarPath>
+		<taskPath>com.task.Hnggzy.TaskNotice</taskPath>
+		<taskPanelPath>com.task.Hnggzy.Panel</taskPanelPath>
+	</taskType>
+	<taskType>
+		河南省公共资源交易中心-中标结果公示
+		<taskJarPath></taskJarPath>
+		<taskPath>com.task.Hnggzy.TaskResult</taskPath>
+		<taskPanelPath>com.task.Hnggzy.Panel</taskPanelPath>
+	</taskType>
+	<taskType>
+		河南省公共资源交易中心-变更公告公示
+		<taskJarPath></taskJarPath>
+		<taskPath>com.task.Hnggzy.TaskChange</taskPath>
+		<taskPanelPath>com.task.Hnggzy.Panel</taskPanelPath>
+	</taskType>
+	
+	
+	<taskType>
+		广东省政府采购中心-资格预审公告
+		<taskJarPath></taskJarPath>
+		<taskPath>com.task.Gpcgd.TaskPretrial</taskPath>
+		<taskPanelPath>com.task.Gpcgd.Panel</taskPanelPath>
+	</taskType>
+	<taskType>
+		广东省政府采购中心-招标公告
+		<taskJarPath></taskJarPath>
+		<taskPath>com.task.Gpcgd.TaskNotice</taskPath>
+		<taskPanelPath>com.task.Gpcgd.Panel</taskPanelPath>
+	</taskType>
+	<taskType>
+		广东省政府采购中心-中标候选人公示
+		<taskJarPath></taskJarPath>
+		<taskPath>com.task.Gpcgd.TaskCandidate</taskPath>
+		<taskPanelPath>com.task.Gpcgd.Panel</taskPanelPath>
+	</taskType>
+	<taskType>
+		广东省政府采购中心-中标结果公示
+		<taskJarPath></taskJarPath>
+		<taskPath>com.task.Gpcgd.TaskResult</taskPath>
+		<taskPanelPath>com.task.Gpcgd.Panel</taskPanelPath>
+	</taskType>
+	<taskType>
+		广东省政府采购中心-变更公告公示
+		<taskJarPath></taskJarPath>
+		<taskPath>com.task.Gpcgd.TaskChange</taskPath>
+		<taskPanelPath>com.task.Gpcgd.Panel</taskPanelPath>
+	</taskType>
+	
+	
+	<taskType>
+		广州公共资源交易中心-资格预审公告
+		<taskJarPath></taskJarPath>
+		<taskPath>com.task.Gzggzy.TaskPretrial</taskPath>
+		<taskPanelPath>com.task.Gzggzy.Panel</taskPanelPath>
+	</taskType>
+	<taskType>
+		广州公共资源交易中心-招标公告
+		<taskJarPath></taskJarPath>
+		<taskPath>com.task.Gzggzy.TaskNotice</taskPath>
+		<taskPanelPath>com.task.Gzggzy.Panel</taskPanelPath>
+	</taskType>
+	<taskType>
+		广州公共资源交易中心-中标结果公示
+		<taskJarPath></taskJarPath>
+		<taskPath>com.task.Gzggzy.TaskResult</taskPath>
+		<taskPanelPath>com.task.Gzggzy.Panel</taskPanelPath>
+	</taskType>
+	<taskType>
+		广州公共资源交易中心-变更公告公示
+		<taskJarPath></taskJarPath>
+		<taskPath>com.task.Gzggzy.TaskChange</taskPath>
+		<taskPanelPath>com.task.Gzggzy.Panel</taskPanelPath>
+	</taskType>
+	
+	
+	
+	<taskType>
+		珠海市公共资源交易中心-资格预审公告
+		<taskJarPath></taskJarPath>
+		<taskPath>com.task.GgzyZhuhai.TaskPretrial</taskPath>
+		<taskPanelPath>com.task.GgzyZhuhai.Panel</taskPanelPath>
+	</taskType>
+	<taskType>
+		珠海市公共资源交易中心-招标公告
+		<taskJarPath></taskJarPath>
+		<taskPath>com.task.GgzyZhuhai.TaskNotice</taskPath>
+		<taskPanelPath>com.task.GgzyZhuhai.Panel</taskPanelPath>
+	</taskType>
+	<taskType>
+		珠海市公共资源交易中心-中标结果公示
+		<taskJarPath></taskJarPath>
+		<taskPath>com.task.GgzyZhuhai.TaskResult</taskPath>
+		<taskPanelPath>com.task.GgzyZhuhai.Panel</taskPanelPath>
+	</taskType>
+	<taskType>
+		珠海市公共资源交易中心-变更公告公示
+		<taskJarPath></taskJarPath>
+		<taskPath>com.task.GgzyZhuhai.TaskChange</taskPath>
+		<taskPanelPath>com.task.GgzyZhuhai.Panel</taskPanelPath>
+	</taskType>
+	
+	
+	<taskType>
+		阳江市公共资源交易中心-招标公告
+		<taskJarPath></taskJarPath>
+		<taskPath>com.task.Yjggzy.TaskNotice</taskPath>
+		<taskPanelPath>com.task.Yjggzy.Panel</taskPanelPath>
+	</taskType>
+	<taskType>
+		阳江市公共资源交易中心-中标结果公示
+		<taskJarPath></taskJarPath>
+		<taskPath>com.task.Yjggzy.TaskResult</taskPath>
+		<taskPanelPath>com.task.Yjggzy.Panel</taskPanelPath>
+	</taskType>
+	<taskType>
+		阳江市公共资源交易中心-变更公告公示
+		<taskJarPath></taskJarPath>
+		<taskPath>com.task.Yjggzy.TaskChange</taskPath>
+		<taskPanelPath>com.task.Yjggzy.Panel</taskPanelPath>
+	</taskType>
 	
 	
 	<taskType>

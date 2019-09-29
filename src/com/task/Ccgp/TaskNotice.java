@@ -1,6 +1,5 @@
 package com.task.Ccgp;
 
-import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.util.ArrayList;
@@ -37,6 +36,10 @@ public class TaskNotice extends TaskAbstract {
 			+ "contentType,contentCls,content,contentUrl)" + "values(?,?,?,?,?," + "?,?,?,?,?," + "?,?,?,?,?,"
 			+ "?,?,?,?) ";
 
+	private final static String webSite="中国政府采购网";
+	private final static String type="(招标公告)";
+	private final static String cls="cggg Notice";
+	
 	public void fireTask() {
 		DbConnection dbconn = null;
 		String pulishDate = "";
@@ -50,7 +53,7 @@ public class TaskNotice extends TaskAbstract {
 			}
 			con = UtilJDBCManager.getConnection(dbconn);
 			this.setTaskStatus("执行成功");
-			this.setTaskMsg("中国政府采购网-招标公告[" + this.exec(bean) + "]\n");
+			this.setTaskMsg(webSite+type+"[" + this.exec(bean) + "]\n");
 		} catch (Exception e) {
 			System.out.println(pulishDate);
 			this.setTaskStatus("执行失败");
@@ -116,7 +119,7 @@ public class TaskNotice extends TaskAbstract {
 		int rs = 0;
 		for (int i = 1; i <= bean.getPageIndex(); i++) {
 			try {
-				System.out.println("InfoBidNotice.pageIndex:"+i);
+				System.out.println(webSite+type+"[page]:" + i);
 				List<InfoBidNotice> list = new ArrayList<InfoBidNotice>();
 				String url = "http://www.ccgp.gov.cn/cggg/zygg/gkzb/index_" + (i-1) + ".htm";
 				if (i == 1) {
@@ -128,7 +131,7 @@ public class TaskNotice extends TaskAbstract {
 					try {
 						InfoBidNotice info = new InfoBidNotice();
 						info.setName(li.getElementsByTag("a").first().attr("title"));
-						info.setWebSite("中国政府采购网");
+						info.setWebSite(webSite);
 						info.setIndustry("");
 						info.setBusiType(getBusiType(info.getName()));
 						info.setProvince("");
@@ -139,7 +142,7 @@ public class TaskNotice extends TaskAbstract {
 						info.setPublishTime(li.select("em:eq(1)").first().html());
 						info.setOpenTime("");
 						info.setContentType("html");
-						info.setContentCls("cggg cgggNotice");
+						info.setContentCls(cls);
 						String contentUrl = li.getElementsByTag("a").first().attr("href").replace("./",
 								"http://www.ccgp.gov.cn/cggg/zygg/gkzb/");
 						info.setContentUrl(contentUrl);
@@ -169,7 +172,7 @@ public class TaskNotice extends TaskAbstract {
 		}
 	}
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws Exception {
 		List<InfoBidNotice> list = new ArrayList<InfoBidNotice>();
 		int pageIndex = 1;
 		String url = "http://www.ccgp.gov.cn/cggg/zygg/gkzb/index_" + pageIndex + ".htm";
@@ -179,7 +182,7 @@ public class TaskNotice extends TaskAbstract {
 			try {
 				InfoBidNotice info = new InfoBidNotice();
 				info.setName(li.getElementsByTag("a").first().attr("title"));
-				info.setWebSite("中国政府采购网");
+				info.setWebSite(webSite);
 				info.setIndustry("");
 				info.setBusiType(getBusiType(info.getName()));
 				info.setProvince("");
@@ -190,7 +193,7 @@ public class TaskNotice extends TaskAbstract {
 				info.setPublishTime(li.select("em:eq(1)").first().html());
 				info.setOpenTime("");
 				info.setContentType("html");
-				info.setContentCls("cggg cgggNotice");
+				info.setContentCls(cls);
 
 				String contentUrl = li.getElementsByTag("a").first().attr("href").replace("./",
 						"http://www.ccgp.gov.cn/cggg/zygg/gkzb/");

@@ -39,7 +39,7 @@ public class Panel implements ITaskPanel {
 			pnlMain.setLayout(null);
 
 			{
-				lPageIndex = new SLabel("页码");
+				lPageIndex = new SLabel("最近页数");
 				pnlMain.add(lPageIndex);
 				lPageIndex.setBounds(21, 58, 70, 14);
 				lPageIndex.setFont(Const.tfont);

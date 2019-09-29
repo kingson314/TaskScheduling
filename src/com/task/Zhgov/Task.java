@@ -47,8 +47,8 @@ public class Task extends TaskAbstract {
 				return;
 			}
 			con = UtilJDBCManager.getConnection(dbconn);
-			int cntNews = this.addNews(this.initNews());
-//			int cntNews = this.addNews(this.getNews());
+//			int cntNews = this.addNews(this.initNews());
+			int cntNews = this.addNews(this.getNews());
 			this.setTaskStatus("执行成功");
 			this.setTaskMsg("珠海要文[" + cntNews + "]\n");
 		} catch (Exception e) {
@@ -111,55 +111,55 @@ public class Task extends TaskAbstract {
 	/**
 	 * 1.中国珠海网-珠海要闻-初始化
 	 **/
-	private List<IssueNews> initNews() throws Exception {
-		List<IssueNews> listNews = new ArrayList<IssueNews>();
-		String[] urlArr = new String[] { "http://www.zhuhai.gov.cn/xw/xwzx_44483/zhyw/" };
-		try {
-		for (String url : urlArr) {
-			String _url = "";
-			for (int i = 1; i < 100; i++) {
-				_url = url + "index.html";
-				if (i > 1)
-					_url = url + "index_" + i + ".html";
-				Document doc = UtilWeb.getDoc(_url);
-				Elements elNewsList = doc.getElementsByClass("list").first().getElementsByTag("li");
-				for (Element elNews : elNewsList) {
-					IssueNews news = new IssueNews();
-					news.setSource("中国珠海网");
-					news.setType("珠海要闻");
-					news.setSubType("");
-					Elements elSpan = elNews.getElementsByTag("span");
-					news.setNewsTime(elSpan.first().html().substring(1,11));
-					news.setYear(news.getNewsTime().substring(0, 4));
-					Element elA = elNews.getElementsByTag("a").first();
-					news.setTitle(elA.html());
-					if (isExits(news))
-						break;// 存在最近一条就可以退出了
-//					System.out.println(news.getTitle());
-					news.setRegion("珠海");
-					String contentUrl ="http://www.zhuhai.gov.cn/xw/xwzx_44483/zhyw"+ elA.attr("href").substring(1);
-					news.setMemo(contentUrl);
-					Element elDoc = UtilWeb.getDoc(contentUrl).getElementById("new_zh").getElementsByClass("TRS_Editor").first();
-					if (elDoc != null) {
-						System.out.println(news.getTitle()+"  "+contentUrl);
-						news.setContent(elDoc.html());
-					} else {
-						System.out.println(news.getTitle()+"  "+contentUrl);
-						elDoc = UtilWeb.getDoc(contentUrl).getElementById("new_zh").getElementsByClass("TRS_PreAppend").first();
-						news.setContent(elDoc.html());
-					}
-//					System.out.println(UtilJackSon.toJson(news));
-					listNews.add(news);
-					Thread.sleep(1000);// 隔10秒
-//					System.out.println(UtilConver.dateToStr(Const.fm_yyyy_MM_dd_HH_mm_ss));
-				}
-			}
-		}
-		}catch (Exception e) {
-			e.printStackTrace();
-		}
-		return listNews;
-	}
+//	private List<IssueNews> initNews() throws Exception {
+//		List<IssueNews> listNews = new ArrayList<IssueNews>();
+//		String[] urlArr = new String[] { "http://www.zhuhai.gov.cn/xw/xwzx_44483/zhyw/" };
+//		try {
+//		for (String url : urlArr) {
+//			String _url = "";
+//			for (int i = 1; i < 100; i++) {
+//				_url = url + "index.html";
+//				if (i > 1)
+//					_url = url + "index_" + i + ".html";
+//				Document doc = UtilWeb.getDoc(_url);
+//				Elements elNewsList = doc.getElementsByClass("list").first().getElementsByTag("li");
+//				for (Element elNews : elNewsList) {
+//					IssueNews news = new IssueNews();
+//					news.setSource("中国珠海网");
+//					news.setType("珠海要闻");
+//					news.setSubType("");
+//					Elements elSpan = elNews.getElementsByTag("span");
+//					news.setNewsTime(elSpan.first().html().substring(1,11));
+//					news.setYear(news.getNewsTime().substring(0, 4));
+//					Element elA = elNews.getElementsByTag("a").first();
+//					news.setTitle(elA.html());
+//					if (isExits(news))
+//						break;// 存在最近一条就可以退出了
+////					System.out.println(news.getTitle());
+//					news.setRegion("珠海");
+//					String contentUrl ="http://www.zhuhai.gov.cn/xw/xwzx_44483/zhyw"+ elA.attr("href").substring(1);
+//					news.setMemo(contentUrl);
+//					Element elDoc = UtilWeb.getDoc(contentUrl).getElementById("new_zh").getElementsByClass("TRS_Editor").first();
+//					if (elDoc != null) {
+//						System.out.println(news.getTitle()+"  "+contentUrl);
+//						news.setContent(elDoc.html());
+//					} else {
+//						System.out.println(news.getTitle()+"  "+contentUrl);
+//						elDoc = UtilWeb.getDoc(contentUrl).getElementById("new_zh").getElementsByClass("TRS_PreAppend").first();
+//						news.setContent(elDoc.html());
+//					}
+////					System.out.println(UtilJackSon.toJson(news));
+//					listNews.add(news);
+//					Thread.sleep(1000);// 隔10秒
+////					System.out.println(UtilConver.dateToStr(Const.fm_yyyy_MM_dd_HH_mm_ss));
+//				}
+//			}
+//		}
+//		}catch (Exception e) {
+//			e.printStackTrace();
+//		}
+//		return listNews;
+//	}
 
 	/**
 	 * 1.中国珠海网-珠海要闻-日常调度

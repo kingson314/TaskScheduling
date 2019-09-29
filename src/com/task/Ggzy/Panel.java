@@ -1,4 +1,4 @@
-package com.task.Cebpubservice;
+package com.task.Ggzy;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -22,8 +22,6 @@ import consts.Const;
 
 public class Panel implements ITaskPanel {
 	private JPanel pnlMain;
-	private STextField txtPageIndex;
-	private SLabel lPageIndex;
 	private SLabel lDbName;
 	private STextField txtDbName;
 	private SButton btnDbName;
@@ -37,18 +35,6 @@ public class Panel implements ITaskPanel {
 		try {
 			pnlMain.setBounds(0, 0, 623, 480);
 			pnlMain.setLayout(null);
-
-			{
-				lPageIndex = new SLabel("最近页数");
-				pnlMain.add(lPageIndex);
-				lPageIndex.setBounds(21, 58, 70, 14);
-				lPageIndex.setFont(Const.tfont);
-			}
-			{
-				txtPageIndex = new STextField();
-				pnlMain.add(txtPageIndex);
-				txtPageIndex.setBounds(103, 51, 429, 21);
-			}
 			{
 				lDbName = new SLabel("数据库连接");
 				pnlMain.add(lDbName);
@@ -102,7 +88,6 @@ public class Panel implements ITaskPanel {
 		try {
 			Bean bean = new Bean();
 			bean.setDbName(UtilString.isNil(txtDbName.getText()));
-			bean.setPageIndex(Integer.valueOf(UtilString.isNil(txtPageIndex.getText(),"1")));
 			if (!paramValidate(bean))
 				return false;
 			task.setJsonStr(UtilJson.getJsonStr(bean));
@@ -118,7 +103,6 @@ public class Panel implements ITaskPanel {
 	public void fillComp(ITask task) {
 		try {
 			Bean bean = (Bean) UtilJson.getJsonBean(task.getJsonStr(), Bean.class);
-			txtPageIndex.setText(String.valueOf(bean.getPageIndex()));
 			txtDbName.setText(bean.getDbName());
 		} catch (Exception e) {
 			Log.logError("采集面板填充控件错误:", e);

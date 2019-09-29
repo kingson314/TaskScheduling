@@ -1,6 +1,5 @@
 package com.task.Cebpubservice;
 
-import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.util.ArrayList;
@@ -37,7 +36,11 @@ public class TaskCandidate extends TaskAbstract {
 			+ "webSite,industry, busiType,unit,source," + "province,city,region,publishTime,memo,"
 			+ "contentType,contentCls,content,contentUrl)" + "values(?,?,?,?,?," + "?,?,?,?,?," + "?,?,?,?,?,"
 			+ "?,?,?,?) ";
-
+	
+	private final static String webSite="中国招投标公共服务平台";
+	private final static String type="(中标候选人公示)";
+	private final static String cls="cebpubservice Candidate";
+	
 	public void fireTask() {
 		DbConnection dbconn = null;
 		String pulishDate = "";
@@ -51,7 +54,7 @@ public class TaskCandidate extends TaskAbstract {
 			}
 			con = UtilJDBCManager.getConnection(dbconn);
 			this.setTaskStatus("执行成功");
-			this.setTaskMsg("中国招投标公共服务平台-中标候选人公示[" + this.exec(bean) + "]\n");
+			this.setTaskMsg(webSite+type+"[" + this.exec(bean) + "]\n");
 		} catch (Exception e) {
 			System.out.println(pulishDate);
 			this.setTaskStatus("执行失败");
@@ -119,9 +122,9 @@ public class TaskCandidate extends TaskAbstract {
 			List<InfoBidCandidate> list = new ArrayList<InfoBidCandidate>();
 			String url = "http://bulletin.cebpubservice.com/xxfbcmses/search/candidate.html?searchDate="
 					+ UtilConver.dateToStr(Const.fm_yyyy_MM_dd)
-					+ "&dates=300&word=&categoryId=92&industryName=&area=&status=&publishMedia=&sourceInfo=&showStatus=&page="
+					+ "&dates=300&word=&categoryId=91&industryName=&area=&status=&publishMedia=&sourceInfo=&showStatus=&page="
 					+ i;
-			System.out.println("page" + i);
+			System.out.println(webSite+type+"[page]:" + i);
 			Document doc = UtilWeb.getDoc(url);
 			Elements elList = doc.getElementsByTag("table").first().getElementsByTag("tr");
 			for (Element tr : elList) {
@@ -131,7 +134,7 @@ public class TaskCandidate extends TaskAbstract {
 						InfoBidCandidate info = new InfoBidCandidate();
 						info.setName(tds.first().getElementsByTag("a").first().attr("title"));
 //					if(info.getName().indexOf("知识")<0 && info.getName().indexOf("产权")<0 )continue;
-						info.setWebSite("中国招投标公共服务平台");
+						info.setWebSite(webSite);
 						info.setIndustry(tr.select("td:eq(1)").first().getElementsByTag("span").first().attr("title"));
 						info.setBusiType(getBusiType(info.getName()));
 						info.setProvince("");
@@ -141,7 +144,7 @@ public class TaskCandidate extends TaskAbstract {
 						info.setSource("");
 						info.setPublishTime(tr.select("td:eq(4)").html());
 						info.setContentType("swf");
-						info.setContentCls("cebpubservice cebpubserviceCandidate");
+						info.setContentCls(cls);
 						String contentUrl = tds.first().getElementsByTag("a").first().attr("href")
 								.replace("javascript:urlOpen('", "").replace("')", "");
 						info.setContentUrl(contentUrl);
@@ -179,7 +182,7 @@ public class TaskCandidate extends TaskAbstract {
 		}
 	}
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws Exception {
 		List<InfoBidNotice> list = new ArrayList<InfoBidNotice>();
 		int pageIndex = 1;
 		String url = "http://bulletin.cebpubservice.com/xxfbcmses/search/candidate.html?searchDate="
@@ -194,7 +197,7 @@ public class TaskCandidate extends TaskAbstract {
 			if (tds.size() > 0) {
 				InfoBidNotice info = new InfoBidNotice();
 				info.setName(tds.first().getElementsByTag("a").first().attr("title"));
-				info.setWebSite("中国招投标公共服务平台");
+				info.setWebSite(webSite);
 				info.setIndustry(tr.select("td:eq(1)").first().getElementsByTag("span").first().attr("title"));
 				info.setBusiType(getBusiType(info.getName()));
 				info.setProvince("");
@@ -205,7 +208,7 @@ public class TaskCandidate extends TaskAbstract {
 				info.setPublishTime(tr.select("td:eq(4)").html());
 				info.setOpenTime(tr.select("td:eq(5)").attr("id"));
 				info.setContentType("swf");
-				info.setContentCls("cebpubservice cebpubserviceCandidate");
+				info.setContentCls(cls);
 
 				String contentUrl = tds.first().getElementsByTag("a").first().attr("href")
 						.replace("javascript:urlOpen('", "").replace("')", "");

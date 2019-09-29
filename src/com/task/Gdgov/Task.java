@@ -49,16 +49,16 @@ public class Task extends TaskAbstract {
 //			int cntDynamicInfo = this.addNews(this.initDynamicInfo());
 //			int cntPolicyPlanning = this.addNews(this.initPolicyPlanning());
 //			int cntPolicyInterpretation=this.addNews(this.initPolicyInterpretation());
-			int cntProjectFunds=this.addNews(this.initProjectFunds());
+//			int cntProjectFunds=this.addNews(this.initProjectFunds());
 			
 			int cntDynamicInfo = this.addNews(this.getDynamicInfo());
-//			int cntPolicyPlanning=  this.addNews(this.getPolicyPlanning());
-//			int cntPolicyInterpretation=this.addNews(this.getPolicyInterpretation());
-//			int cntProjectFunds=this.addNews(this.getProjectFunds());
+			int cntPolicyPlanning=  this.addNews(this.getPolicyPlanning());
+			int cntPolicyInterpretation=this.addNews(this.getPolicyInterpretation());
+			int cntProjectFunds=this.addNews(this.getProjectFunds());
 			this.setTaskStatus("执行成功");
 			this.setTaskMsg("地市动态[" + cntDynamicInfo + "]\n"
-//					+ "	[" + cntPolicyPlanning + "]\n "
-//					+ "政策解读[" + cntPolicyInterpretation + "]\n"
+					+ "	[" + cntPolicyPlanning + "]\n "
+					+ "政策解读[" + cntPolicyInterpretation + "]\n"
 					+ "项目基金[" + cntProjectFunds + "]\n");
 		} catch (Exception e) {
 			System.out.println(pulishDate);
@@ -116,59 +116,59 @@ public class Task extends TaskAbstract {
 				+ news.getNewsTime() + "'";
 		return UtilSql.isExist(con, sql, new Object[] {});
 	}
-
-	/**
-	 * 1.广东省工业信息-地市动态-初始化
-	 **/
-	private List<IssueNews> initDynamicInfo() throws Exception {
-		List<IssueNews> listNews = new ArrayList<IssueNews>();
-		String[] urlArr = new String[] { "http://gdii.gd.gov.cn/dsdt2318/", "http://gdii.gd.gov.cn/20173508n/",
-				"http://gdii.gd.gov.cn/20163504n/", "http://gdii.gd.gov.cn/20153509n/",
-				"http://gdii.gd.gov.cn/20143510n/", "http://gdii.gd.gov.cn/20133507n/" };
-		for (String url : urlArr) {
-			String _url = "";
-			for (int i = 1; i < 100; i++) {
-				_url = url + "index.html";
-				if (i > 1)
-					_url = url + "index_" + i + ".html";
-				Document doc = UtilWeb.getDoc(_url);
-				Elements elNewsList = doc.getElementsByClass("NewsList").first().getElementsByTag("li");
-
-				if (elNewsList.size() == 0) {
-					System.out.println(url + "===========" + i);
-					break;
-				}
-				for (Element elNews : elNewsList) {
-					IssueNews news = new IssueNews();
-					news.setSource("广东省工业信息");
-					news.setType("政策信息");
-					news.setSubType("地市动态");
-					Elements elSpan = elNews.getElementsByTag("span");
-					news.setNewsTime(elSpan.first().html());
-					news.setYear(news.getNewsTime().substring(0, 4));
-					Element elA = elNews.getElementsByTag("a").first();
-					news.setTitle(elA.attr("title"));
-					if (isExits(news))
-						break;// 存在最近一条就可以退出了
-					news.setRegion(news.getTitle().split("：")[0]);
-					String contentUrl = elA.attr("href");
-					news.setMemo(contentUrl);
-					Element elDoc = UtilWeb.getDoc(contentUrl).getElementById("zoom");
-					if (elDoc != null) {
-						news.setContent(elDoc.html());
-					} else {
-						System.out.println(news.getTitle()+"  "+contentUrl);
-						news.setContent(UtilWeb.getDoc(contentUrl).getElementsByClass("main").first().html());
-					}
-					listNews.add(news);
-					Thread.sleep(1000);// 隔10秒
-					System.out.println(news.getTitle());
-					System.out.println(UtilConver.dateToStr(Const.fm_yyyy_MM_dd_HH_mm_ss));
-				}
-			}
-		}
-		return listNews;
-	}
+//
+//	/**
+//	 * 1.广东省工业信息-地市动态-初始化
+//	 **/
+//	private List<IssueNews> initDynamicInfo() throws Exception {
+//		List<IssueNews> listNews = new ArrayList<IssueNews>();
+//		String[] urlArr = new String[] { "http://gdii.gd.gov.cn/dsdt2318/", "http://gdii.gd.gov.cn/20173508n/",
+//				"http://gdii.gd.gov.cn/20163504n/", "http://gdii.gd.gov.cn/20153509n/",
+//				"http://gdii.gd.gov.cn/20143510n/", "http://gdii.gd.gov.cn/20133507n/" };
+//		for (String url : urlArr) {
+//			String _url = "";
+//			for (int i = 1; i < 100; i++) {
+//				_url = url + "index.html";
+//				if (i > 1)
+//					_url = url + "index_" + i + ".html";
+//				Document doc = UtilWeb.getDoc(_url);
+//				Elements elNewsList = doc.getElementsByClass("NewsList").first().getElementsByTag("li");
+//
+//				if (elNewsList.size() == 0) {
+//					System.out.println(url + "===========" + i);
+//					break;
+//				}
+//				for (Element elNews : elNewsList) {
+//					IssueNews news = new IssueNews();
+//					news.setSource("广东省工业信息");
+//					news.setType("政策信息");
+//					news.setSubType("地市动态");
+//					Elements elSpan = elNews.getElementsByTag("span");
+//					news.setNewsTime(elSpan.first().html());
+//					news.setYear(news.getNewsTime().substring(0, 4));
+//					Element elA = elNews.getElementsByTag("a").first();
+//					news.setTitle(elA.attr("title"));
+//					if (isExits(news))
+//						break;// 存在最近一条就可以退出了
+//					news.setRegion(news.getTitle().split("：")[0]);
+//					String contentUrl = elA.attr("href");
+//					news.setMemo(contentUrl);
+//					Element elDoc = UtilWeb.getDoc(contentUrl).getElementById("zoom");
+//					if (elDoc != null) {
+//						news.setContent(elDoc.html());
+//					} else {
+//						System.out.println(news.getTitle()+"  "+contentUrl);
+//						news.setContent(UtilWeb.getDoc(contentUrl).getElementsByClass("main").first().html());
+//					}
+//					listNews.add(news);
+//					Thread.sleep(1000);// 隔10秒
+//					System.out.println(news.getTitle());
+//					System.out.println(UtilConver.dateToStr(Const.fm_yyyy_MM_dd_HH_mm_ss));
+//				}
+//			}
+//		}
+//		return listNews;
+//	}
 
 	/**
 	 * 1.广东省工业信息-地市动态-日常调度
@@ -209,62 +209,62 @@ public class Task extends TaskAbstract {
 		return listNews;
 	}
 
-	/**
-	 * 1.广东省工业信息-政策规划-初始化
-	 **/
-	private List<IssueNews> initPolicyPlanning() throws Exception {
-		List<IssueNews> listNews = new ArrayList<IssueNews>();
-		String[] urlArr = new String[] { "http://gdii.gd.gov.cn/zcgh3227/" };
-		for (String url : urlArr) {
-			String _url = "";
-			for (int i = 1; i < 100; i++) {
-				_url = url + "index.html";
-				if (i > 1)
-					_url = url + "index_" + i + ".html";
-				Document doc = UtilWeb.getDoc(_url);
-				Elements elNewsList = doc.getElementsByClass("NewsList").first().getElementsByTag("li");
-				System.out.println(url + "===========" + i);
-				if (elNewsList.size() == 0) {
-					System.out.println(url + "===========" + i);
-					break;
-				}
-				for (Element elNews : elNewsList) {
-					IssueNews news = new IssueNews();
-					news.setSource("广东省工业信息");
-					news.setType("政策规划");
-					news.setSubType("政策规划");
-					Elements elSpan = elNews.getElementsByTag("span");
-					news.setNewsTime(elSpan.first().html());
-					news.setYear(news.getNewsTime().substring(0, 4));
-					Element elA = elNews.getElementsByTag("a").first();
-					news.setTitle(elA.attr("title"));
-					if (isExits(news))
-						break;// 存在最近一条就可以退出了
-//					System.out.println(news.getTitle());
-					news.setRegion("");
-					String contentUrl = elA.attr("href");
-					news.setMemo(contentUrl);
-					Element elDoc = UtilWeb.getDoc(contentUrl).getElementById("zoom");
-					if (elDoc != null) {
-						news.setContent(elDoc.html());
-					} else {
-						System.out.println(news.getTitle()+"  "+contentUrl);
-						Elements elDocs=UtilWeb.getDoc(contentUrl).getElementsByClass("main");
-						if(elDocs!=null && elDocs.first()!=null) {
-							news.setContent(elDocs.first().html());
-						}else {
-							news.setContent(UtilWeb.getDoc(contentUrl).getElementsByClass("wrap").first().html());
-						}
-					}
-//					System.out.println(UtilJackSon.toJson(news));
-					listNews.add(news);
-					Thread.sleep(1000);// 隔10秒
-//					System.out.println(UtilConver.dateToStr(Const.fm_yyyy_MM_dd_HH_mm_ss));
-				}
-			}
-		}
-		return listNews;
-	}
+//	/**
+//	 * 1.广东省工业信息-政策规划-初始化
+//	 **/
+//	private List<IssueNews> initPolicyPlanning() throws Exception {
+//		List<IssueNews> listNews = new ArrayList<IssueNews>();
+//		String[] urlArr = new String[] { "http://gdii.gd.gov.cn/zcgh3227/" };
+//		for (String url : urlArr) {
+//			String _url = "";
+//			for (int i = 1; i < 100; i++) {
+//				_url = url + "index.html";
+//				if (i > 1)
+//					_url = url + "index_" + i + ".html";
+//				Document doc = UtilWeb.getDoc(_url);
+//				Elements elNewsList = doc.getElementsByClass("NewsList").first().getElementsByTag("li");
+//				System.out.println(url + "===========" + i);
+//				if (elNewsList.size() == 0) {
+//					System.out.println(url + "===========" + i);
+//					break;
+//				}
+//				for (Element elNews : elNewsList) {
+//					IssueNews news = new IssueNews();
+//					news.setSource("广东省工业信息");
+//					news.setType("政策规划");
+//					news.setSubType("政策规划");
+//					Elements elSpan = elNews.getElementsByTag("span");
+//					news.setNewsTime(elSpan.first().html());
+//					news.setYear(news.getNewsTime().substring(0, 4));
+//					Element elA = elNews.getElementsByTag("a").first();
+//					news.setTitle(elA.attr("title"));
+//					if (isExits(news))
+//						break;// 存在最近一条就可以退出了
+////					System.out.println(news.getTitle());
+//					news.setRegion("");
+//					String contentUrl = elA.attr("href");
+//					news.setMemo(contentUrl);
+//					Element elDoc = UtilWeb.getDoc(contentUrl).getElementById("zoom");
+//					if (elDoc != null) {
+//						news.setContent(elDoc.html());
+//					} else {
+//						System.out.println(news.getTitle()+"  "+contentUrl);
+//						Elements elDocs=UtilWeb.getDoc(contentUrl).getElementsByClass("main");
+//						if(elDocs!=null && elDocs.first()!=null) {
+//							news.setContent(elDocs.first().html());
+//						}else {
+//							news.setContent(UtilWeb.getDoc(contentUrl).getElementsByClass("wrap").first().html());
+//						}
+//					}
+////					System.out.println(UtilJackSon.toJson(news));
+//					listNews.add(news);
+//					Thread.sleep(1000);// 隔10秒
+////					System.out.println(UtilConver.dateToStr(Const.fm_yyyy_MM_dd_HH_mm_ss));
+//				}
+//			}
+//		}
+//		return listNews;
+//	}
 
 	/**
 	 * 1.广东省工业信息-政策规划-日常调度
@@ -315,59 +315,59 @@ public class Task extends TaskAbstract {
 	/**
 	 * 1.广东省工业信息-政策解读-初始化
 	 **/
-	private List<IssueNews> initPolicyInterpretation() throws Exception {
-		List<IssueNews> listNews = new ArrayList<IssueNews>();
-		String[] urlArr = new String[] { "http://gdii.gd.gov.cn/zcjd3267/" };
-		for (String url : urlArr) {
-			String _url = "";
-			for (int i = 1; i < 100; i++) {
-				_url = url + "index.html";
-				if (i > 1)
-					_url = url + "index_" + i + ".html";
-				Document doc = UtilWeb.getDoc(_url);
-				Elements elNewsList = doc.getElementsByClass("NewsList").first().getElementsByTag("li");
-				System.out.println(url + "===========" + i);
-				if (elNewsList.size() == 0) {
-					System.out.println(url + "===========" + i);
-					break;
-				}
-				for (Element elNews : elNewsList) {
-					IssueNews news = new IssueNews();
-					news.setSource("广东省工业信息");
-					news.setType("政策规划");
-					news.setSubType("政策解读");
-					Elements elSpan = elNews.getElementsByTag("span");
-					news.setNewsTime(elSpan.first().html());
-					news.setYear(news.getNewsTime().substring(0, 4));
-					Element elA = elNews.getElementsByTag("a").first();
-					news.setTitle(elA.attr("title"));
-					if (isExits(news))
-						break;// 存在最近一条就可以退出了
-//					System.out.println(news.getTitle());
-					news.setRegion("");
-					String contentUrl = elA.attr("href");
-					news.setMemo(contentUrl);
-					Element elDoc = UtilWeb.getDoc(contentUrl).getElementById("zoom");
-					if (elDoc != null) {
-						news.setContent(elDoc.html());
-					} else {
-						System.out.println(news.getTitle()+"  "+contentUrl);
-						Elements elDocs=UtilWeb.getDoc(contentUrl).getElementsByClass("main");
-						if(elDocs!=null && elDocs.first()!=null) {
-							news.setContent(elDocs.first().html());
-						}else {
-							news.setContent(UtilWeb.getDoc(contentUrl).getElementsByClass("wrap").first().html());
-						}
-					}
-//					System.out.println(UtilJackSon.toJson(news));
-					listNews.add(news);
-					Thread.sleep(1000);// 隔10秒
-//					System.out.println(UtilConver.dateToStr(Const.fm_yyyy_MM_dd_HH_mm_ss));
-				}
-			}
-		}
-		return listNews;
-	}
+//	private List<IssueNews> initPolicyInterpretation() throws Exception {
+//		List<IssueNews> listNews = new ArrayList<IssueNews>();
+//		String[] urlArr = new String[] { "http://gdii.gd.gov.cn/zcjd3267/" };
+//		for (String url : urlArr) {
+//			String _url = "";
+//			for (int i = 1; i < 100; i++) {
+//				_url = url + "index.html";
+//				if (i > 1)
+//					_url = url + "index_" + i + ".html";
+//				Document doc = UtilWeb.getDoc(_url);
+//				Elements elNewsList = doc.getElementsByClass("NewsList").first().getElementsByTag("li");
+//				System.out.println(url + "===========" + i);
+//				if (elNewsList.size() == 0) {
+//					System.out.println(url + "===========" + i);
+//					break;
+//				}
+//				for (Element elNews : elNewsList) {
+//					IssueNews news = new IssueNews();
+//					news.setSource("广东省工业信息");
+//					news.setType("政策规划");
+//					news.setSubType("政策解读");
+//					Elements elSpan = elNews.getElementsByTag("span");
+//					news.setNewsTime(elSpan.first().html());
+//					news.setYear(news.getNewsTime().substring(0, 4));
+//					Element elA = elNews.getElementsByTag("a").first();
+//					news.setTitle(elA.attr("title"));
+//					if (isExits(news))
+//						break;// 存在最近一条就可以退出了
+////					System.out.println(news.getTitle());
+//					news.setRegion("");
+//					String contentUrl = elA.attr("href");
+//					news.setMemo(contentUrl);
+//					Element elDoc = UtilWeb.getDoc(contentUrl).getElementById("zoom");
+//					if (elDoc != null) {
+//						news.setContent(elDoc.html());
+//					} else {
+//						System.out.println(news.getTitle()+"  "+contentUrl);
+//						Elements elDocs=UtilWeb.getDoc(contentUrl).getElementsByClass("main");
+//						if(elDocs!=null && elDocs.first()!=null) {
+//							news.setContent(elDocs.first().html());
+//						}else {
+//							news.setContent(UtilWeb.getDoc(contentUrl).getElementsByClass("wrap").first().html());
+//						}
+//					}
+////					System.out.println(UtilJackSon.toJson(news));
+//					listNews.add(news);
+//					Thread.sleep(1000);// 隔10秒
+////					System.out.println(UtilConver.dateToStr(Const.fm_yyyy_MM_dd_HH_mm_ss));
+//				}
+//			}
+//		}
+//		return listNews;
+//	}
 
 	/**
 	 * 1.广东省工业信息-政策解读-日常调度
@@ -416,59 +416,59 @@ public class Task extends TaskAbstract {
 	/**
 	 * 1.广东省工业信息-项目资金-初始化
 	 **/
-	private List<IssueNews> initProjectFunds() throws Exception {
-		List<IssueNews> listNews = new ArrayList<IssueNews>();
-		String[] urlArr = new String[] { "http://gdii.gd.gov.cn/xmzj1033/" };
-		for (String url : urlArr) {
-			String _url = "";
-			for (int i = 1; i < 100; i++) {
-				_url = url + "index.html";
-				if (i > 1)
-					_url = url + "index_" + i + ".html";
-				Document doc = UtilWeb.getDoc(_url);
-				Elements elNewsList = doc.getElementsByClass("NewsList").first().getElementsByTag("li");
-				System.out.println(url + "===========" + i);
-				if (elNewsList.size() == 0) {
-					System.out.println(url + "===========" + i);
-					break;
-				}
-				for (Element elNews : elNewsList) {
-					IssueNews news = new IssueNews();
-					news.setSource("广东省工业信息");
-					news.setType("项目资金");
-					news.setSubType("");
-					Elements elSpan = elNews.getElementsByTag("span");
-					news.setNewsTime(elSpan.first().html());
-					news.setYear(news.getNewsTime().substring(0, 4));
-					Element elA = elNews.getElementsByTag("a").first();
-					news.setTitle(elA.attr("title"));
-					if (isExits(news))
-						break;// 存在最近一条就可以退出了
-//					System.out.println(news.getTitle());
-					news.setRegion("");
-					String contentUrl = elA.attr("href");
-					news.setMemo(contentUrl);
-					Element elDoc = UtilWeb.getDoc(contentUrl).getElementById("zoom");
-					if (elDoc != null) {
-						news.setContent(elDoc.html());
-					} else {
-						System.out.println(news.getTitle()+"  "+contentUrl);
-						Elements elDocs=UtilWeb.getDoc(contentUrl).getElementsByClass("main");
-						if(elDocs!=null && elDocs.first()!=null) {
-							news.setContent(elDocs.first().html());
-						}else {
-							news.setContent(UtilWeb.getDoc(contentUrl).getElementsByClass("wrap").first().html());
-						}
-					}
-//					System.out.println(UtilJackSon.toJson(news));
-					listNews.add(news);
-					Thread.sleep(1000);// 隔10秒
-//					System.out.println(UtilConver.dateToStr(Const.fm_yyyy_MM_dd_HH_mm_ss));
-				}
-			}
-		}
-		return listNews;
-	}
+//	private List<IssueNews> initProjectFunds() throws Exception {
+//		List<IssueNews> listNews = new ArrayList<IssueNews>();
+//		String[] urlArr = new String[] { "http://gdii.gd.gov.cn/xmzj1033/" };
+//		for (String url : urlArr) {
+//			String _url = "";
+//			for (int i = 1; i < 100; i++) {
+//				_url = url + "index.html";
+//				if (i > 1)
+//					_url = url + "index_" + i + ".html";
+//				Document doc = UtilWeb.getDoc(_url);
+//				Elements elNewsList = doc.getElementsByClass("NewsList").first().getElementsByTag("li");
+//				System.out.println(url + "===========" + i);
+//				if (elNewsList.size() == 0) {
+//					System.out.println(url + "===========" + i);
+//					break;
+//				}
+//				for (Element elNews : elNewsList) {
+//					IssueNews news = new IssueNews();
+//					news.setSource("广东省工业信息");
+//					news.setType("项目资金");
+//					news.setSubType("");
+//					Elements elSpan = elNews.getElementsByTag("span");
+//					news.setNewsTime(elSpan.first().html());
+//					news.setYear(news.getNewsTime().substring(0, 4));
+//					Element elA = elNews.getElementsByTag("a").first();
+//					news.setTitle(elA.attr("title"));
+//					if (isExits(news))
+//						break;// 存在最近一条就可以退出了
+////					System.out.println(news.getTitle());
+//					news.setRegion("");
+//					String contentUrl = elA.attr("href");
+//					news.setMemo(contentUrl);
+//					Element elDoc = UtilWeb.getDoc(contentUrl).getElementById("zoom");
+//					if (elDoc != null) {
+//						news.setContent(elDoc.html());
+//					} else {
+//						System.out.println(news.getTitle()+"  "+contentUrl);
+//						Elements elDocs=UtilWeb.getDoc(contentUrl).getElementsByClass("main");
+//						if(elDocs!=null && elDocs.first()!=null) {
+//							news.setContent(elDocs.first().html());
+//						}else {
+//							news.setContent(UtilWeb.getDoc(contentUrl).getElementsByClass("wrap").first().html());
+//						}
+//					}
+////					System.out.println(UtilJackSon.toJson(news));
+//					listNews.add(news);
+//					Thread.sleep(1000);// 隔10秒
+////					System.out.println(UtilConver.dateToStr(Const.fm_yyyy_MM_dd_HH_mm_ss));
+//				}
+//			}
+//		}
+//		return listNews;
+//	}
 
 	/**
 	 * 1.广东省工业信息-项目资金-日常调度

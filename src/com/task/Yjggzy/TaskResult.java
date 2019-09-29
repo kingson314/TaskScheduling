@@ -1,4 +1,4 @@
-package com.task.Ccgp;
+package com.task.Yjggzy;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -10,7 +10,7 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-import com.taskBusiBean.info.InfoBidPretrial;
+import com.taskBusiBean.info.InfoBidResult;
 import com.taskInterface.TaskAbstract;
 
 import common.util.UtilWeb;
@@ -23,21 +23,21 @@ import module.dbconnection.DbConnection;
 import module.dbconnection.DbConnectionDao;
 
 /**
- * @Description:中国政府采购网-资格预审公告
+ * @Description:阳江市公共资源交易中心-中标结果公示
  * @date Aut 1,o19
  * @author:fgq
  */
-public class TaskPretrial extends TaskAbstract {
+public class TaskResult extends TaskAbstract {
 	private Connection con;
 	private PreparedStatement ps;
-	private String sql = "insert into InfoBidPretrial(createDate,name,state,ord,modifyTime,"
-			+ "webSite,industry, busiType,unit,source," + "province,city,region,publishTime,openTime,"
+	private String sql = "insert into InfoBidResult(createDate,name,state,ord,modifyTime,"
+			+ "webSite,industry, busiType,unit,source," + "province,city,region,publishTime,memo,"
 			+ "contentType,contentCls,content,contentUrl)" + "values(?,?,?,?,?," + "?,?,?,?,?," + "?,?,?,?,?,"
 			+ "?,?,?,?) ";
 
-	private final static String webSite="中国政府采购网";
-	private final static String type="(资格预审公告)";
-	private final static String cls="cggg Pretrial";
+	private final static String webSite="阳江市公共资源交易中心";
+	private final static String type="(中标结果公示)";
+	private final static String cls="gzggzy Result";
 	
 	public void fireTask() {
 		DbConnection dbconn = null;
@@ -66,11 +66,11 @@ public class TaskPretrial extends TaskAbstract {
 		fireTask();
 	}
 
-	private int add(List<InfoBidPretrial> list) {
+	private int add(List<InfoBidResult> list) {
 		int rs = 0;
 		try {
 			this.ps = con.prepareStatement(sql);
-			for (InfoBidPretrial entity : list) {
+			for (InfoBidResult entity : list) {
 				if (isExits(entity))
 					continue;
 				rs += 1;
@@ -90,7 +90,7 @@ public class TaskPretrial extends TaskAbstract {
 				this.ps.setString(12, entity.getCity());
 				this.ps.setString(13, entity.getRegion());
 				this.ps.setString(14, entity.getPublishTime());
-				this.ps.setString(15, entity.getOpenTime());
+				this.ps.setString(15, "");// memo
 
 				this.ps.setString(16, entity.getContentType());
 				this.ps.setString(17, entity.getContentCls());
@@ -108,8 +108,8 @@ public class TaskPretrial extends TaskAbstract {
 		return rs;
 	}
 
-	private boolean isExits(InfoBidPretrial model) throws Exception {
-		String sql = "select count(1) from InfoBidPretrial where name='" + model.getName() + "' and unit='"
+	private boolean isExits(InfoBidResult model) throws Exception {
+		String sql = "select count(1) from InfoBidResult where name='" + model.getName() + "' and unit='"
 				+ model.getUnit() + "'";
 		return UtilSql.isExist(con, sql, new Object[] {});
 	}
@@ -117,44 +117,34 @@ public class TaskPretrial extends TaskAbstract {
 	private int exec(Bean bean) throws Exception {
 		int rs = 0;
 		for (int i = 1; i <= bean.getPageIndex(); i++) {
-			List<InfoBidPretrial> list = new ArrayList<InfoBidPretrial>();
-			try {
-				System.out.println(webSite+type+"[page]:" + i);
-				String url = "http://www.ccgp.gov.cn/cggg/zygg/zgysgg/index_" + (i - 1) + ".htm";
-				if (i == 1) {
-					url = "http://www.ccgp.gov.cn/cggg/zygg/zgysgg/index.htm";
-				}
-				Document doc = UtilWeb.getDoc(url);
-				Elements elList = doc.getElementsByClass("c_list_bid").first().getElementsByTag("li");
-				for (Element li : elList) {
-					try {
-						InfoBidPretrial info = new InfoBidPretrial();
-						info.setName(li.getElementsByTag("a").first().attr("title"));
-						info.setWebSite(webSite);
-						info.setIndustry("");
-						info.setBusiType(getBusiType(info.getName()));
-						info.setProvince("");
-						info.setCity("");
-						info.setRegion(li.select("em:eq(2)").first().html());
-						info.setUnit(li.select("em:eq(3)").first().html());
-						info.setSource("");
-						info.setPublishTime(li.select("em:eq(1)").first().html());
-						info.setContentType("html");
-						info.setContentCls(cls);
-						String contentUrl = li.getElementsByTag("a").first().attr("href").replace("./",
-								"http://www.ccgp.gov.cn/cggg/zygg/zgysgg/");
-						info.setContentUrl(contentUrl);
-						String contentHtml = UtilWeb.getDoc(contentUrl).getElementsByClass("vF_detail_content").first()
-								.html();
-						info.setContent(contentHtml);
-						list.add(info);
-						Thread.sleep(1000);
-					} catch (Exception e) {
-						e.printStackTrace();
-					}
-				}
-			} catch (Exception e) {
-				e.printStackTrace();
+			List<InfoBidResult> list = new ArrayList<InfoBidResult>();
+			String url = "http://www.yjggzy.cn/Query/ArticleQuery2/43a0fbd899a34465945625ea39e34d9c?page="+i;
+			Document doc = UtilWeb.getDoc(url);
+			Elements elList = doc.getElementsByClass("list").first().getElementsByTag("li");
+
+			for (Element li : elList) {
+				InfoBidResult info = new InfoBidResult();
+				info.setName(li.select("a").first().attr("title"));
+				info.setBusiType(getBusiType(info.getName()));
+				info.setWebSite(webSite);
+				info.setIndustry("");
+				info.setProvince("广东");
+				info.setCity("阳江市");
+				info.setRegion("广东");
+				info.setUnit("");
+				info.setSource("");
+				info.setPublishTime(li.select("span").html().replace("/", "-"));
+				info.setContentType("html");
+				info.setContentCls(cls);
+
+				String contentUrl = "http://www.yjggzy.cn"+li.select("a").first().attr("href");
+				info.setContentUrl(contentUrl);
+
+				Element contentEl = UtilWeb.getDoc(contentUrl);
+				info.setContent(contentEl.getElementsByClass("acticle").first().html());
+				list.add(info);
+				System.out.println(info.getContent());
+//				System.out.println(UtilJackSon.toJson(list));
 			}
 			rs += this.add(list);
 		}
@@ -166,6 +156,39 @@ public class TaskPretrial extends TaskAbstract {
 			return "知识产权";
 		} else {
 			return "";
+		}
+	}
+
+	public static void main(String[] args) throws Exception {
+		List<InfoBidResult> list = new ArrayList<InfoBidResult>();
+		String url = "http://www.yjggzy.cn/Query/ArticleQuery2/43a0fbd899a34465945625ea39e34d9c?page=1";
+		Document doc = UtilWeb.getDoc(url);
+		Elements elList = doc.getElementsByClass("list").first().getElementsByTag("li");
+
+		for (Element li : elList) {
+			InfoBidResult info = new InfoBidResult();
+			info.setName(li.select("a").first().attr("title"));
+			info.setBusiType(getBusiType(info.getName()));
+			info.setWebSite(webSite);
+			info.setIndustry("");
+			info.setProvince("广东");
+			info.setCity("阳江市");
+			info.setRegion("广东");
+			info.setUnit("");
+			info.setSource("");
+			info.setPublishTime(li.select("span").html().replace("/", "-"));
+			info.setContentType("html");
+			info.setContentCls(cls);
+
+			String contentUrl = "http://www.yjggzy.cn"+li.select("a").first().attr("href");
+			info.setContentUrl(contentUrl);
+
+			Element contentEl = UtilWeb.getDoc(contentUrl);
+			info.setContent(contentEl.getElementsByClass("acticle").first().html());
+			list.add(info);
+			System.out.println(info.getContent());
+//			System.out.println(UtilJackSon.toJson(list));
+			break;
 		}
 	}
 

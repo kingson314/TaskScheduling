@@ -1,4 +1,4 @@
-package com.task.Ccgp;
+package com.task.Zycg;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -10,34 +10,35 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-import com.taskBusiBean.info.InfoBidCandidate;
+import com.taskBusiBean.info.InfoBidResult;
 import com.taskInterface.TaskAbstract;
 
 import common.util.UtilWeb;
 import common.util.conver.UtilConver;
 import common.util.jdbc.UtilJDBCManager;
 import common.util.jdbc.UtilSql;
+import common.util.json.UtilJackSon;
 import common.util.json.UtilJson;
 import consts.Const;
 import module.dbconnection.DbConnection;
 import module.dbconnection.DbConnectionDao;
 
 /**
- * @Description:中国政府采购网-中标候选人公示
+ * @Description:中央政府采购网-中标结果公示
  * @date Aut 1,o19
  * @author:fgq
  */
-public class TaskCandidate extends TaskAbstract {
+public class TaskResult extends TaskAbstract {
 	private Connection con;
 	private PreparedStatement ps;
-	private String sql = "insert into InfoBidCandidate(createDate,name,state,ord,modifyTime,"
+	private String sql = "insert into InfoBidResult(createDate,name,state,ord,modifyTime,"
 			+ "webSite,industry, busiType,unit,source," + "province,city,region,publishTime,memo,"
 			+ "contentType,contentCls,content,contentUrl)" + "values(?,?,?,?,?," + "?,?,?,?,?," + "?,?,?,?,?,"
 			+ "?,?,?,?) ";
 	
-	private final static String webSite="中国政府采购网";
-	private final static String type="(中标候选人公示)";
-	private final static String cls="cggg Candidate";
+	private final static String webSite="中央政府采购网";
+	private final static String type="(中标结果公示)";
+	private final static String cls="hnggzy Result";
 
 	public void fireTask() {
 		DbConnection dbconn = null;
@@ -66,11 +67,11 @@ public class TaskCandidate extends TaskAbstract {
 		fireTask();
 	}
 
-	private int add(List<InfoBidCandidate> list) {
+	private int add(List<InfoBidResult> list) {
 		int rs = 0;
 		try {
 			this.ps = con.prepareStatement(sql);
-			for (InfoBidCandidate entity : list) {
+			for (InfoBidResult entity : list) {
 				if (isExits(entity))
 					continue;
 				rs += 1;
@@ -108,8 +109,8 @@ public class TaskCandidate extends TaskAbstract {
 		return rs;
 	}
 
-	private boolean isExits(InfoBidCandidate model) throws Exception {
-		String sql = "select count(1) from InfoBidCandidate where name='" + model.getName() + "' and unit='"
+	private boolean isExits(InfoBidResult model) throws Exception {
+		String sql = "select count(1) from InfoBidResult where name='" + model.getName() + "' and unit='"
 				+ model.getUnit() + "'";
 		return UtilSql.isExist(con, sql, new Object[] {});
 	}
@@ -117,44 +118,37 @@ public class TaskCandidate extends TaskAbstract {
 	private int exec(Bean bean) throws Exception {
 		int rs = 0;
 		for (int i = 1; i <= bean.getPageIndex(); i++) {
-			List<InfoBidCandidate> list = new ArrayList<InfoBidCandidate>();
-			try {
-				System.out.println(webSite+type+"[page]:" + i);
-				String url = "http://www.ccgp.gov.cn/cggg/zygg/zbgg/index_" + (i - 1) + ".htm";
-				if (i == 1) {
-					url = "http://www.ccgp.gov.cn/cggg/zygg/zbgg/index.htm";
+			List<InfoBidResult> list = new ArrayList<InfoBidResult>();
+			String url = "http://www.zycg.gov.cn/article/llist?catalog=ZhongBiao&page="
+					+ i;
+			System.out.println(webSite+type+"[page]:" + i);
+			Document doc = UtilWeb.getDoc(url);
+			Elements elList = doc.getElementsByClass("lby-list").first().getElementsByTag("li");
+			for (Element li : elList) {
+				try {
+					InfoBidResult info = new InfoBidResult();
+					info.setName(li.getElementsByTag("a").first().attr("title"));
+					info.setWebSite(webSite);
+					info.setIndustry("");
+					info.setBusiType(getBusiType(info.getName()));
+					info.setProvince("");
+					info.setCity("");
+					info.setRegion("中央政府");
+					info.setUnit("");
+					info.setSource("");
+					info.setPublishTime(li.getElementsByTag("span").first().html().replace("[", "").replace("]", ""));
+					info.setContentType("html");
+					info.setContentCls(cls);
+
+					String contentUrl = "http://www.zycg.gov.cn" + li.getElementsByTag("a").first().attr("href");
+					info.setContentUrl(contentUrl);
+					String contentHtml = UtilWeb.getDoc(contentUrl).getElementById("container").html();
+					info.setContent(contentHtml);
+					list.add(info);
+					Thread.sleep(1000);
+				} catch (Exception e) {
+					e.printStackTrace();
 				}
-				Document doc = UtilWeb.getDoc(url);
-				Elements elList = doc.getElementsByClass("c_list_bid").first().getElementsByTag("li");
-				for (Element li : elList) {
-					try {
-						InfoBidCandidate info = new InfoBidCandidate();
-						info.setName(li.getElementsByTag("a").first().attr("title"));
-						info.setWebSite(webSite);
-						info.setIndustry("");
-						info.setBusiType(getBusiType(info.getName()));
-						info.setProvince("");
-						info.setCity("");
-						info.setRegion(li.select("em:eq(2)").first().html());
-						info.setUnit(li.select("em:eq(3)").first().html());
-						info.setSource("");
-						info.setPublishTime(li.select("em:eq(1)").first().html());
-						info.setContentType("html");
-						info.setContentCls(cls);
-						String contentUrl = li.getElementsByTag("a").first().attr("href").replace("./",
-								"http://www.ccgp.gov.cn/cggg/zygg/zbgg/");
-						info.setContentUrl(contentUrl);
-						String contentHtml = UtilWeb.getDoc(contentUrl).getElementsByClass("vF_detail_content").first()
-								.html();
-						info.setContent(contentHtml);
-						list.add(info);
-						Thread.sleep(1000);
-					} catch (Exception e) {
-						e.printStackTrace();
-					}
-				}
-			} catch (Exception e) {
-				e.printStackTrace();
 			}
 			rs += this.add(list);
 		}
@@ -166,6 +160,39 @@ public class TaskCandidate extends TaskAbstract {
 			return "知识产权";
 		} else {
 			return "";
+		}
+	}
+
+	public static void main(String[] args) throws Exception {
+		List<InfoBidResult> list = new ArrayList<InfoBidResult>();
+		int pageIndex = 1;
+		String url = "http://www.zycg.gov.cn/article/llist?catalog=ZhongBiao&page="
+				+ pageIndex;
+		Document doc = UtilWeb.getDoc(url);
+		Elements elList = doc.getElementsByClass("lby-list").first().getElementsByTag("li");
+
+		for (Element li : elList) {
+			InfoBidResult info = new InfoBidResult();
+			info.setName(li.getElementsByTag("a").first().attr("title"));
+			info.setWebSite(webSite);
+			info.setIndustry("");
+			info.setBusiType(getBusiType(info.getName()));
+			info.setProvince("");
+			info.setCity("");
+			info.setRegion("中央政府");
+			info.setUnit("");
+			info.setSource("");
+			info.setPublishTime(li.getElementsByTag("span").first().html().replace("[", "").replace("]", ""));
+			info.setContentType("html");
+			info.setContentCls(cls);
+
+			String contentUrl = "http://www.zycg.gov.cn" + li.getElementsByTag("a").first().attr("href");
+			info.setContentUrl(contentUrl);
+			String contentHtml = UtilWeb.getDoc(contentUrl).getElementById("container").html();
+			info.setContent(contentHtml);
+			list.add(info);
+			System.out.println(UtilJackSon.toJson(list));
+			break;
 		}
 	}
 

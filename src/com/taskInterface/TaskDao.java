@@ -354,7 +354,7 @@ public class TaskDao {
 		try {
 			sm = con.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
 			try {
-				rs = sm.executeQuery("select max(len(taskOrder)) as len from  " + AppCon.TN_Task);
+				rs = sm.executeQuery("select max(length(taskOrder)) as len from  " + AppCon.TN_Task);
 			} catch (Exception e) {
 			}
 			rs.last();

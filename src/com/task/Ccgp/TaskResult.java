@@ -34,6 +34,11 @@ public class TaskResult extends TaskAbstract {
 			+ "webSite,industry, busiType,unit,source," + "province,city,region,publishTime,memo,"
 			+ "contentType,contentCls,content,contentUrl)" + "values(?,?,?,?,?," + "?,?,?,?,?," + "?,?,?,?,?,"
 			+ "?,?,?,?) ";
+	
+	private final static String webSite="中国政府采购网";
+	private final static String type="(中标结果公示)";
+	private final static String cls="cggg Result";
+	
 
 	public void fireTask() {
 		DbConnection dbconn = null;
@@ -48,7 +53,7 @@ public class TaskResult extends TaskAbstract {
 			}
 			con = UtilJDBCManager.getConnection(dbconn);
 			this.setTaskStatus("执行成功");
-			this.setTaskMsg("中国政府采购网-中标结果公示[" + this.exec(bean) + "]\n");
+			this.setTaskMsg(webSite+type+"[" + this.exec(bean) + "]\n");
 		} catch (Exception e) {
 			System.out.println(pulishDate);
 			this.setTaskStatus("执行失败");
@@ -115,7 +120,7 @@ public class TaskResult extends TaskAbstract {
 		for (int i = 1; i <= bean.getPageIndex(); i++) {
 			List<InfoBidResult> list = new ArrayList<InfoBidResult>();
 			try {
-				System.out.println("InfoBidResult.pageIndex:" + i);
+				System.out.println(webSite+type+"[page]:" + i);
 				String url = "http://www.ccgp.gov.cn/cggg/zygg/cjgg/index_" + (i - 1) + ".htm";
 				if (i == 1) {
 					url = "http://www.ccgp.gov.cn/cggg/zygg/cjgg/index.htm";
@@ -126,7 +131,7 @@ public class TaskResult extends TaskAbstract {
 					try {
 						InfoBidResult info = new InfoBidResult();
 						info.setName(li.getElementsByTag("a").first().attr("title"));
-						info.setWebSite("中国政府采购网");
+						info.setWebSite(webSite);
 						info.setIndustry("");
 						info.setBusiType(getBusiType(info.getName()));
 						info.setProvince("");
@@ -136,7 +141,7 @@ public class TaskResult extends TaskAbstract {
 						info.setSource("");
 						info.setPublishTime(li.select("em:eq(1)").first().html());
 						info.setContentType("html");
-						info.setContentCls("cggg cgggResult");
+						info.setContentCls(cls);
 						String contentUrl = li.getElementsByTag("a").first().attr("href").replace("./",
 								"http://www.ccgp.gov.cn/cggg/zygg/cjgg/");
 						info.setContentUrl(contentUrl);

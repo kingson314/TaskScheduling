@@ -90,7 +90,7 @@ public class TaskTab {
 						pnlTaskTool.add(tbTask);
 
 						{
-							System.out.println(ImageContext.Add);
+//							System.out.println(ImageContext.Add);
 							btnAddTask = new SButton("\u6dfb\u52a0\u4efb\u52a1", ImageContext.Add);
 							btnAddTask.setSize(200, 25);
 							tbTask.add(btnAddTask);

@@ -1,0 +1,1995 @@
+[2019-09-26 09:01:32,663 INFO] - MLog clients using log4j logging.
+[2019-09-26 09:01:33,059 INFO] - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+[2019-09-26 09:01:33,173 INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge1fna5tpo0gz1bqmmgk|1ea802cc, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge1fna5tpo0gz1bqmmgk|1ea802cc, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/app-qy?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2019-09-26 09:01:37,069 INFO] - Job execution threads will use class loader of thread: Thread-0
+[2019-09-26 09:01:37,102 INFO] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2019-09-26 09:01:37,103 INFO] - Quartz Scheduler v.2.0.1 created.
+[2019-09-26 09:01:37,106 INFO] - RAMJobStore initialized.
+[2019-09-26 09:01:37,109 INFO] - Scheduler meta-data: Quartz Scheduler (v2.0.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 100 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2019-09-26 09:01:37,109 INFO] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+[2019-09-26 09:01:37,109 INFO] - Quartz scheduler version: 2.0.1
+[2019-09-26 09:01:37,143 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-09-26 09:01:37,150 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-09-26 09:02:33,076 INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge1fna5tpo0gz1bqmmgk|26df8dad, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge1fna5tpo0gz1bqmmgk|26df8dad, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://192.168.50.169:3306/app-infoCenter?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2019-09-26 09:02:53,067 WARN] - com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector@775d879f -- APPARENT DEADLOCK!!! Creating emergency threads for unassigned pending tasks!
+[2019-09-26 09:02:53,073 WARN] - com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector@775d879f -- APPARENT DEADLOCK!!! Complete Status: 
+	Managed Threads: 3
+	Active Threads: 3
+	Active Tasks: 
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@38a76d3f (com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@23dd74cb (com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@9d595f3 (com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1)
+	Pending Tasks: 
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@5b45d2b2
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@58889270
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@103bde86
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@3564ab7f
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@40413f23
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@5cc62e49
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@12c704b9
+Pool thread stack traces:
+	Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0,5,main]
+		java.net.PlainSocketImpl.socketConnect(Native Method)
+		java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+		java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+		java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+		java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+		java.net.Socket.connect(Socket.java:589)
+		java.net.Socket.connect(Socket.java:538)
+		java.net.Socket.<init>(Socket.java:434)
+		java.net.Socket.<init>(Socket.java:244)
+		com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:259)
+		com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:307)
+		com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2482)
+		com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2519)
+		com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2304)
+		com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:834)
+		com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+		sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+		sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+		sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+		java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+		com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+		com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:416)
+		com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:346)
+		com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:135)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+		com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137)
+		com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014)
+		com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+	Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2,5,main]
+		java.net.PlainSocketImpl.socketConnect(Native Method)
+		java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+		java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+		java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+		java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+		java.net.Socket.connect(Socket.java:589)
+		java.net.Socket.connect(Socket.java:538)
+		java.net.Socket.<init>(Socket.java:434)
+		java.net.Socket.<init>(Socket.java:244)
+		com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:259)
+		com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:307)
+		com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2482)
+		com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2519)
+		com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2304)
+		com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:834)
+		com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+		sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+		sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+		sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+		java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+		com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+		com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:416)
+		com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:346)
+		com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:135)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+		com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137)
+		com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014)
+		com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+	Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1,5,main]
+		java.net.PlainSocketImpl.socketConnect(Native Method)
+		java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+		java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+		java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+		java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+		java.net.Socket.connect(Socket.java:589)
+		java.net.Socket.connect(Socket.java:538)
+		java.net.Socket.<init>(Socket.java:434)
+		java.net.Socket.<init>(Socket.java:244)
+		com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:259)
+		com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:307)
+		com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2482)
+		com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2519)
+		com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2304)
+		com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:834)
+		com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+		sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+		sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+		sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+		java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+		com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+		com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:416)
+		com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:346)
+		com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:135)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+		com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137)
+		com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014)
+		com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+
+
+[2019-09-26 09:03:53,081 WARN] - Task com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@38a76d3f (in deadlocked PoolThread) failed to complete in maximum time 60000ms. Trying interrupt().
+[2019-09-26 09:03:53,083 WARN] - Task com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@23dd74cb (in deadlocked PoolThread) failed to complete in maximum time 60000ms. Trying interrupt().
+[2019-09-26 09:03:53,083 WARN] - Task com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@9d595f3 (in deadlocked PoolThread) failed to complete in maximum time 60000ms. Trying interrupt().
+[2019-09-26 09:05:05,492 WARN] - com.mchange.v2.resourcepool.BasicResourcePool@223497d8 -- Thread unexpectedly interrupted while performing an acquisition attempt.
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1805)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+[2019-09-26 09:05:05,492 WARN] - com.mchange.v2.resourcepool.BasicResourcePool@223497d8 -- Thread unexpectedly interrupted while performing an acquisition attempt.
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1805)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+[2019-09-26 09:05:05,492 WARN] - com.mchange.v2.resourcepool.BasicResourcePool@223497d8 -- Thread unexpectedly interrupted while performing an acquisition attempt.
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1805)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+[2019-09-26 09:06:25,828 INFO] - MLog clients using log4j logging.
+[2019-09-26 09:06:26,330 INFO] - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+[2019-09-26 09:06:26,696 INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge1fna5tpuao2vjjdby|3d24b1bb, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge1fna5tpuao2vjjdby|3d24b1bb, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/app-qy?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2019-09-26 09:06:30,971 INFO] - Job execution threads will use class loader of thread: Thread-0
+[2019-09-26 09:06:31,207 INFO] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2019-09-26 09:06:31,209 INFO] - Quartz Scheduler v.2.0.1 created.
+[2019-09-26 09:06:31,211 INFO] - RAMJobStore initialized.
+[2019-09-26 09:06:31,213 INFO] - Scheduler meta-data: Quartz Scheduler (v2.0.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 100 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2019-09-26 09:06:31,215 INFO] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+[2019-09-26 09:06:31,215 INFO] - Quartz scheduler version: 2.0.1
+[2019-09-26 09:06:31,272 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-09-26 09:06:31,305 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-09-26 09:06:42,213 INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge1fna5tpuao2vjjdby|41df15f, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge1fna5tpuao2vjjdby|41df15f, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://192.168.50.169:3306/app-infoCenter?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2019-09-26 09:07:02,174 WARN] - com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector@3d1ae42 -- APPARENT DEADLOCK!!! Creating emergency threads for unassigned pending tasks!
+[2019-09-26 09:07:02,178 WARN] - com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector@3d1ae42 -- APPARENT DEADLOCK!!! Complete Status: 
+	Managed Threads: 3
+	Active Threads: 3
+	Active Tasks: 
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@42065e0a (com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@7dadd212 (com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@3a6a88c0 (com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2)
+	Pending Tasks: 
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@2c04a53c
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@5c8258b8
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@4fac2c78
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@216e81c5
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@284afd91
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@664337b8
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@48a208e4
+Pool thread stack traces:
+	Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0,5,main]
+		java.net.PlainSocketImpl.socketConnect(Native Method)
+		java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+		java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+		java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+		java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+		java.net.Socket.connect(Socket.java:589)
+		java.net.Socket.connect(Socket.java:538)
+		java.net.Socket.<init>(Socket.java:434)
+		java.net.Socket.<init>(Socket.java:244)
+		com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:259)
+		com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:307)
+		com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2482)
+		com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2519)
+		com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2304)
+		com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:834)
+		com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+		sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+		sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+		sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+		java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+		com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+		com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:416)
+		com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:346)
+		com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:135)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+		com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137)
+		com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014)
+		com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+	Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2,5,main]
+		java.net.PlainSocketImpl.socketConnect(Native Method)
+		java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+		java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+		java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+		java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+		java.net.Socket.connect(Socket.java:589)
+		java.net.Socket.connect(Socket.java:538)
+		java.net.Socket.<init>(Socket.java:434)
+		java.net.Socket.<init>(Socket.java:244)
+		com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:259)
+		com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:307)
+		com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2482)
+		com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2519)
+		com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2304)
+		com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:834)
+		com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+		sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+		sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+		sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+		java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+		com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+		com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:416)
+		com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:346)
+		com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:135)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+		com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137)
+		com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014)
+		com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+	Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1,5,main]
+		java.net.PlainSocketImpl.socketConnect(Native Method)
+		java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+		java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+		java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+		java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+		java.net.Socket.connect(Socket.java:589)
+		java.net.Socket.connect(Socket.java:538)
+		java.net.Socket.<init>(Socket.java:434)
+		java.net.Socket.<init>(Socket.java:244)
+		com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:259)
+		com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:307)
+		com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2482)
+		com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2519)
+		com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2304)
+		com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:834)
+		com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+		sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+		sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+		sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+		java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+		com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+		com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:416)
+		com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:346)
+		com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:135)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+		com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137)
+		com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014)
+		com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+
+
+[2019-09-26 09:07:33,515 INFO] - MLog clients using log4j logging.
+[2019-09-26 09:07:33,763 INFO] - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+[2019-09-26 09:07:34,036 INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1bqomxva5tpvqs36snvwj|62982eae, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1bqomxva5tpvqs36snvwj|62982eae, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/app-qy?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2019-09-26 09:07:38,069 INFO] - Job execution threads will use class loader of thread: Thread-0
+[2019-09-26 09:07:38,417 INFO] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2019-09-26 09:07:38,419 INFO] - Quartz Scheduler v.2.0.1 created.
+[2019-09-26 09:07:38,421 INFO] - RAMJobStore initialized.
+[2019-09-26 09:07:38,424 INFO] - Scheduler meta-data: Quartz Scheduler (v2.0.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 100 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2019-09-26 09:07:38,424 INFO] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+[2019-09-26 09:07:38,424 INFO] - Quartz scheduler version: 2.0.1
+[2019-09-26 09:07:38,547 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-09-26 09:07:38,563 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-09-26 09:07:45,712 INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1bqomxva5tpvqs36snvwj|700afea5, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1bqomxva5tpvqs36snvwj|700afea5, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://192.168.50.169:3306/app-infoCenter?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2019-09-26 12:01:01,541 INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1bqomxva5tpvqs36snvwj|510bf97b, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1bqomxva5tpvqs36snvwj|510bf97b, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://193.112.165.185:3306/app-qy?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2019-09-26 15:07:39,691 ERROR] - 20190926 150739:getTasksFromXml错误:Index: 2, Size: 2
+errorList:java.util.ArrayList.rangeCheck(ArrayList.java:657)
+java.util.ArrayList.get(ArrayList.java:433)
+com.taskClass.TaskClassImp.getTasksFromXml(TaskClassImp.java:39)
+com.app.AppFun.loadTaskType(AppFun.java:71)
+com.app.AppFun.initParam(AppFun.java:92)
+com.app.AppBoot$1.run(AppBoot.java:113)
+
+[2019-09-26 15:07:40,133 ERROR] - 20190926 150740:getTaskJarFromXml错误:Index: 2, Size: 2
+errorList:java.util.ArrayList.rangeCheck(ArrayList.java:657)
+java.util.ArrayList.get(ArrayList.java:433)
+com.taskClass.TaskClassImp.getTaskJarFromXml(TaskClassImp.java:89)
+com.app.AppFun.loadTaskType(AppFun.java:76)
+com.app.AppFun.initParam(AppFun.java:92)
+com.app.AppBoot$1.run(AppBoot.java:113)
+
+[2019-09-26 15:07:40,136 ERROR] - 20190926 150740:主程序初始化参数信息错误:null
+errorList:com.app.AppFun.loadTaskType(AppFun.java:78)
+com.app.AppFun.initParam(AppFun.java:92)
+com.app.AppBoot$1.run(AppBoot.java:113)
+
+[2019-09-26 15:07:40,260 INFO] - MLog clients using log4j logging.
+[2019-09-26 15:07:40,823 INFO] - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+[2019-09-26 15:07:41,033 INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1bqomxva5u2quoq819xk0|5d6cdee, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1bqomxva5u2quoq819xk0|5d6cdee, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/app-qy?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2019-09-26 15:07:42,669 ERROR] - 20190926 150742:主程序创建任务列表错误:null
+errorList:javax.swing.DefaultComboBoxModel.<init>(DefaultComboBoxModel.java:58)
+common.component.SComboBox.<init>(SComboBox.java:19)
+com.taskInterface.TaskTab.<init>(TaskTab.java:168)
+com.taskInterface.TaskTab.getInstance(TaskTab.java:60)
+com.app.AppTableView.<init>(AppTableView.java:37)
+com.app.AppTableView.getInstance(AppTableView.java:30)
+com.app.AppMain.<init>(AppMain.java:80)
+com.app.AppBoot$1.run(AppBoot.java:158)
+
+[2019-09-26 15:07:44,404 INFO] - Job execution threads will use class loader of thread: Thread-0
+[2019-09-26 15:07:44,633 INFO] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2019-09-26 15:07:44,637 INFO] - Quartz Scheduler v.2.0.1 created.
+[2019-09-26 15:07:44,638 INFO] - RAMJobStore initialized.
+[2019-09-26 15:07:44,640 INFO] - Scheduler meta-data: Quartz Scheduler (v2.0.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 100 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2019-09-26 15:07:44,641 INFO] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+[2019-09-26 15:07:44,641 INFO] - Quartz scheduler version: 2.0.1
+[2019-09-26 15:07:44,751 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-09-26 15:07:44,762 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-09-26 15:07:44,770 ERROR] - 20190926 150744:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:07:44,775 ERROR] - 20190926 150744:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:07:45,003 ERROR] - 20190926 150745:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:07:45,015 ERROR] - 20190926 150745:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:07:46,005 ERROR] - 20190926 150746:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:07:46,007 ERROR] - 20190926 150746:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:07:47,002 ERROR] - 20190926 150747:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:07:47,007 ERROR] - 20190926 150747:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:07:48,003 ERROR] - 20190926 150748:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:07:48,005 ERROR] - 20190926 150748:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:07:49,002 ERROR] - 20190926 150749:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:07:49,004 ERROR] - 20190926 150749:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:07:50,006 ERROR] - 20190926 150750:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:07:50,008 ERROR] - 20190926 150750:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:07:51,058 ERROR] - 20190926 150751:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:07:51,059 ERROR] - 20190926 150751:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:07:52,002 ERROR] - 20190926 150752:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:07:52,004 ERROR] - 20190926 150752:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:07:53,004 ERROR] - 20190926 150753:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:07:53,007 ERROR] - 20190926 150753:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:07:54,030 ERROR] - 20190926 150754:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:07:54,031 ERROR] - 20190926 150754:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:07:55,002 ERROR] - 20190926 150755:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:07:55,004 ERROR] - 20190926 150755:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:07:56,006 ERROR] - 20190926 150756:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:07:56,011 ERROR] - 20190926 150756:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:07:57,049 ERROR] - 20190926 150757:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:07:57,051 ERROR] - 20190926 150757:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:07:58,003 ERROR] - 20190926 150758:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:07:58,009 ERROR] - 20190926 150758:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:07:59,014 ERROR] - 20190926 150759:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:07:59,015 ERROR] - 20190926 150759:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:00,076 ERROR] - 20190926 150800:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:00,079 ERROR] - 20190926 150800:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:01,008 ERROR] - 20190926 150801:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:01,010 ERROR] - 20190926 150801:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:02,005 ERROR] - 20190926 150802:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:02,009 ERROR] - 20190926 150802:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:03,018 ERROR] - 20190926 150803:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:03,020 ERROR] - 20190926 150803:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:04,004 ERROR] - 20190926 150804:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:04,005 ERROR] - 20190926 150804:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:05,014 ERROR] - 20190926 150805:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:05,018 ERROR] - 20190926 150805:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:06,024 ERROR] - 20190926 150806:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:06,025 ERROR] - 20190926 150806:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:07,007 ERROR] - 20190926 150807:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:07,010 ERROR] - 20190926 150807:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:08,003 ERROR] - 20190926 150808:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:08,007 ERROR] - 20190926 150808:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:09,029 ERROR] - 20190926 150809:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:09,030 ERROR] - 20190926 150809:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:10,006 ERROR] - 20190926 150810:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:10,010 ERROR] - 20190926 150810:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:11,002 ERROR] - 20190926 150811:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:11,005 ERROR] - 20190926 150811:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:12,043 ERROR] - 20190926 150812:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:12,045 ERROR] - 20190926 150812:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:13,010 ERROR] - 20190926 150813:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:13,011 ERROR] - 20190926 150813:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:14,004 ERROR] - 20190926 150814:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:14,007 ERROR] - 20190926 150814:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:15,029 ERROR] - 20190926 150815:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:15,031 ERROR] - 20190926 150815:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:16,004 ERROR] - 20190926 150816:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:16,007 ERROR] - 20190926 150816:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:17,005 ERROR] - 20190926 150817:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:17,009 ERROR] - 20190926 150817:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:18,028 ERROR] - 20190926 150818:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:18,030 ERROR] - 20190926 150818:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:19,002 ERROR] - 20190926 150819:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:19,004 ERROR] - 20190926 150819:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:20,002 ERROR] - 20190926 150820:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:20,005 ERROR] - 20190926 150820:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:21,022 ERROR] - 20190926 150821:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:21,023 ERROR] - 20190926 150821:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:22,003 ERROR] - 20190926 150822:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:22,006 ERROR] - 20190926 150822:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:23,003 ERROR] - 20190926 150823:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:23,010 ERROR] - 20190926 150823:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:24,040 ERROR] - 20190926 150824:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:24,047 ERROR] - 20190926 150824:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:25,015 ERROR] - 20190926 150825:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:25,019 ERROR] - 20190926 150825:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:26,003 ERROR] - 20190926 150826:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:26,004 ERROR] - 20190926 150826:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:27,031 ERROR] - 20190926 150827:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:27,032 ERROR] - 20190926 150827:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:28,026 ERROR] - 20190926 150828:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:28,027 ERROR] - 20190926 150828:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:29,005 ERROR] - 20190926 150829:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:29,008 ERROR] - 20190926 150829:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:30,026 ERROR] - 20190926 150830:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:30,027 ERROR] - 20190926 150830:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:31,001 ERROR] - 20190926 150831:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:31,003 ERROR] - 20190926 150831:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:32,005 ERROR] - 20190926 150832:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:32,009 ERROR] - 20190926 150832:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:33,022 ERROR] - 20190926 150833:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:33,023 ERROR] - 20190926 150833:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:34,001 ERROR] - 20190926 150834:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:34,005 ERROR] - 20190926 150834:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:35,002 ERROR] - 20190926 150835:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:35,006 ERROR] - 20190926 150835:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:36,024 ERROR] - 20190926 150836:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:36,025 ERROR] - 20190926 150836:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:37,004 ERROR] - 20190926 150837:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:37,005 ERROR] - 20190926 150837:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:38,006 ERROR] - 20190926 150838:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:38,008 ERROR] - 20190926 150838:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:39,026 ERROR] - 20190926 150839:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:39,028 ERROR] - 20190926 150839:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:40,002 ERROR] - 20190926 150840:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:40,003 ERROR] - 20190926 150840:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:41,002 ERROR] - 20190926 150841:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:41,005 ERROR] - 20190926 150841:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:42,026 ERROR] - 20190926 150842:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:42,028 ERROR] - 20190926 150842:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:43,005 ERROR] - 20190926 150843:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:43,006 ERROR] - 20190926 150843:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:44,002 ERROR] - 20190926 150844:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:44,004 ERROR] - 20190926 150844:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:45,024 ERROR] - 20190926 150845:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:45,026 ERROR] - 20190926 150845:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:46,006 ERROR] - 20190926 150846:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:46,008 ERROR] - 20190926 150846:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:47,004 ERROR] - 20190926 150847:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:47,005 ERROR] - 20190926 150847:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:48,027 ERROR] - 20190926 150848:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:48,030 ERROR] - 20190926 150848:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:49,002 ERROR] - 20190926 150849:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:49,004 ERROR] - 20190926 150849:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:50,005 ERROR] - 20190926 150850:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:50,006 ERROR] - 20190926 150850:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:51,026 ERROR] - 20190926 150851:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:51,027 ERROR] - 20190926 150851:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:52,002 ERROR] - 20190926 150852:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:52,005 ERROR] - 20190926 150852:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:53,003 ERROR] - 20190926 150853:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:53,004 ERROR] - 20190926 150853:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:54,025 ERROR] - 20190926 150854:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:54,026 ERROR] - 20190926 150854:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:55,005 ERROR] - 20190926 150855:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:55,006 ERROR] - 20190926 150855:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:56,001 ERROR] - 20190926 150856:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:56,003 ERROR] - 20190926 150856:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:57,023 ERROR] - 20190926 150857:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:57,026 ERROR] - 20190926 150857:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:58,005 ERROR] - 20190926 150858:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:58,007 ERROR] - 20190926 150858:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:59,005 ERROR] - 20190926 150859:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:08:59,006 ERROR] - 20190926 150859:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:09:00,021 ERROR] - 20190926 150900:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:09:00,023 ERROR] - 20190926 150900:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:09:01,004 ERROR] - 20190926 150901:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:09:01,008 ERROR] - 20190926 150901:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:09:02,004 ERROR] - 20190926 150902:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:09:02,007 ERROR] - 20190926 150902:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:09:03,027 ERROR] - 20190926 150903:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:09:03,030 ERROR] - 20190926 150903:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:09:04,003 ERROR] - 20190926 150904:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:09:04,006 ERROR] - 20190926 150904:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:09:05,006 ERROR] - 20190926 150905:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:09:05,009 ERROR] - 20190926 150905:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:09:06,036 ERROR] - 20190926 150906:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:09:06,038 ERROR] - 20190926 150906:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:09:07,002 ERROR] - 20190926 150907:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:09:07,002 ERROR] - 20190926 150907:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:09:08,002 ERROR] - 20190926 150908:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:09:08,004 ERROR] - 20190926 150908:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:09:09,019 ERROR] - 20190926 150909:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:09:09,020 ERROR] - 20190926 150909:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:09:10,002 ERROR] - 20190926 150910:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:09:10,005 ERROR] - 20190926 150910:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:09:11,005 ERROR] - 20190926 150911:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:09:11,008 ERROR] - 20190926 150911:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:09:12,045 ERROR] - 20190926 150912:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:09:12,047 ERROR] - 20190926 150912:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:09:13,002 ERROR] - 20190926 150913:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:09:13,003 ERROR] - 20190926 150913:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:09:14,006 ERROR] - 20190926 150914:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:09:14,009 ERROR] - 20190926 150914:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:09:15,026 ERROR] - 20190926 150915:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:09:15,027 ERROR] - 20190926 150915:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:09:16,004 ERROR] - 20190926 150916:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:09:16,008 ERROR] - 20190926 150916:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:09:17,004 ERROR] - 20190926 150917:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:09:17,005 ERROR] - 20190926 150917:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:09:18,022 ERROR] - 20190926 150918:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:09:18,023 ERROR] - 20190926 150918:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:09:19,002 ERROR] - 20190926 150919:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:09:19,005 ERROR] - 20190926 150919:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:09:20,002 ERROR] - 20190926 150920:0调度执行任务错误:null
+errorList:common.util.string.UtilString.splitStr(UtilString.java:254)
+module.datetype.HolidayDao.<init>(HolidayDao.java:37)
+module.datetype.HolidayDao.getInstance(HolidayDao.java:31)
+com.scher.ScherExecJob.execute(ScherExecJob.java:79)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:09:20,004 ERROR] - 20190926 150920:记录调度日志错误:null
+errorList:java.lang.Integer.parseInt(Integer.java:542)
+java.lang.Integer.valueOf(Integer.java:766)
+com.log.Log.takeLogSche(Log.java:332)
+com.scher.ScherExecJob.execute(ScherExecJob.java:116)
+org.quartz.core.JobRunShell.run(JobRunShell.java:206)
+org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:548)
+
+[2019-09-26 15:09:32,522 INFO] - MLog clients using log4j logging.
+[2019-09-26 15:09:32,960 INFO] - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+[2019-09-26 15:09:33,129 INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1bqomxva5u2t9d31trbibb|627456d9, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1bqomxva5u2t9d31trbibb|627456d9, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/app-qy?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2019-09-26 15:09:37,011 INFO] - Job execution threads will use class loader of thread: Thread-0
+[2019-09-26 15:09:37,349 INFO] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2019-09-26 15:09:37,365 INFO] - Quartz Scheduler v.2.0.1 created.
+[2019-09-26 15:09:37,375 INFO] - RAMJobStore initialized.
+[2019-09-26 15:09:37,378 INFO] - Scheduler meta-data: Quartz Scheduler (v2.0.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 100 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2019-09-26 15:09:37,378 INFO] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+[2019-09-26 15:09:37,378 INFO] - Quartz scheduler version: 2.0.1
+[2019-09-26 15:09:37,463 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-09-26 15:09:37,478 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-09-26 15:10:47,359 ERROR] - 20190926 151047:获取最大任务Order错误:null
+errorList:com.taskInterface.TaskDao.getMaxOrderLen(TaskDao.java:360)
+com.taskInterface.TaskTable.updateOrder(TaskTable.java:277)
+com.taskInterface.TaskTable.access$5(TaskTable.java:276)
+com.taskInterface.TaskTable$7.actionPerformed(TaskTable.java:127)
+javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+javax.swing.AbstractButton.doClick(AbstractButton.java:376)
+javax.swing.plaf.basic.BasicMenuItemUI.doClick(BasicMenuItemUI.java:842)
+com.apple.laf.AquaMenuItemUI.doClick(AquaMenuItemUI.java:157)
+javax.swing.plaf.basic.BasicMenuItemUI$Handler.mouseReleased(BasicMenuItemUI.java:886)
+java.awt.Component.processMouseEvent(Component.java:6533)
+javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+java.awt.Component.processEvent(Component.java:6298)
+java.awt.Container.processEvent(Container.java:2237)
+java.awt.Component.dispatchEventImpl(Component.java:4889)
+java.awt.Container.dispatchEventImpl(Container.java:2295)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4889)
+java.awt.LightweightDispatcher.processMouseEvent(Container.java:4526)
+java.awt.LightweightDispatcher.dispatchEvent(Container.java:4467)
+java.awt.Container.dispatchEventImpl(Container.java:2281)
+java.awt.Window.dispatchEventImpl(Window.java:2746)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+java.awt.EventQueue.access$500(EventQueue.java:97)
+java.awt.EventQueue$3.run(EventQueue.java:709)
+java.awt.EventQueue$3.run(EventQueue.java:703)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90)
+java.awt.EventQueue$4.run(EventQueue.java:731)
+java.awt.EventQueue$4.run(EventQueue.java:729)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+
+[2019-09-26 15:12:46,929 INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1bqomxva5u2t9d31trbibb|53439607, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1bqomxva5u2t9d31trbibb|53439607, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://192.168.50.169:3306/app-infoCenter?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2019-09-26 16:36:15,532 INFO] - MLog clients using log4j logging.
+[2019-09-26 16:36:16,190 INFO] - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+[2019-09-26 16:36:16,471 INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1bqomxva5u5wrx41vp4zga|650ddb8a, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1bqomxva5u5wrx41vp4zga|650ddb8a, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/app-qy?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2019-09-26 16:36:21,308 INFO] - Job execution threads will use class loader of thread: Thread-0
+[2019-09-26 16:36:22,208 INFO] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2019-09-26 16:36:22,210 INFO] - Quartz Scheduler v.2.0.1 created.
+[2019-09-26 16:36:22,213 INFO] - RAMJobStore initialized.
+[2019-09-26 16:36:22,215 INFO] - Scheduler meta-data: Quartz Scheduler (v2.0.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 100 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2019-09-26 16:36:22,215 INFO] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+[2019-09-26 16:36:22,215 INFO] - Quartz scheduler version: 2.0.1
+[2019-09-26 16:36:22,453 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-09-26 16:36:22,470 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.

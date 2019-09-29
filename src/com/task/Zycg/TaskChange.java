@@ -1,4 +1,4 @@
-package com.task.Ccgp;
+package com.task.Zycg;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -17,13 +17,14 @@ import common.util.UtilWeb;
 import common.util.conver.UtilConver;
 import common.util.jdbc.UtilJDBCManager;
 import common.util.jdbc.UtilSql;
+import common.util.json.UtilJackSon;
 import common.util.json.UtilJson;
 import consts.Const;
 import module.dbconnection.DbConnection;
 import module.dbconnection.DbConnectionDao;
 
 /**
- * @Description:中国政府采购网-变更公告公示
+ * @Description:中央政府采购网-变更公告公示
  * @date Aut 1,o19
  * @author:fgq
  */
@@ -35,10 +36,10 @@ public class TaskChange extends TaskAbstract {
 			+ "contentType,contentCls,content,contentUrl,memo)" + "values(?,?,?,?,?," + "?,?,?,?,?," + "?,?,?,?,?,"
 			+ "?,?,?,?,?) ";
 	
-	private final static String webSite="中国政府采购网";
+	private final static String webSite="中央政府采购网";
 	private final static String type="(变更公告公示)";
-	private final static String cls="cggg Change";
-
+	private final static String cls="hnggzy Change";
+	
 	public void fireTask() {
 		DbConnection dbconn = null;
 		String pulishDate = "";
@@ -119,49 +120,42 @@ public class TaskChange extends TaskAbstract {
 		int rs = 0;
 		for (int i = 1; i <= bean.getPageIndex(); i++) {
 			List<InfoBidChange> list = new ArrayList<InfoBidChange>();
-			try {
-				System.out.println(webSite+type+"[page]:" + i);
-				String url = "http://www.ccgp.gov.cn/cggg/zygg/gzgg/index_" + (i - 1) + ".htm";
-				if (i == 1) {
-					url = "http://www.ccgp.gov.cn/cggg/zygg/gzgg/index.htm";
+			String url = "http://www.zycg.gov.cn/article/llist?catalog=bggg&page="
+					+ i;
+			System.out.println(webSite+type+"[page]:" + i);
+			Document doc = UtilWeb.getDoc(url);
+			Elements elList = doc.getElementsByClass("lby-list").first().getElementsByTag("li");
+			for (Element li : elList) {
+				try {
+					InfoBidChange info = new InfoBidChange();
+					info.setName(li.getElementsByTag("a").first().attr("title"));
+					info.setWebSite(webSite);
+					info.setIndustry("");
+					info.setBusiType(getBusiType(info.getName()));
+					info.setProvince("");
+					info.setCity("");
+					info.setRegion("中央政府");
+					info.setUnit("");
+					info.setSource("");
+					info.setPublishTime(li.getElementsByTag("span").first().html().replace("[", "").replace("]", ""));
+					info.setContentType("html");
+					info.setContentCls(cls);
+
+					String contentUrl = "http://www.zycg.gov.cn" + li.getElementsByTag("a").first().attr("href");
+					info.setContentUrl(contentUrl);
+					String contentHtml = UtilWeb.getDoc(contentUrl).getElementById("container").html();
+					info.setContent(contentHtml);
+					list.add(info);
+					Thread.sleep(1000);
+				} catch (Exception e) {
+					e.printStackTrace();
 				}
-				Document doc = UtilWeb.getDoc(url);
-				Elements elList = doc.getElementsByClass("c_list_bid").first().getElementsByTag("li");
-				for (Element li : elList) {
-					try {
-						InfoBidChange info = new InfoBidChange();
-						info.setName(li.getElementsByTag("a").first().attr("title"));
-						info.setWebSite(webSite);
-						info.setIndustry("");
-						info.setBusiType(getBusiType(info.getName()));
-						info.setProvince("");
-						info.setCity("");
-						info.setRegion(li.select("em:eq(2)").first().html());
-						info.setUnit(li.select("em:eq(3)").first().html());
-						info.setSource("");
-						info.setPublishTime(li.select("em:eq(1)").first().html());
-						info.setContentType("html");
-						info.setContentCls(cls);
-						String contentUrl = li.getElementsByTag("a").first().attr("href").replace("./",
-								"http://www.ccgp.gov.cn/cggg/zygg/gzgg/");
-						info.setContentUrl(contentUrl);
-						String contentHtml = UtilWeb.getDoc(contentUrl).getElementsByClass("vF_detail_content").first()
-								.html();
-						info.setContent(contentHtml);
-						list.add(info);
-						Thread.sleep(1000);
-					} catch (Exception e) {
-						e.printStackTrace();
-					}
-				}
-			} catch (Exception e) {
-				e.printStackTrace();
 			}
 			rs += this.add(list);
 		}
 		return rs;
 	}
-
+ 
 	private static String getBusiType(String name) {
 		if (name.indexOf("知识") >= 0 || name.indexOf("产权") >= 0) {
 			return "知识产权";
@@ -169,4 +163,38 @@ public class TaskChange extends TaskAbstract {
 			return "";
 		}
 	}
+
+	public static void main(String[] args) throws Exception {
+		List<InfoBidChange> list = new ArrayList<InfoBidChange>();
+		int pageIndex = 1;
+		String url = "http://www.zycg.gov.cn/article/llist?catalog=bggg&page="
+				+ pageIndex;
+		Document doc = UtilWeb.getDoc(url);
+		Elements elList = doc.getElementsByClass("lby-list").first().getElementsByTag("li");
+
+		for (Element li : elList) {
+			InfoBidChange info = new InfoBidChange();
+			info.setName(li.getElementsByTag("a").first().attr("title"));
+			info.setWebSite(webSite);
+			info.setIndustry("");
+			info.setBusiType(getBusiType(info.getName()));
+			info.setProvince("");
+			info.setCity("");
+			info.setRegion("中央政府");
+			info.setUnit("");
+			info.setSource("");
+			info.setPublishTime(li.getElementsByTag("span").first().html().replace("[", "").replace("]", ""));
+			info.setContentType("html");
+			info.setContentCls(cls);
+
+			String contentUrl = "http://www.zycg.gov.cn" + li.getElementsByTag("a").first().attr("href");
+			info.setContentUrl(contentUrl);
+			String contentHtml = UtilWeb.getDoc(contentUrl).getElementById("container").html();
+			info.setContent(contentHtml);
+			list.add(info);
+			System.out.println(UtilJackSon.toJson(list));
+			break;
+		}
+	}
+
 }
