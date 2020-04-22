@@ -10,6 +10,7 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import com.task.ConstTask;
 import com.task.Gdgov.IssueNews;
 import com.taskInterface.TaskAbstract;
 
@@ -185,16 +186,18 @@ public class Task extends TaskAbstract {
 			news.setRegion("珠海");
 			String contentUrl ="http://www.zhuhai.gov.cn/xw/xwzx_44483/zhyw"+ elA.attr("href").substring(1);
 			news.setMemo(contentUrl);
+			Thread.sleep(ConstTask.SleepTime);
 			Element elDoc = UtilWeb.getDoc(contentUrl).getElementById("new_zh");
 			if (elDoc != null) {
 				news.setContent(elDoc.getElementsByClass("TRS_Editor").first().html());
 			} else {
 				System.out.println(news.getTitle()+"  "+contentUrl);
+				Thread.sleep(ConstTask.SleepTime);
 				news.setContent(UtilWeb.getDoc(contentUrl).getElementsByClass("main").first().html());
 			}
 //			System.out.println(UtilJackSon.toJson(news));
 			listNews.add(news);
-			Thread.sleep(1000);// 隔10秒
+			Thread.sleep(ConstTask.SleepTime);
 //			System.out.println(UtilConver.dateToStr(Const.fm_yyyy_MM_dd_HH_mm_ss));
 		}
 		return listNews;

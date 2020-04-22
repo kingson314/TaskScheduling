@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="GBK"?>
 
 <任务类型信息>
+
+	<taskType>
+		珠海金融工作局-政策法规
+		<taskJarPath>taskJar\Zhjr.jar</taskJarPath>
+		<taskPath>com.task.Zhjr.Task</taskPath>
+		<taskPanelPath>com.task.Zhjr.Panel</taskPanelPath>
+	</taskType>
+	
+	
 	<taskType>
 		中国招投标公共服务平台-资格预审公告
 		<taskJarPath>taskJar\Cebpubservice.jar</taskJarPath>

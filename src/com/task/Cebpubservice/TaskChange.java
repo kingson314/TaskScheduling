@@ -10,6 +10,7 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import com.task.ConstTask;
 import com.taskBusiBean.info.InfoBidChange;
 import com.taskBusiBean.info.InfoBidNotice;
 import com.taskInterface.TaskAbstract;
@@ -152,6 +153,7 @@ public class TaskChange extends TaskAbstract {
 						String contentUrl = tds.first().getElementsByTag("a").first().attr("href")
 								.replace("javascript:urlOpen('", "").replace("')", "");
 						info.setContentUrl(contentUrl);
+						Thread.sleep(ConstTask.SleepTime);
 						String contentHtml = UtilWeb.getDoc(contentUrl).html();
 						String swfPath = contentHtml.substring(contentHtml.indexOf("escape('") + "escape('".length());
 						swfPath = swfPath.substring(0, swfPath.indexOf("')"));
@@ -159,7 +161,7 @@ public class TaskChange extends TaskAbstract {
 //				System.out.println(UtilJackSon.toJson(info));
 //				UtilHttp.download(swfPath, "/Volumes/Docs/Git/nginx/infoCenter/cebpubservice/"+swfPath.substring(swfPath.lastIndexOf("/")+1));
 						list.add(info);
-						Thread.sleep(1000);
+						Thread.sleep(ConstTask.SleepTime);
 					} catch (Exception e) {
 						e.printStackTrace();
 					}

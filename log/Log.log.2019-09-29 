@@ -1,0 +1,218 @@
+[2019-09-29 15:04:02,004 INFO] - MLog clients using log4j logging.
+[2019-09-29 15:04:02,256 INFO] - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+[2019-09-29 15:04:02,458 INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1bqomxva5ycxq86640214|6ea865c5, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1bqomxva5ycxq86640214|6ea865c5, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/app-qy?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2019-09-29 15:04:07,135 INFO] - Job execution threads will use class loader of thread: Thread-0
+[2019-09-29 15:04:07,489 INFO] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2019-09-29 15:04:07,490 INFO] - Quartz Scheduler v.2.0.1 created.
+[2019-09-29 15:04:07,492 INFO] - RAMJobStore initialized.
+[2019-09-29 15:04:07,501 INFO] - Scheduler meta-data: Quartz Scheduler (v2.0.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 100 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2019-09-29 15:04:07,501 INFO] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+[2019-09-29 15:04:07,501 INFO] - Quartz scheduler version: 2.0.1
+[2019-09-29 15:04:07,542 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-09-29 15:04:07,549 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-09-29 15:04:16,758 ERROR] - 20190929 150416:获取任务PANEL类com.task.Dpcgd.Panel错误3:com.task.Dpcgd.Panel
+errorList:java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+java.lang.Class.forName0(Native Method)
+java.lang.Class.forName(Class.java:348)
+com.taskClass.TaskClassImp.getTaskPanel(TaskClassImp.java:121)
+com.taskInterface.TaskDialog.createPanel(TaskDialog.java:89)
+com.taskInterface.TaskDialog.<init>(TaskDialog.java:104)
+com.taskInterface.TaskTab.addTask(TaskTab.java:272)
+com.taskInterface.TaskTab$1.actionPerformed(TaskTab.java:100)
+javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+java.awt.Component.processMouseEvent(Component.java:6533)
+javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+java.awt.Component.processEvent(Component.java:6298)
+java.awt.Container.processEvent(Container.java:2237)
+java.awt.Component.dispatchEventImpl(Component.java:4889)
+java.awt.Container.dispatchEventImpl(Container.java:2295)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4889)
+java.awt.LightweightDispatcher.processMouseEvent(Container.java:4526)
+java.awt.LightweightDispatcher.dispatchEvent(Container.java:4467)
+java.awt.Container.dispatchEventImpl(Container.java:2281)
+java.awt.Window.dispatchEventImpl(Window.java:2746)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+java.awt.EventQueue.access$500(EventQueue.java:97)
+java.awt.EventQueue$3.run(EventQueue.java:709)
+java.awt.EventQueue$3.run(EventQueue.java:703)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90)
+java.awt.EventQueue$4.run(EventQueue.java:731)
+java.awt.EventQueue$4.run(EventQueue.java:729)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+
+[2019-09-29 15:04:16,815 ERROR] - 20190929 150416:任务对话框构造错误:null
+errorList:com.taskInterface.TaskDialog.createPanel(TaskDialog.java:90)
+com.taskInterface.TaskDialog.<init>(TaskDialog.java:104)
+com.taskInterface.TaskTab.addTask(TaskTab.java:272)
+com.taskInterface.TaskTab$1.actionPerformed(TaskTab.java:100)
+javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+java.awt.Component.processMouseEvent(Component.java:6533)
+javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+java.awt.Component.processEvent(Component.java:6298)
+java.awt.Container.processEvent(Container.java:2237)
+java.awt.Component.dispatchEventImpl(Component.java:4889)
+java.awt.Container.dispatchEventImpl(Container.java:2295)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4889)
+java.awt.LightweightDispatcher.processMouseEvent(Container.java:4526)
+java.awt.LightweightDispatcher.dispatchEvent(Container.java:4467)
+java.awt.Container.dispatchEventImpl(Container.java:2281)
+java.awt.Window.dispatchEventImpl(Window.java:2746)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+java.awt.EventQueue.access$500(EventQueue.java:97)
+java.awt.EventQueue$3.run(EventQueue.java:709)
+java.awt.EventQueue$3.run(EventQueue.java:703)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90)
+java.awt.EventQueue$4.run(EventQueue.java:731)
+java.awt.EventQueue$4.run(EventQueue.java:729)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+
+[2019-09-29 15:06:22,856 ERROR] - 20190929 150622:获取任务PANEL类com.task.Dpcgd.Panel错误3:com.task.Dpcgd.Panel
+errorList:java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+java.lang.Class.forName0(Native Method)
+java.lang.Class.forName(Class.java:348)
+com.taskClass.TaskClassImp.getTaskPanel(TaskClassImp.java:121)
+com.taskInterface.TaskDialog.createPanel(TaskDialog.java:89)
+com.taskInterface.TaskDialog.<init>(TaskDialog.java:104)
+com.taskInterface.TaskTab.addTask(TaskTab.java:272)
+com.taskInterface.TaskTab$1.actionPerformed(TaskTab.java:100)
+javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+java.awt.Component.processMouseEvent(Component.java:6533)
+javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+java.awt.Component.processEvent(Component.java:6298)
+java.awt.Container.processEvent(Container.java:2237)
+java.awt.Component.dispatchEventImpl(Component.java:4889)
+java.awt.Container.dispatchEventImpl(Container.java:2295)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4889)
+java.awt.LightweightDispatcher.processMouseEvent(Container.java:4526)
+java.awt.LightweightDispatcher.dispatchEvent(Container.java:4467)
+java.awt.Container.dispatchEventImpl(Container.java:2281)
+java.awt.Window.dispatchEventImpl(Window.java:2746)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+java.awt.EventQueue.access$500(EventQueue.java:97)
+java.awt.EventQueue$3.run(EventQueue.java:709)
+java.awt.EventQueue$3.run(EventQueue.java:703)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90)
+java.awt.EventQueue$4.run(EventQueue.java:731)
+java.awt.EventQueue$4.run(EventQueue.java:729)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+
+[2019-09-29 15:06:22,866 ERROR] - 20190929 150622:任务对话框构造错误:null
+errorList:com.taskInterface.TaskDialog.createPanel(TaskDialog.java:90)
+com.taskInterface.TaskDialog.<init>(TaskDialog.java:104)
+com.taskInterface.TaskTab.addTask(TaskTab.java:272)
+com.taskInterface.TaskTab$1.actionPerformed(TaskTab.java:100)
+javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+java.awt.Component.processMouseEvent(Component.java:6533)
+javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+java.awt.Component.processEvent(Component.java:6298)
+java.awt.Container.processEvent(Container.java:2237)
+java.awt.Component.dispatchEventImpl(Component.java:4889)
+java.awt.Container.dispatchEventImpl(Container.java:2295)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4889)
+java.awt.LightweightDispatcher.processMouseEvent(Container.java:4526)
+java.awt.LightweightDispatcher.dispatchEvent(Container.java:4467)
+java.awt.Container.dispatchEventImpl(Container.java:2281)
+java.awt.Window.dispatchEventImpl(Window.java:2746)
+java.awt.Component.dispatchEvent(Component.java:4711)
+java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+java.awt.EventQueue.access$500(EventQueue.java:97)
+java.awt.EventQueue$3.run(EventQueue.java:709)
+java.awt.EventQueue$3.run(EventQueue.java:703)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90)
+java.awt.EventQueue$4.run(EventQueue.java:731)
+java.awt.EventQueue$4.run(EventQueue.java:729)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+
+[2019-09-29 15:07:12,097 INFO] - MLog clients using log4j logging.
+[2019-09-29 15:07:12,292 INFO] - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+[2019-09-29 15:07:12,473 INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1bqomxva5yd1swabsw1b9|2840e3d6, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1bqomxva5yd1swabsw1b9|2840e3d6, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/app-qy?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2019-09-29 15:07:16,042 INFO] - Job execution threads will use class loader of thread: Thread-0
+[2019-09-29 15:07:16,307 INFO] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2019-09-29 15:07:16,309 INFO] - Quartz Scheduler v.2.0.1 created.
+[2019-09-29 15:07:16,311 INFO] - RAMJobStore initialized.
+[2019-09-29 15:07:16,316 INFO] - Scheduler meta-data: Quartz Scheduler (v2.0.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 100 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2019-09-29 15:07:16,316 INFO] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+[2019-09-29 15:07:16,316 INFO] - Quartz scheduler version: 2.0.1
+[2019-09-29 15:07:16,454 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-09-29 15:07:16,479 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.

@@ -30,6 +30,25 @@ public class IssueNews {
 	private String year;
 	private String region;
 	private String memo;
+	private Boolean hasFile;
+	private String files;
+	
+	public Boolean getHasFile() {
+		return hasFile;
+	}
+
+	public void setHasFile(Boolean hasFile) {
+		this.hasFile = hasFile;
+	}
+
+	public String getFiles() {
+		return files;
+	}
+
+	public void setFiles(String files) {
+		this.files = files;
+	}
+
 	public String getYear() {
 		return year;
 	}

@@ -10,6 +10,7 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import com.task.ConstTask;
 import com.taskBusiBean.info.InfoBidChange;
 import com.taskInterface.TaskAbstract;
 
@@ -145,11 +146,12 @@ public class TaskChange extends TaskAbstract {
 						String contentUrl = li.getElementsByTag("a").first().attr("href").replace("./",
 								"http://www.ccgp.gov.cn/cggg/zygg/gzgg/");
 						info.setContentUrl(contentUrl);
+						Thread.sleep(ConstTask.SleepTime);
 						String contentHtml = UtilWeb.getDoc(contentUrl).getElementsByClass("vF_detail_content").first()
 								.html();
 						info.setContent(contentHtml);
 						list.add(info);
-						Thread.sleep(1000);
+						Thread.sleep(ConstTask.SleepTime);
 					} catch (Exception e) {
 						e.printStackTrace();
 					}

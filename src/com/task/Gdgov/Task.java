@@ -10,6 +10,7 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import com.task.ConstTask;
 import com.taskInterface.TaskAbstract;
 
 import common.util.UtilWeb;
@@ -194,6 +195,7 @@ public class Task extends TaskAbstract {
 			news.setRegion(news.getTitle().split("：")[0]);
 			String contentUrl = elA.attr("href");
 			news.setMemo(contentUrl);
+			Thread.sleep(ConstTask.SleepTime);
 			Element elDoc = UtilWeb.getDoc(contentUrl).getElementById("zoom");
 			if (elDoc != null) {
 				news.setContent(elDoc.html());
@@ -203,7 +205,7 @@ public class Task extends TaskAbstract {
 			}
 //			System.out.println(UtilJackSon.toJson(news));
 			listNews.add(news);
-			Thread.sleep(1000);// 隔10秒
+			Thread.sleep(ConstTask.SleepTime);
 //			System.out.println(UtilConver.dateToStr(Const.fm_yyyy_MM_dd_HH_mm_ss));
 		}
 		return listNews;
@@ -290,6 +292,7 @@ public class Task extends TaskAbstract {
 			news.setRegion("");
 			String contentUrl = elA.attr("href");
 			news.setMemo(contentUrl);
+			Thread.sleep(ConstTask.SleepTime);
 			Element elDoc = UtilWeb.getDoc(contentUrl).getElementById("zoom");
 			if (elDoc != null) {
 				news.setContent(elDoc.html());
@@ -304,7 +307,7 @@ public class Task extends TaskAbstract {
 			}
 //			System.out.println(UtilJackSon.toJson(news));
 			listNews.add(news);
-			Thread.sleep(1000);// 隔10秒
+			Thread.sleep(ConstTask.SleepTime);
 //			System.out.println(UtilConver.dateToStr(Const.fm_yyyy_MM_dd_HH_mm_ss));
 		}
 		return listNews;
@@ -393,6 +396,7 @@ public class Task extends TaskAbstract {
 			news.setRegion("");
 			String contentUrl = elA.attr("href");
 			news.setMemo(contentUrl);
+			Thread.sleep(ConstTask.SleepTime);
 			Element elDoc = UtilWeb.getDoc(contentUrl).getElementById("zoom");
 			if (elDoc != null) {
 				news.setContent(elDoc.html());
@@ -407,7 +411,7 @@ public class Task extends TaskAbstract {
 			}
 //			System.out.println(UtilJackSon.toJson(news));
 			listNews.add(news);
-			Thread.sleep(1000);// 隔10秒
+			Thread.sleep(ConstTask.SleepTime);
 //			System.out.println(UtilConver.dateToStr(Const.fm_yyyy_MM_dd_HH_mm_ss));
 		}
 		return listNews;
@@ -453,6 +457,7 @@ public class Task extends TaskAbstract {
 //						news.setContent(elDoc.html());
 //					} else {
 //						System.out.println(news.getTitle()+"  "+contentUrl);
+//						Thread.sleep(ConstTask.SleepTime);
 //						Elements elDocs=UtilWeb.getDoc(contentUrl).getElementsByClass("main");
 //						if(elDocs!=null && elDocs.first()!=null) {
 //							news.setContent(elDocs.first().html());
@@ -462,7 +467,7 @@ public class Task extends TaskAbstract {
 //					}
 ////					System.out.println(UtilJackSon.toJson(news));
 //					listNews.add(news);
-//					Thread.sleep(1000);// 隔10秒
+//					Thread.sleep(ConstTask.SleepTime);
 ////					System.out.println(UtilConver.dateToStr(Const.fm_yyyy_MM_dd_HH_mm_ss));
 //				}
 //			}
@@ -494,11 +499,13 @@ public class Task extends TaskAbstract {
 			news.setRegion("");
 			String contentUrl = elA.attr("href");
 			news.setMemo(contentUrl);
+			Thread.sleep(ConstTask.SleepTime);
 			Element elDoc = UtilWeb.getDoc(contentUrl).getElementById("zoom");
 			if (elDoc != null) {
 				news.setContent(elDoc.html());
 			} else {
 				System.out.println(news.getTitle()+"  "+contentUrl);
+				Thread.sleep(ConstTask.SleepTime);
 				Elements elDocs=UtilWeb.getDoc(contentUrl).getElementsByClass("main");
 				if(elDocs!=null && elDocs.first()!=null) {
 					news.setContent(elDocs.first().html());
@@ -508,7 +515,7 @@ public class Task extends TaskAbstract {
 			}
 //			System.out.println(UtilJackSon.toJson(news));
 			listNews.add(news);
-			Thread.sleep(1000);// 隔10秒
+			Thread.sleep(ConstTask.SleepTime);
 //			System.out.println(UtilConver.dateToStr(Const.fm_yyyy_MM_dd_HH_mm_ss));
 		}
 		return listNews;

@@ -13,6 +13,7 @@ import org.jsoup.select.Elements;
 import org.openqa.selenium.By;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
 
+import com.task.ConstTask;
 import com.taskBusiBean.info.InfoBidNotice;
 import com.taskInterface.TaskAbstract;
 
@@ -139,6 +140,7 @@ public class TaskNotice extends TaskAbstract {
 			Document doc = UtilWeb.getDocument(driver.getPageSource());
 //			int pages=Integer.valueOf(doc.getElementsByClass("count").get(1).html().replace("共", "").replace("页", "").trim());
 //			System.out.println();
+			Thread.sleep(ConstTask.SleepTime);
 			Elements elList = doc.getElementById("toview").getElementsByClass("publicont");
 			for (Element li : elList) {
 				InfoBidNotice info = new InfoBidNotice();
@@ -166,6 +168,7 @@ public class TaskNotice extends TaskAbstract {
 				String contentUrl = h4.getElementsByTag("a").first().attr("href");
 				info.setContentUrl(contentUrl);
 //				System.out.println(contentUrl);
+				Thread.sleep(ConstTask.SleepTime);
 				Document documentDetail = UtilWeb.getPageDocument(contentUrl);
 				Element iframe = documentDetail.getElementsByTag("iframe").first();
 				String iframeSrc = "http://www.ggzy.gov.cn"+iframe.attr("src");

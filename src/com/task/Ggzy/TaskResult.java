@@ -13,6 +13,7 @@ import org.jsoup.select.Elements;
 import org.openqa.selenium.By;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
 
+import com.task.ConstTask;
 import com.taskBusiBean.info.InfoBidResult;
 import com.taskInterface.TaskAbstract;
 
@@ -164,14 +165,17 @@ public class TaskResult extends TaskAbstract {
 				String contentUrl = h4.getElementsByTag("a").first().attr("href");
 				info.setContentUrl(contentUrl);
 //				System.out.println(contentUrl);
+				Thread.sleep(ConstTask.SleepTime);
 				Document documentDetail = UtilWeb.getPageDocument(contentUrl);
 				Element iframe = documentDetail.getElementsByTag("iframe").first();
 				String iframeSrc = "http://www.ggzy.gov.cn"+iframe.attr("src");
 //				System.out.println(iframeSrc);
+				Thread.sleep(ConstTask.SleepTime);
 				Document documentIframe = UtilWeb.getPageDocument(iframeSrc);
 				String contentHtml = documentIframe.getElementsByClass("detail").first().html();
 				info.setContent(contentHtml);
 				list.add(info);
+				Thread.sleep(ConstTask.SleepTime);
 //				System.out.println(UtilJackSon.toJson(list));
 			}
 		} finally {

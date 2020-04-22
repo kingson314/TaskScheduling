@@ -1,0 +1,93 @@
+[2019-10-18 09:36:37,800 INFO] - MLog clients using log4j logging.
+[2019-10-18 09:36:38,040 INFO] - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+[2019-10-18 09:36:38,257 INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1bqomxva51p6lvbu196pe1e|32a3aaba, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1bqomxva51p6lvbu196pe1e|32a3aaba, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/app-qy?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2019-10-18 09:36:43,039 INFO] - Job execution threads will use class loader of thread: Thread-0
+[2019-10-18 09:36:43,276 INFO] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2019-10-18 09:36:43,278 INFO] - Quartz Scheduler v.2.0.1 created.
+[2019-10-18 09:36:43,280 INFO] - RAMJobStore initialized.
+[2019-10-18 09:36:43,283 INFO] - Scheduler meta-data: Quartz Scheduler (v2.0.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 100 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2019-10-18 09:36:43,283 INFO] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+[2019-10-18 09:36:43,284 INFO] - Quartz scheduler version: 2.0.1
+[2019-10-18 09:36:43,334 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-10-18 09:36:43,351 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-10-18 09:37:29,768 INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1bqomxva51p6lvbu196pe1e|eac5915, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1bqomxva51p6lvbu196pe1e|eac5915, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://193.112.165.185:3306/app-qy?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2019-10-18 10:10:34,095 INFO] - MLog clients using log4j logging.
+[2019-10-18 10:10:34,469 INFO] - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+[2019-10-18 10:10:34,800 INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1bqomxva51p7tineuz6vic|7bc61967, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1bqomxva51p7tineuz6vic|7bc61967, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/app-qy?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2019-10-18 10:10:38,371 INFO] - Job execution threads will use class loader of thread: Thread-0
+[2019-10-18 10:10:38,490 INFO] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2019-10-18 10:10:38,491 INFO] - Quartz Scheduler v.2.0.1 created.
+[2019-10-18 10:10:38,493 INFO] - RAMJobStore initialized.
+[2019-10-18 10:10:38,496 INFO] - Scheduler meta-data: Quartz Scheduler (v2.0.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 100 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2019-10-18 10:10:38,496 INFO] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+[2019-10-18 10:10:38,496 INFO] - Quartz scheduler version: 2.0.1
+[2019-10-18 10:10:38,536 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-10-18 10:10:38,548 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-10-18 10:10:51,037 INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1bqomxva51p7tineuz6vic|6b4f203, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1bqomxva51p7tineuz6vic|6b4f203, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://193.112.165.185:3306/app-qy?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2019-10-18 11:52:16,798 ERROR] - 20191018 115216:Sql.QueryForCount:select count(1) from IssueNews where title='广东省地方金融监督管理局关于换发融资担保业务经营许可证的通知' and newsTime='2019-08-23'Communications link failure
+
+The last packet successfully received from the server was 3,638,547 milliseconds ago.  The last packet sent successfully to the server was 145 milliseconds ago.
+errorList:sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1121)
+com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3673)
+com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3562)
+com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4113)
+com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2570)
+com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2731)
+com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2818)
+com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2157)
+com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2324)
+com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.executeQuery(NewProxyPreparedStatement.java:76)
+common.util.jdbc.UtilSql.queryForCount(UtilSql.java:1394)
+common.util.jdbc.UtilSql.isExist(UtilSql.java:1410)
+com.task.Zhjr.Task.isExits(Task.java:117)
+com.task.Zhjr.Task.addNews(Task.java:79)
+com.task.Zhjr.Task.fireTask(Task.java:58)
+com.task.Zhjr.Task.fireTask(Task.java:71)
+com.taskmanu.ManuExecThread.execTask(ManuExecThread.java:102)
+com.taskmanu.ManuExecThread.run(ManuExecThread.java:48)
+java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+java.util.concurrent.FutureTask.run(FutureTask.java:266)
+java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+java.lang.Thread.run(Thread.java:748)
+
+[2019-10-18 12:36:45,607 INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1bqomxva51p7tineuz6vic|6b8dd, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1bqomxva51p7tineuz6vic|6b8dd, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://193.112.165.185:3306/app-qy?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2019-10-18 12:37:33,539 INFO] - MLog clients using log4j logging.
+[2019-10-18 12:37:33,625 INFO] - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+[2019-10-18 12:37:33,954 INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1bqomxva51pd2joi13vb0cp|315a1cb3, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1bqomxva51pd2joi13vb0cp|315a1cb3, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/app-qy?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2019-10-18 12:37:43,043 INFO] - Job execution threads will use class loader of thread: Thread-2
+[2019-10-18 12:37:43,645 INFO] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2019-10-18 12:37:43,646 INFO] - Quartz Scheduler v.2.0.1 created.
+[2019-10-18 12:37:43,648 INFO] - RAMJobStore initialized.
+[2019-10-18 12:37:43,653 INFO] - Scheduler meta-data: Quartz Scheduler (v2.0.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 100 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2019-10-18 12:37:43,654 INFO] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+[2019-10-18 12:37:43,654 INFO] - Quartz scheduler version: 2.0.1
+[2019-10-18 12:37:43,865 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-10-18 12:37:43,882 INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-10-18 12:37:51,121 INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1bqomxva51pd2joi13vb0cp|859b19c, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1bqomxva51pd2joi13vb0cp|859b19c, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://193.112.165.185:3306/app-qy?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
